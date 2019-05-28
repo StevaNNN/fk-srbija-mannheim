@@ -24,7 +24,16 @@
             "tsConfig": "src/tsconfig.app.json",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              {
+                "glob": "**/*",
+                "input": "src/assets/",
+                "ignore": [
+                  "**/*.svg",
+                  "**/*.ttf",
+                  "**/*.png"
+                ],
+                "output": "/assets/"
+              }
             ],
             "styles": [
               "src/styles.scss"
@@ -41,7 +50,7 @@
                 }
               ],
               "optimization": true,
-              "outputHashing": "all",
+              "outputHashing": "none",
               "sourceMap": false,
               "extractCss": true,
               "namedChunks": false,

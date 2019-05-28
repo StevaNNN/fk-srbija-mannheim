@@ -1,17 +1,30 @@
-@import "sass/abstract/vars";
-@import "sass/abstract/functions";
-@import "sass/abstract/mixins";
+/// Abstract imports
+@import 'sass/abstract/vars';
+@import 'sass/abstract/functions';
+@import 'sass/abstract/mixins';
 
-@import "sass/base/reset";
-@import "sass/base/global";
-@import "sass/base/typo";
+/// Base imports
+@import 'sass/base/reset';
+@import 'sass/base/global';
+@import 'sass/base/typo';
 
-@import "sass/components/header";
-@import "sass/components/footer";
-@import "sass/components/navbar";
+/// Component's variables
+@import 'sass/components/var/header';
+@import 'sass/components/var/footer';
+@import 'sass/components/var/navbar';
 
-@import "sass/vendors/bootstrap";
+/// Component's source
+@import 'sass/components/var/header';
+@import 'sass/components/var/footer';
+@import 'sass/components/var/navbar';
 
+/// Third party libraries
+@import 'sass/vendors/bootstrap';
 
-@include add-all-fonts();
-//@include generateMaterialIcons();
+/// Bellow we are typing all we need to set globally on app
+
+/// Generating all fonts
+@include add-all-fonts;
+
+/// Generating icons
+@include generate-icon-by-size;

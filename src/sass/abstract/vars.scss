@@ -1,13 +1,43 @@
+/// App prefix
+$prefix: 'fcm-';
+
+/// Font path root
 $font-path: 'assets/font/';
+
+/// Roboto font path
 $roboto-path: $font-path + '/roboto';
+
+/// Material font path
 $material-path: $font-path + '/materialIcons';
+
+/// Referencing which font will be default for app
 $fsm-font-path: $roboto-path;
+
+/// Fonts
+$font-family-light: 'Roboto-Light';
+$font-family: 'Roboto-Regular';
+$font-family-medium: 'Roboto-Medium';
+$font-family-bold: 'Roboto-Bold';
+$font-family-italic: 'Roboto-Italic';
+
+// Map of fonts needed by mixin that generates them
 $map-of-fonts: (
-  'Roboto-Regular': #{'Roboto-Regular' + '.ttf'},
-  'Roboto-Medium': #{'Roboto-Medium' + '.ttf'},
-  'Roboto-Bold': #{'Roboto-Bold' + '.ttf'},
-  'Roboto-Light': #{'Roboto-Light' + '.ttf'},
-  'Roboto-Italic': #{'Roboto-Italic' + '.ttf'}
+  'Roboto-Light': #{$font-family-light  + '.ttf'},
+  'Roboto-Regular': #{$font-family + '.ttf'},
+  'Roboto-Medium': #{$font-family-medium + '.ttf'},
+  'Roboto-Bold': #{$font-family-bold + '.ttf'},
+  'Roboto-Italic': #{$font-family-italic + '.ttf'}
 );
 
+/// Font sizes
+
+
+/// Img path for sass folder arhitecture
 $img-path: 'assets/img/';
+
+/// Map of icon references
+$list-of-custom-icon-names: (
+    '24': (
+        'search-white'
+    )
+);
