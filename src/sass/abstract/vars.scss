@@ -1,0 +1,11 @@
+$font-path: 'assets/font/';
+$roboto-path: $font-path + '/roboto';
+$material-path: $font-path + '/materialIcons';
+$fsm-font-path: $roboto-path;
+$map-of-fonts: (
+  'Roboto-Regular': #{'Roboto-Regular' + '.ttf'},
+  'Roboto-Medium': #{'Roboto-Medium' + '.ttf'},
+  'Roboto-Bold': #{'Roboto-Bold' + '.ttf'},
+  'Roboto-Light': #{'Roboto-Light' + '.ttf'},
+  'Roboto-Italic': #{'Roboto-Italic' + '.ttf'}
+);

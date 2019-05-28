@@ -1,0 +1,40 @@
+/// This file is for mixins, all mixins
+/// that you need for site should be placed here
+
+/// Add all fonts you want
+///
+/// @author Stevan Stojanovic
+///
+/// @param $font-names {string/string's} provide the list of font names/or single font name
+/// in order to embed font with name passed as arguments to this mixin
+
+@mixin add-all-fonts(
+  $map: $map-of-fonts,
+	$path: $fsm-font-path) {
+  @if ($map != null) {
+    @each $font-type, $font-name in $map {
+      @font-face {
+        font-family: $font-type;
+        font-style: normal;
+        font-weight: normal;
+        src: url('#{$path}' + '/' + '#{$font-name}');
+      }
+    }
+  } @else  {
+    @warn "'#{$map}' should be placed as argument";
+  }
+}
+
+
+
+@mixin generateMaterialIcons() {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(MaterialIcons-Regular.eot); /* For IE6-8 */
+  src: local('Material Icons'),
+       local('MaterialIcons-Regular'),
+       url(MaterialIcons-Regular.woff2) format('woff2'),
+       url(MaterialIcons-Regular.woff) format('woff'),
+       url(MaterialIcons-Regular.ttf) format('truetype');
+}

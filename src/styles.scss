@@ -1,1 +1,17 @@
-/* You can add global styles to this file, and also import other style files */
+@import "sass/abstract/vars";
+@import "sass/abstract/functions";
+@import "sass/abstract/mixins";
+
+@import "sass/base/reset";
+@import "sass/base/global";
+@import "sass/base/typo";
+
+@import "sass/components/header";
+@import "sass/components/footer";
+@import "sass/components/navbar";
+
+@import "sass/vendors/bootstrap";
+
+
+@include add-all-fonts();
+//@include generateMaterialIcons();
