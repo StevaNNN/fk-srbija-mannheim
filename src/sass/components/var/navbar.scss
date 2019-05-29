@@ -4,7 +4,7 @@ $fcm-navbar-padding: 10px !default;
 
 /// navbar transition
 /// @group navbar
-$fcm-navbar-transition: 'all .3s ease-in-out';
+$fcm-navbar-transition: 'background-color .4s .2s ease-in-out, transform .4s ease-in-out';
 
 /// navbar right side holder margin
 /// @group navbar

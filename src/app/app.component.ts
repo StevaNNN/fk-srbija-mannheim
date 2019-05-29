@@ -18,10 +18,10 @@ export class AppComponent {
     const navbar = document.querySelector('#navbar');
 
     if (numberOfPxFromTop > 100) {
-      navbar.classList.add('bg-dark', 'animateTop');
+      navbar.classList.add('bg-dark', 'scroll-up');
 
     } else if (numberOfPxFromTop < 100) {
-      navbar.classList.remove('bg-dark', 'animateTop');
+      navbar.classList.remove('bg-dark', 'scroll-up');
     }
   }
 }

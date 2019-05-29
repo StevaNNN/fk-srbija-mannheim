@@ -1,10 +1,17 @@
 /// App navbar wrapper
 .#{$prefix}navbar {
   padding: $fcm-navbar-padding;
-  transition: background-color .4s .2s ease-in-out, transform .4s ease-in-out;
+  transition: unquote($fcm-navbar-transition);
   
-  &.animateTop {
-    transform: translateY(-76px);
+  &.scroll-up {
+    transform: translateY(-#{$fcm-navbar-logo-size + ($fcm-navbar-padding * 2)});
+  }
+  
+  /// removing custom toogler from 768px above
+  .menu-white-big-icon {
+    @media screen and (min-width: 768px){
+      display: none;
+    }
   }
   
   .dropdown {
