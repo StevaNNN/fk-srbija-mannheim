@@ -1,20 +1,27 @@
 /// navbar padding
+/// @group navbar
 $fcm-navbar-padding: 10px !default;
 
 /// navbar right side holder margin
+/// @group navbar
 $fcm-navbar-right-side-margin: 18px !default;
 
 /// navbar dropdown height
+/// @group navbar
 $fcm-navbar-dropdown-height: 24px !default;
 
 /// navbar dropdown height
+/// @group navbar
 $fcm-navbar-logo-size: 56px !default;
 
 /// navbar link color
+/// @group navbar
 $fcm-nav-link-color: #fff !default;
 
 /// navbar nav item transition
+/// @group navbar
 $fcm-nav-item-transition: unquote('all .2s ease-in-out') !default;
 
 /// navbar nav item hover background color
+/// @group navbar
 $fcm-nav-item-hover-background-color: rgba(#ccc, .3) !default;
