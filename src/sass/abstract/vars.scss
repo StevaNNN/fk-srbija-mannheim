@@ -33,6 +33,9 @@ $map-of-fonts: (
 
 
 /// Img path for sass folder arhitecture
+/// Note this path is relative from styles.scss this path should be also used into html img etc...
+/// img's or icons or fonts that are included in app with html will be stored at dist/assets/img
+/// but those generated from sass folder will be stored at root of the dist folder
 $img-path: 'assets/img/';
 
 /// Map of icon references

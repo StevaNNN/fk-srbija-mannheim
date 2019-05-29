@@ -1,0 +1,10 @@
+.#{$prefix}home-page {
+  
+    .#{$prefix}home-page-bg {
+      background-image: url('#{$img-path}test.jpg');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      min-height: 100vh;
+    }
+}

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component, HostListener} from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +7,21 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'fk-srbija-mannheim';
+
+  @HostListener('window:scroll', [])
+
+  onScroll() {
+    // storing scroll from top
+    const numberOfPxFromTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+
+    // storing reference to navbar
+    const navbar = document.querySelector('#navbar');
+
+    if (numberOfPxFromTop > 100) {
+      navbar.classList.add('bg-dark', 'animateTop');
+
+    } else if (numberOfPxFromTop < 100) {
+      navbar.classList.remove('bg-dark', 'animateTop');
+    }
+  }
 }

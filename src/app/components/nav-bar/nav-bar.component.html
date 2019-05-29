@@ -1,5 +1,5 @@
-<div class="d-flex fixed-top fcm-navbar w-100 bg-dark">
-  <nav class="navbar navbar-expand-md navbar-toggleable-md bg-dark w-100">
+<div class="d-flex fixed-top fcm-navbar w-100" id="navbar">
+  <nav class="navbar navbar-expand-md navbar-toggleable-md w-100">
     <button class="navbar-toggler" type="button"
             (click)="toggleNavbar()">
       <span class="navbar-toggler-icon"></span>
@@ -29,7 +29,7 @@
       </ul>
     </div>
   </nav>
-  <a href="#" class="fcm-logo"></a>
+  <a routerLink="/home" routerLinkActive="active" class="fcm-logo"></a>
   <div class="navbar-right-side d-flex">
     <span class="search-white-icon mr-2"></span>
     <div ngbDropdown>

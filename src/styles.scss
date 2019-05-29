@@ -18,13 +18,16 @@
 @import 'sass/components/src/footer';
 @import 'sass/components/src/navbar';
 
-/// Third party libraries
-@import 'sass/vendors/bootstrap';
+/// Page imports
+@import 'sass/pages/home';
 
-/// Bellow we are typing all we need to set globally on app
+/// ======= Bellow we are typing all we need to set globally on app ======== ///
 
 /// Generating all fonts
 @include add-all-fonts;
 
 /// Generating icons
 @include generate-icon-by-size;
+
+/// Third party libraries ready for overriding them with our variables
+@import 'sass/vendors/bootstrap';
