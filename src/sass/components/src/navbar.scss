@@ -1,0 +1,49 @@
+/// App navbar wrapper
+.#{$prefix}navbar {
+  padding: $fcm-navbar-padding;
+  
+  .dropdown {
+    height: $fcm-navbar-dropdown-height;
+  }
+  
+  // removing bootstrap default carret icon
+  .dropdown-toggle {
+    &::after {
+      display: none;
+    }
+  }
+  
+  // navbar right side
+  .navbar-right-side {
+    margin-right: ($fcm-navbar-right-side-margin - 2);
+    margin-top: $fcm-navbar-right-side-margin;
+  }
+  
+  // navbar logo
+  .#{$prefix}logo {
+    background-image: url('#{$img-path}test-logo.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: block;
+    height: $fcm-navbar-logo-size;
+    position: absolute;
+    right: calc(50% - #{$fcm-navbar-logo-size / 2});
+    width: $fcm-navbar-logo-size;
+    z-index: 1;
+  }
+  
+  // navbar item
+  .nav-item {
+    transition: $fcm-nav-item-transition;
+    
+    &:hover {
+      background-color: $fcm-nav-item-hover-background-color;
+    }
+  }
+  
+  // navbar link
+  .nav-link {
+    color: $fcm-nav-link-color;
+  }
+}
