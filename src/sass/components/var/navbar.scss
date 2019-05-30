@@ -2,47 +2,113 @@
 /// @group navbar
 $fcm-navbar-padding: 10px !default;
 
+/// navbar padding
+/// @group navbar
+$fcm-navbar-total-height: 100px !default;
+
 /// navbar bg-color
 /// @group navbar
 $fcm-navbar-bg-color: #151e2d !default;
 
 /// navbar transition
 /// @group navbar
-$fcm-navbar-transition: 'background-color .3s ease-in-out';
+$fcm-navbar-transition: 'all .3s ease-in-out' !default;
+
+/// fcm navbar dropdown height
+/// @group navbar
+$fcm-navbar-logo-size: 100px !default;
+
+/// fcm navbar nav item color
+/// @group navbar
+$fcm-navbar-nav-item-color: #fff !default;
+
+/// fcm navbar nav item transition
+/// @group navbar
+$fcm-navbar-nav-item-transition: unquote('all .2s ease-in-out') !default;
+
+/// fcm navbar nav item hover background color
+/// @group navbar
+$fcm-navbar-nav-item-over-bg-color: rgba(#ccc, .3) !default;
+
+/// ======================== SPACER ===================== ///
+
 
 /// navbar right side holder margin
 /// @group navbar
 $fcm-navbar-right-side-margin: 28px !default;
 
-/// navbar dropdown height
+
+/// ======================== SPACER ===================== ///
+
+
+/// fcm navbar dropdown height
 /// @group navbar
 $fcm-navbar-dropdown-height: 24px !default;
 
-/// navbar dropdown height
-/// @group navbar
-$fcm-navbar-logo-size: 100px !default;
 
-/// navbar link color
-/// @group navbar
-$fcm-nav-link-color: #fff !default;
-
-/// navbar nav item transition
-/// @group navbar
-$fcm-nav-item-transition: unquote('all .2s ease-in-out') !default;
-
-/// navbar nav item hover background color
-/// @group navbar
-$fcm-nav-item-hover-background-color: rgba(#ccc, .3) !default;
+/// ======================== SPACER ===================== ///
 
 
-/// fcm side nav bg color
+/// fcm side nav navbar active bg color
 /// @group navbar
-$fcm-side-nav-bg-color: #1b2436;
+$fcm-side-nav-navbar-active-bg-color: #1b2436 !default;
+
+/// fcm side nav width
+/// @group navbar
+$fcm-side-nav-navbar-width: 350px !default;
+
+/// fcm side nav navbar padding
+/// @group navbar
+$fcm-side-nav-navbar-padding: #{$fcm-navbar-total-height} 25px 0 !default;
+
+/// fcm side nav navbar transition
+/// @group navbar
+$fcm-side-nav-navbar-transition: $fcm-navbar-transition !default;
+
+/// fcm side nav item color
+/// @group navbar
+$fcm-side-nav-item-color: rgba($white, .5) !default;
+
+/// fcm side nav item over color
+/// @group navbar
+$fcm-side-nav-item-over-color: $white !default;
+
+/// fcm side nav item transition
+/// @group navbar
+$fcm-side-nav-item-transition: $fcm-navbar-nav-item-transition !default;
+
+
+/// ======================== SPACER ===================== ///
+
 
 /// fcm top bar bg color
 /// @group navbar
-$fcm-top-bar-bg-color: #131929;
+$fcm-top-bar-bg-color: #131929 !default;
+
+/// fcm top bar padding
+/// @group navbar
+$fcm-top-bar-padding: .938rem !default;
 
 /// fcm top bar color
 /// @group navbar
-$fcm-top-bar-color: $white;
+$fcm-top-bar-color: $white !default;
+
+/// fcm top bar logo height
+/// @group navbar
+$fcm-top-bar-logo-height: 30px !default;
+
+/// fcm top bar logo width
+/// @group navbar
+$fcm-top-bar-logo-width: 150px !default;
+
+/// fcm top bar label font size
+/// @group navbar
+$fcm-top-bar-label-font-size: $fcm-font-size-sm !default;
+
+/// fcm top bar label height
+/// @group navbar
+$fcm-top-bar-label-height: $fcm-top-bar-logo-height !default;
+
+/// fcm top bar label color
+/// @group navbar
+$fcm-top-bar-label-color: rgba($white, .5) !default;
