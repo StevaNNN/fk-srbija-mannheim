@@ -1,13 +1,16 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
-@Component({
+@Component ({
   selector: 'app-info-container',
   templateUrl: './info-container.component.html',
   styleUrls: ['./info-container.component.scss']
 })
 export class InfoContainerComponent implements OnInit {
 
-  constructor() { }
+  @Input() confing: any;
+
+  constructor() {
+  }
 
   ngOnInit() {
   }
