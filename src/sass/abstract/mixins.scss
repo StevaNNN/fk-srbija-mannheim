@@ -42,6 +42,7 @@
                 width: unquote($key) + unquote($unit);
                 height: unquote($key) + unquote($unit);
                 position: relative;
+                cursor: pointer;
   
                 &::before {
                     background-position: center;
