@@ -3,6 +3,13 @@ app-nav-bar {
   position: fixed;
   top: 0;
   width: 100%;
+  transition: unquote($fcm-navbar-transition);
+  
+  /// giving navbar background color when scrolled down above 100px(height of the nav). This can be confusing but we have functionality when scroll down transform: translateY(-100px) at the same time we have this class but its not visible to the user. We get coloured nav when scrolling up but when we come to to top of the page we lose bg-color, hopefuly this make sense :D
+  
+  &.#{$prefix}navbar-bg {
+    background-color: rgba(#151e2d, .9);
+  }
 }
 
 /// App navbar wrapper

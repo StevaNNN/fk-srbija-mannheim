@@ -5,7 +5,7 @@ import {
   transition,
   trigger
 } from '@angular/animations';
-import { AfterViewInit, Component, HostBinding } from '@angular/core';
+import {AfterViewInit, Component, HostBinding, HostListener} from '@angular/core';
 import { fromEvent } from 'rxjs';
 import {
   distinctUntilChanged,
@@ -34,13 +34,13 @@ enum Direction {
     trigger('toggle', [
       state(
         VisibilityState.Hidden,
-        style({ opacity: 0, transform: 'translateY(-100%)' })
+        style({ opacity: 0, transform: 'translateY(-100%)'})
       ),
       state(
         VisibilityState.Visible,
         style({ opacity: 1, transform: 'translateY(0)' })
       ),
-      transition('* => *', animate('200ms ease-in'))
+      transition('* => *', animate('300ms ease-in-out'))
     ])
   ]
 })
@@ -78,6 +78,24 @@ export class NavBarComponent  implements AfterViewInit {
 
     goingUp$.subscribe(() => (this.isVisible = true));
     goingDown$.subscribe(() => (this.isVisible = false));
+  }
+
+  // Handling when page off set is greater than nav height and attaching specific class to it of so
+  @HostListener('window:scroll', [])
+
+  onScroll() {
+    // storing scroll from top
+    const numberOfPxFromTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+
+    // storing reference to navbar
+    const navbar = document.querySelector('app-nav-bar');
+
+    if (numberOfPxFromTop > 100) {
+      navbar.classList.add('fcm-navbar-bg');
+
+    } else if (numberOfPxFromTop < 100) {
+      navbar.classList.remove('fcm-navbar-bg');
+    }
   }
 
 }

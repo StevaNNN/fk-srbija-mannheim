@@ -2,6 +2,10 @@
 /// @group navbar
 $fcm-navbar-padding: 10px !default;
 
+/// navbar transition
+/// @group navbar
+$fcm-navbar-transition: 'background-color .3s ease-in-out';
+
 /// navbar right side holder margin
 /// @group navbar
 $fcm-navbar-right-side-margin: 28px !default;
