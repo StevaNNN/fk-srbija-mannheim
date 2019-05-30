@@ -12,11 +12,17 @@
 @import 'sass/components/var/header';
 @import 'sass/components/var/footer';
 @import 'sass/components/var/navbar';
+@import 'sass/components/var/info-bar';
 
 /// Component's source
 @import 'sass/components/src/header';
 @import 'sass/components/src/footer';
 @import 'sass/components/src/navbar';
+@import 'sass/components/src/info-bar';
+@import 'sass/components/src/section-with-bg-img';
+
+/// Layout imports
+
 
 /// Page imports
 @import 'sass/pages/home';

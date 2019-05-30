@@ -5,15 +5,15 @@
 /// @param $font-names {string/string's} provide the list of font names/or single font name
 
 @mixin add-all-fonts(
-    $map: $map-of-fonts,
-	  $path: $fsm-font-path) {
+    $map: $fcm-map-of-fonts,
+	  $path: $fcm-font-path) {
         @if ($map != null) {
             @each $font-type, $font-name in $map {
                 @font-face {
                     font-family: $font-type;
                     font-style: normal;
                     font-weight: normal;
-                    src: url('#{$path}' + '/' + '#{$font-name}');
+                    src: url('#{$path}' + '#{$font-name}');
                 }
             }
         } @else  {
@@ -28,7 +28,7 @@
 /// @param $map {map} of icons stored by theirs size
 /// @param $unit {string} unit used for determining size of the icon wrapper
 
-@mixin generate-icon-by-size($map: $list-of-custom-icon-names, $unit: 'px') {
+@mixin generate-icon-by-size($map: $fcm-list-of-custom-icon-names, $unit: 'px') {
     $map-keys: map-keys($map);
   
     @each $key in $map-keys {
@@ -49,7 +49,7 @@
                     content: '';
                     height: unquote($key) + unquote($unit);
                     width: unquote($key) + unquote($unit);
-                    background-image: url($img-path + $sub-key + ".svg");
+                    background-image: url($fcm-img-path + $sub-key + ".svg");
                 }
             }
         }

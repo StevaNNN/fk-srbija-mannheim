@@ -1,0 +1,21 @@
+.#{$prefix}info-bar {
+  bottom: 35%;
+  color: $fcm-info-bar-color;
+  max-width: $fcm-info-bar-max-width;
+  position: absolute;
+  right: 10%;
+  width: 100%;
+}
+
+.#{$prefix}info-bar-context {
+  color: $fcm-info-bar-context-color;
+  text-transform: unquote($fcm-info-bar-context-text-transform);
+}
+
+.#{$prefix}info-bar-title {
+  text-shadow: $fcm-info-bar-title-text-shadow;
+}
+
+.#{$prefix}info-bar-btn {
+  color: $fcm-info-bar-btn-color;
+}
