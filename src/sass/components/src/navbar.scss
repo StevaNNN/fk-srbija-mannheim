@@ -4,7 +4,7 @@ app-nav-bar {
   top: 0;
   transition: unquote($fcm-navbar-transition);
   width: 100%;
-
+  
   /// giving navbar background color when scrolled down above 100px(height of the nav). This can be confusing but we have functionality when scroll down transform: translateY(-100px) at the same time we have this class but its not visible to the user. We get coloured nav when scrolling up but when we come to to top of the page we lose bg-color, hopefuly this make sense :D
   
   &.#{$prefix}navbar-bg {
@@ -16,31 +16,37 @@ app-nav-bar {
 .#{$prefix}navbar {
   min-height: $fcm-navbar-logo-size;
   padding: $fcm-navbar-padding;
+  /// this must stay initialy after scroll we set this to 0 with JS
   top: 60px;
-  transition: all .3s ease-in-out;
-
+  transition: unquote($fcm-navbar-transition);
+  
   &.side-menu-open {
     background-color: $fcm-navbar-bg-color;
   }
   
-  .dropdown {
-    height: $fcm-navbar-dropdown-height;
-  }
-  
-  // removing bootstrap default carret icon
-  .dropdown-toggle {
-    &::after {
+  /// Left side of nav
+  .#{$prefix}list-of-links {
+    flex-direction: row;
+    
+    @include media-breakpoint-down(sm) {
       display: none;
     }
   }
   
-  // navbar right side
-  .navbar-right-side {
-    margin-right: ($fcm-navbar-right-side-margin - 2);
-    margin-top: $fcm-navbar-right-side-margin;
+  .nav-item {
+    transition: unquote($fcm-navbar-nav-item-transition);
+    color: $fcm-navbar-nav-item-color;
+    
+    &:hover {
+      background-color: $fcm-navbar-nav-item-over-bg-color;
+    }
   }
   
-  // navbar logo
+  .nav-link {
+    color: inherit;
+  }
+  
+  /// Middle of nav
   .#{$prefix}logo {
     background-image: url('#{$fcm-img-path}logo.png');
     background-position: center;
@@ -54,42 +60,29 @@ app-nav-bar {
     width: $fcm-navbar-logo-size;
     z-index: 1;
   }
-
-  .navbar {
-    justify-content: start;
-  }
-
-  // navbar item
-  .nav-item {
-    transition: $fcm-nav-item-transition;
-    
-    &:hover {
-      background-color: $fcm-nav-item-hover-background-color;
-    }
-
-    .active {
-       color: red !important;
-     }
+  
+  /// Right side of nav
+  .navbar-right-side {
+    margin-right: ($fcm-navbar-right-side-margin - 2);
+    margin-top: $fcm-navbar-right-side-margin;
   }
   
-  // navbar link
-  .nav-link {
-    color: $fcm-nav-link-color;
+  .dropdown {
+    height: $fcm-navbar-dropdown-height;
   }
-
-  .#{$prefix}list-of-links {
-      flex-direction: row;
-    
-      @include media-breakpoint-down(sm) {
-        display: none;
-      }
+  
+  // removing bootstrap default carret icon
+  .dropdown-toggle {
+    &::after {
+      display: none;
+    }
   }
 }
 
 /// Side menu styling
 .#{$prefix}side-menu {
   height: 100vh;
-
+  
   &.collapse:not(.show){
     display: block;
   }
@@ -97,21 +90,21 @@ app-nav-bar {
   .navbar-nav {
     background-color: transparent;
     height: 100%;
-    padding: 100px 25px 0;
-    transform: translateX(-350px);
-    transition: all .3s ease-in-out;
+    padding: $fcm-side-nav-navbar-padding;
+    transform: translateX(-#{$fcm-side-nav-navbar-width});
+    transition: unquote($fcm-side-nav-navbar-transition);
     width: 0;
   }
-
+  
   .nav-item {
-    color: rgba($white, .5);
-    transition: all .2s ease-in-out;
-
+    color: $fcm-side-nav-item-color;
+    transition: unquote($fcm-navbar-nav-item-transition);
+    
     &:hover {
-      color: $white;
+      color: $fcm-side-nav-item-over-color;
     }
   }
-
+  
   .nav-link {
     color: inherit;
   }
@@ -119,8 +112,8 @@ app-nav-bar {
   &.show {
     .navbar-nav {
       transform: translateX(0);
-      width: 350px;
-      background-color: $fcm-side-nav-bg-color;
+      width: $fcm-side-nav-navbar-width;
+      background-color: $fcm-side-nav-navbar-active-bg-color;
     }
   }
 }
@@ -129,7 +122,7 @@ app-nav-bar {
 .#{$prefix}top-bar {
   background-color: $fcm-top-bar-bg-color;
   color: $fcm-top-bar-color;
-  padding: .938rem;
+  padding: $fcm-top-bar-padding;
 }
 
 .#{$prefix}top-bar-sponsor-logo {
@@ -137,11 +130,14 @@ app-nav-bar {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 30px;
-  width: 150px;
+  height: $fcm-top-bar-logo-height;
+  width: $fcm-top-bar-logo-width;
 }
 
 .#{$prefix}top-bar-sponsor-label {
-  font-size: $fcm-font-size;
-  line-height: 30px;
+  font-size: $fcm-top-bar-label-font-size;
+  height: $fcm-top-bar-label-height;
+  display: flex;
+  align-items: flex-end;
+  color: $fcm-top-bar-label-color;
 }
