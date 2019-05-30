@@ -1,0 +1,39 @@
+.#{$prefix}underline-btn {
+  min-width: $fcm-btn-underline-min-width;
+  position: relative;
+  
+  &.btn {
+    color: $fcm-btn-underline-color;
+    font-size: $fcm-btn-underline-font-size;
+    padding-left: 0;
+  }
+  
+  &:hover {
+    
+    &::after {
+      width: 100%;
+    }
+  }
+  
+  &::before,
+  &::after {
+    bottom: -15px;
+    content: '';
+    height: $fcm-btn-underline-stripe-height;
+    left: 0;
+    position: absolute;
+  }
+  
+  &::before {
+    background-color: $fcm-btn-underline-stripe-1-bg-color;
+    width: 100%;
+    z-index: 1;
+  }
+  
+  &::after {
+    background-color: $fcm-btn-underline-stripe-2-bg-color;
+    transition: unquote($fcm-btn-underline-stripe-transition);
+    width: 0;
+    z-index: 2;
+  }
+}

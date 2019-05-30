@@ -3,31 +3,8 @@
 @import 'sass/abstract/functions';
 @import 'sass/abstract/mixins';
 
-/// Base imports
-@import 'sass/base/reset';
-@import 'sass/base/global';
-@import 'sass/base/typo';
-
-/// Component's variables
-@import 'sass/components/var/header';
-@import 'sass/components/var/footer';
-@import 'sass/components/var/navbar';
-@import 'sass/components/var/info-bar';
-
-/// Component's source
-@import 'sass/components/src/header';
-@import 'sass/components/src/footer';
-@import 'sass/components/src/navbar';
-@import 'sass/components/src/info-bar';
-@import 'sass/components/src/section-with-bg-img';
-
-/// Layout imports
-
-
-/// Page imports
-@import 'sass/pages/home';
-
-/// ======= Bellow we are typing all we need to set globally on app ======== ///
+/// Override bootstrap var import
+@import 'sass/override/bootstrap-var-override';
 
 /// Generating all fonts
 @include add-all-fonts;
@@ -37,3 +14,27 @@
 
 /// Third party libraries ready for overriding them with our variables
 @import 'sass/vendors/bootstrap';
+
+/// Override bootstrap imports
+@import 'sass/override/bootstrap-btn-override';
+
+/// Base imports
+@import 'sass/base/global';
+
+/// Component's variables
+@import 'sass/components/var/header';
+@import 'sass/components/var/footer';
+@import 'sass/components/var/navbar';
+@import 'sass/components/var/info-bar';
+@import 'sass/components/var/btn';
+
+/// Component's source
+@import 'sass/components/src/header';
+@import 'sass/components/src/footer';
+@import 'sass/components/src/navbar';
+@import 'sass/components/src/info-bar';
+@import 'sass/components/src/section-with-bg-img';
+@import 'sass/components/src/btn';
+
+/// Page imports
+@import 'sass/pages/home';

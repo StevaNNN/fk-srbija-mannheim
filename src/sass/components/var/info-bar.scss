@@ -8,7 +8,10 @@ $fcm-info-bar-color: $white !default;
 $fcm-info-bar-color: $white !default;
 
 /// info bar context color
-$fcm-info-bar-context-color: red !default;
+$fcm-info-bar-context-color: #ff1541 !default;
+
+/// info bar context font-family
+$fcm-info-bar-context-font-family: $fcm-font-family-medium !default;
 
 /// info bar context text transform
 $fcm-info-bar-context-text-transform: 'uppercase' !default;
