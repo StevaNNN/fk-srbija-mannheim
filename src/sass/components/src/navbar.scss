@@ -4,7 +4,7 @@ app-nav-bar {
   top: 0;
   transition: unquote($fcm-navbar-transition);
   width: 100%;
-  
+
   /// giving navbar background color when scrolled down above 100px(height of the nav). This can be confusing but we have functionality when scroll down transform: translateY(-100px) at the same time we have this class but its not visible to the user. We get coloured nav when scrolling up but when we come to to top of the page we lose bg-color, hopefuly this make sense :D
   
   &.#{$prefix}navbar-bg {
@@ -18,7 +18,7 @@ app-nav-bar {
   padding: $fcm-navbar-padding;
   top: 60px;
   transition: all .3s ease-in-out;
-  
+
   &.side-menu-open {
     background-color: $fcm-navbar-bg-color;
   }
@@ -54,11 +54,11 @@ app-nav-bar {
     width: $fcm-navbar-logo-size;
     z-index: 1;
   }
-  
+
   .navbar {
     justify-content: start;
   }
-  
+
   // navbar item
   .nav-item {
     transition: $fcm-nav-item-transition;
@@ -66,13 +66,17 @@ app-nav-bar {
     &:hover {
       background-color: $fcm-nav-item-hover-background-color;
     }
+
+    .active {
+       color: red !important;
+     }
   }
   
   // navbar link
   .nav-link {
     color: $fcm-nav-link-color;
   }
-  
+
   .#{$prefix}list-of-links {
       flex-direction: row;
     
@@ -85,7 +89,7 @@ app-nav-bar {
 /// Side menu styling
 .#{$prefix}side-menu {
   height: 100vh;
-  
+
   &.collapse:not(.show){
     display: block;
   }
@@ -98,16 +102,16 @@ app-nav-bar {
     transition: all .3s ease-in-out;
     width: 0;
   }
-  
+
   .nav-item {
     color: rgba($white, .5);
     transition: all .2s ease-in-out;
-    
+
     &:hover {
       color: $white;
     }
   }
-  
+
   .nav-link {
     color: inherit;
   }

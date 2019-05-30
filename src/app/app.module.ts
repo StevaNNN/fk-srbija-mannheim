@@ -9,6 +9,8 @@ import { HomeComponent } from './pages/home/home.component';
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { SquadComponent } from './pages/squad/squad.component';
+import { InfoContainerComponent } from './components/info-container/info-container.component';
 
 @NgModule ({
   declarations: [
@@ -16,7 +18,9 @@ import { FooterComponent } from './components/footer/footer.component';
     HomeComponent,
     NavBarComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    SquadComponent,
+    InfoContainerComponent
   ],
   imports: [
     NgbModule,
