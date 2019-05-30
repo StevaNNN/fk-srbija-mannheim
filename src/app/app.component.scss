@@ -1,0 +1,7 @@
+@import '../sass/abstract/vars';
+
+/// this behaves like wrapper for navbar should not be removed no styling should be aplied here!!!
+app-nav-bar {
+    height: $fcm-app-nav-bar-height;
+    z-index: $fcm-app-nav-bar-z-index;
+}

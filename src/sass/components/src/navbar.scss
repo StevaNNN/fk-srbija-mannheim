@@ -1,12 +1,14 @@
+/// this styling is needed because of scroll down hide scroll up show functionality
+app-nav-bar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
 /// App navbar wrapper
 .#{$prefix}navbar {
-  padding: $fcm-navbar-padding;
-  transition: unquote($fcm-navbar-transition);
   min-height: $fcm-navbar-logo-size;
-  
-  &.scroll-up {
-    transform: translateY(-#{$fcm-navbar-logo-size + ($fcm-navbar-padding * 2)});
-  }
+  padding: $fcm-navbar-padding;
   
   /// removing custom toogler from 768px above
   .menu-white-big-icon {
@@ -42,9 +44,9 @@
     height: $fcm-navbar-logo-size;
     position: absolute;
     right: calc(50% - #{$fcm-navbar-logo-size / 2});
+    top: 0;
     width: $fcm-navbar-logo-size;
     z-index: 1;
-    top: 0;
   }
   
   // navbar item
