@@ -1,23 +1,26 @@
-<div class="d-flex fixed-top fcm-navbar w-100">
+<div class="fcm-top-bar w-100" id="sponsor-cont">
+  <div class="fcm-top-bar-content d-flex justify-content-end align-items-center">
+    <p class="mb-0  mr-3 fcm-top-bar-sponsor-label">SPOSORED BY</p>
+    <div class="fcm-top-bar-sponsor-logo"></div>
+  </div>
+</div>
+<div class="d-flex fixed-top fcm-navbar w-100" id="fcm-navbar-wrap"
+     [ngClass]="{'side-menu-open': navbarOpen}">
   <nav class="navbar navbar-expand-md navbar-toggleable-md w-100">
     <span class="menu-white-big-icon mr-2" (click)="toggleNavbar()"></span>
     <ul class="navbar-nav fcm-list-of-links">
       <li class="nav-item">
         <a class="nav-link" href="#">psg.fr</a>
       </li>
-    
       <li class="nav-item">
         <a class="nav-link" href="#">billets</a>
       </li>
-    
       <li class="nav-item">
         <a class="nav-link" href="#">boutique</a>
       </li>
-    
       <li class="nav-item">
         <a class="nav-link" href="#">myparis</a>
       </li>
-    
       <li class="nav-item">
         <a class="nav-link" href="#">squad</a>
       </li>
@@ -26,7 +29,7 @@
   <a routerLink="/home" routerLinkActive="active" class="fcm-logo"></a>
   <div class="navbar-right-side d-flex">
     <div ngbDropdown>
-      <a class="globe-white-icon" id="id01" ngbDropdownToggle></a>
+      <a class="globe-white-big-icon" id="id01" ngbDropdownToggle></a>
       <div class="dropdown-menu" aria-labelledby="id01" ngbDropdownMenu>
         <a class="dropdown-item" href="#">srb</a>
         <a class="dropdown-item" href="#">eng</a>
@@ -41,21 +44,18 @@
     <li class="nav-item">
       <a class="nav-link" href="#">psg.fr</a>
     </li>
-    
     <li class="nav-item">
       <a class="nav-link" href="#">billets</a>
     </li>
-    
     <li class="nav-item">
       <a class="nav-link" href="#">boutique</a>
     </li>
-    
     <li class="nav-item">
       <a class="nav-link" href="#">myparis</a>
     </li>
-    
     <li class="nav-item">
       <a class="nav-link" href="#">experience</a>
     </li>
   </ul>
 </div>
+

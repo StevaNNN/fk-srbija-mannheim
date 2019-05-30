@@ -2,13 +2,13 @@
 app-nav-bar {
   position: fixed;
   top: 0;
-  width: 100%;
   transition: unquote($fcm-navbar-transition);
+  width: 100%;
   
   /// giving navbar background color when scrolled down above 100px(height of the nav). This can be confusing but we have functionality when scroll down transform: translateY(-100px) at the same time we have this class but its not visible to the user. We get coloured nav when scrolling up but when we come to to top of the page we lose bg-color, hopefuly this make sense :D
   
   &.#{$prefix}navbar-bg {
-    background-color: rgba(#151e2d, .9);
+    background-color: $fcm-navbar-bg-color;
   }
 }
 
@@ -16,12 +16,11 @@ app-nav-bar {
 .#{$prefix}navbar {
   min-height: $fcm-navbar-logo-size;
   padding: $fcm-navbar-padding;
+  top: 60px;
+  transition: all .3s ease-in-out;
   
-  /// removing custom toogler from 768px above
-  .menu-white-big-icon {
-    @media screen and (min-width: 768px){
-      display: none;
-    }
+  &.side-menu-open {
+    background-color: $fcm-navbar-bg-color;
   }
   
   .dropdown {
@@ -56,6 +55,10 @@ app-nav-bar {
     z-index: 1;
   }
   
+  .navbar {
+    justify-content: start;
+  }
+  
   // navbar item
   .nav-item {
     transition: $fcm-nav-item-transition;
@@ -70,10 +73,6 @@ app-nav-bar {
     color: $fcm-nav-link-color;
   }
   
-  .navbar {
-    justify-content: start;
-  }
-  
   .#{$prefix}list-of-links {
       flex-direction: row;
     
@@ -83,22 +82,62 @@ app-nav-bar {
   }
 }
 
-.fcm-side-menu {
-  padding-top: 100px;
-  background-color: rgba(#151e2d, .6);
+/// Side menu styling
+.#{$prefix}side-menu {
   height: 100vh;
-  padding-left: 20px;
+  
+  &.collapse:not(.show){
+    display: block;
+  }
   
   .navbar-nav {
-    width: 250px;
-    transform: translateX(-250px);
-    transition: transform .3s ease-in-out;
+    background-color: transparent;
     height: 100%;
+    padding: 100px 25px 0;
+    transform: translateX(-350px);
+    transition: all .3s ease-in-out;
+    width: 0;
+  }
+  
+  .nav-item {
+    color: rgba($white, .5);
+    transition: all .2s ease-in-out;
+    
+    &:hover {
+      color: $white;
+    }
+  }
+  
+  .nav-link {
+    color: inherit;
   }
   
   &.show {
     .navbar-nav {
       transform: translateX(0);
+      width: 350px;
+      background-color: $fcm-side-nav-bg-color;
     }
   }
+}
+
+/// Top bar styling
+.#{$prefix}top-bar {
+  background-color: $fcm-top-bar-bg-color;
+  color: $fcm-top-bar-color;
+  padding: .938rem;
+}
+
+.#{$prefix}top-bar-sponsor-logo {
+  background-image: url('#{$fcm-img-path}ericsson-sponsor.svg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 30px;
+  width: 150px;
+}
+
+.#{$prefix}top-bar-sponsor-label {
+  font-size: $fcm-font-size;
+  line-height: 30px;
 }

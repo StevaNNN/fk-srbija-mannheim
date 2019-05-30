@@ -2,6 +2,10 @@
 /// @group navbar
 $fcm-navbar-padding: 10px !default;
 
+/// navbar bg-color
+/// @group navbar
+$fcm-navbar-bg-color: #151e2d !default;
+
 /// navbar transition
 /// @group navbar
 $fcm-navbar-transition: 'background-color .3s ease-in-out';
@@ -29,3 +33,16 @@ $fcm-nav-item-transition: unquote('all .2s ease-in-out') !default;
 /// navbar nav item hover background color
 /// @group navbar
 $fcm-nav-item-hover-background-color: rgba(#ccc, .3) !default;
+
+
+/// fcm side nav bg color
+/// @group navbar
+$fcm-side-nav-bg-color: #1b2436;
+
+/// fcm top bar bg color
+/// @group navbar
+$fcm-top-bar-bg-color: #131929;
+
+/// fcm top bar color
+/// @group navbar
+$fcm-top-bar-color: $white;

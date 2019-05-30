@@ -9,13 +9,12 @@
   
   @include media-breakpoint-down(md){
     max-width: 500px;
+    right: calc(50% - 250px);
   }
   
   @include media-breakpoint-down(sm){
-    max-width: 350px;
-  }
-  @include media-breakpoint-up(xs) {
-    right: 0;
+    max-width: 300px;
+    right: calc(50% - 150px);
   }
 }
 
@@ -29,4 +28,8 @@
 .#{$prefix}info-bar-title {
   margin-bottom: 1rem;
   text-shadow: $fcm-info-bar-title-text-shadow;
+  
+  @include media-breakpoint-down(sm){
+    font-size: 2rem
+  }
 }

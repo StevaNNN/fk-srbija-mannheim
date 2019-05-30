@@ -90,11 +90,21 @@ export class NavBarComponent  implements AfterViewInit {
     // storing reference to navbar
     const navbar = document.querySelector('app-nav-bar');
 
+    // storing reference to sponsors
+    const sponsor = document.querySelector('#sponsor-cont');
+
+    // storing reference to sponsors
+    const fcmNavbar = document.getElementById('fcm-navbar-wrap');
+
     if (numberOfPxFromTop > 100) {
       navbar.classList.add('fcm-navbar-bg');
+      sponsor.classList.add('d-none');
+      fcmNavbar.style.top = '0';
 
     } else if (numberOfPxFromTop < 100) {
       navbar.classList.remove('fcm-navbar-bg');
+      sponsor.classList.remove('d-none');
+      fcmNavbar.style.top = '60px';
     }
   }
 
