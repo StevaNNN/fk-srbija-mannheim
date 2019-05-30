@@ -69,4 +69,36 @@ app-nav-bar {
   .nav-link {
     color: $fcm-nav-link-color;
   }
+  
+  .navbar {
+    justify-content: start;
+  }
+  
+  .#{$prefix}list-of-links {
+      flex-direction: row;
+    
+      @include media-breakpoint-down(sm) {
+        display: none;
+      }
+  }
+}
+
+.fcm-side-menu {
+  padding-top: 100px;
+  background-color: rgba(#151e2d, .6);
+  height: 100vh;
+  padding-left: 20px;
+  
+  .navbar-nav {
+    width: 250px;
+    transform: translateX(-250px);
+    transition: transform .3s ease-in-out;
+    height: 100%;
+  }
+  
+  &.show {
+    .navbar-nav {
+      transform: translateX(0);
+    }
+  }
 }
