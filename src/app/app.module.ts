@@ -11,6 +11,8 @@ import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { SquadComponent } from './pages/squad/squad.component';
 import { InfoContainerComponent } from './components/info-container/info-container.component';
+import { PositionsComponent } from './pages/squad/positions/positions.component';
+import { TeamMemberComponent } from './pages/squad/positions/team-member/team-member.component';
 import { SideNavComponent } from './components/side-nav/side-nav.component';
 import { TopBarComponent } from './components/top-bar/top-bar.component';
 
@@ -24,7 +26,10 @@ import { TopBarComponent } from './components/top-bar/top-bar.component';
     SquadComponent,
     InfoContainerComponent,
     SideNavComponent,
-    TopBarComponent
+    TopBarComponent,
+    InfoContainerComponent,
+    PositionsComponent,
+    TeamMemberComponent
   ],
   imports: [
     NgbModule,

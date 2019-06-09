@@ -1,0 +1,9 @@
+<section *ngFor="let position of positions;">
+  <h2>{{position.positionName}}</h2>
+  <div class="row">
+    <div class="col-md-4 col-sm-6 col-12" *ngFor="let member of position.members; let i = index">
+      <app-team-member [member]="member"></app-team-member>
+    </div>
+
+  </div>
+</section>
