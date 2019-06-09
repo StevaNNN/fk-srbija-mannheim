@@ -1,0 +1,31 @@
+<app-profile-details-header [confing]="profile"></app-profile-details-header>
+<section>
+  <div class="row">
+    <div class="col-md-6 col-sm-12 col-12">
+
+      <div>{{profile.number}}
+        <div class="fcm-profile-details-number-container"
+             [style.backgroundImage]="'url(' + profile.numberBackgroundImage + ')'">
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-6 col-sm-12 col-12">
+      <h3>{{profile.name}} {{profile.surname}} {{profile.number}}</h3>
+      <div class="row">
+        <div class="col-md-8 col-sm-12 col-12">
+          <div><span class="fcm-profile-label">Birthdate</span> {{profile.birthday}} {{profile.birthCity}}</div>
+          <div><span class="fcm-profile-label">Nationality</span> {{profile.nationality}} <span
+            [ngClass]="getNationalFlage()"></span></div>
+          <div><span class="fcm-profile-label">Height/Weight</span> {{profile.height}}/{{profile.weight}}</div>
+          <div><span class="fcm-profile-label">Skills</span> {{profile.skills}}</div>
+        </div>
+
+        <div class="col-md-4 col-sm-12 col-12">
+          <div class="fcm-player-position"></div>
+          <div>{{profile.position}}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

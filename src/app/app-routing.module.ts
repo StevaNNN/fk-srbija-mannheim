@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './pages/home/home.component';
 import { SquadComponent } from './pages/squad/squad.component';
+import { ProfileDetailsComponent } from './pages/squad/profile-details/profile-details.component';
 
 const routes: Routes = [
   {
@@ -14,7 +15,13 @@ const routes: Routes = [
     component: HomeComponent
   }, {
     path: 'squad',
-    component: SquadComponent
+    children: [{
+      path: '',
+      component: SquadComponent
+    }, {
+      path: ':id',
+      component: ProfileDetailsComponent
+    }]
   }, {
     path: '**',
     redirectTo: '/home'

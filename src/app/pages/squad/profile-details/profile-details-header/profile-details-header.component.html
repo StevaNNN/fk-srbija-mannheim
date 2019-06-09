@@ -1,0 +1,11 @@
+<div class="fcm-profile-details-header">
+  <div>
+    <div>{{confing.name}}</div>
+    <div>{{confing.surname}}</div>
+    <div>FIRST TEAM</div>
+  </div>
+  <div class="fcm-profile-details-header-image"
+       *ngIf="confing"
+       [style.backgroundImage]="'url(' + confing.image + ')'">
+  </div>
+</div>

@@ -15,6 +15,8 @@ import { PositionsComponent } from './pages/squad/positions/positions.component'
 import { TeamMemberComponent } from './pages/squad/positions/team-member/team-member.component';
 import { SideNavComponent } from './components/side-nav/side-nav.component';
 import { TopBarComponent } from './components/top-bar/top-bar.component';
+import { ProfileDetailsComponent } from './pages/squad/profile-details/profile-details.component';
+import { ProfileDetailsHeaderComponent } from './pages/squad/profile-details/profile-details-header/profile-details-header.component';
 
 @NgModule ({
   declarations: [
@@ -29,7 +31,9 @@ import { TopBarComponent } from './components/top-bar/top-bar.component';
     TopBarComponent,
     InfoContainerComponent,
     PositionsComponent,
-    TeamMemberComponent
+    TeamMemberComponent,
+    ProfileDetailsComponent,
+    ProfileDetailsHeaderComponent
   ],
   imports: [
     NgbModule,
