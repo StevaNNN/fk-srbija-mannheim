@@ -27,6 +27,8 @@
 @import 'sass/components/var/navbar';
 @import 'sass/components/var/info-container';
 @import 'sass/components/var/btn';
+@import 'sass/components/var/side-nav';
+@import 'sass/components/var/top-bar';
 
 /// Component's source
 @import 'sass/components/src/header';
@@ -34,6 +36,8 @@
 @import 'sass/components/src/navbar';
 @import 'sass/components/src/info-container';
 @import 'sass/components/src/btn';
+@import 'sass/components/src/side-nav';
+@import 'sass/components/src/top-bar';
 
 /// Page imports
 @import 'sass/pages/home';

@@ -11,6 +11,8 @@ import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { SquadComponent } from './pages/squad/squad.component';
 import { InfoContainerComponent } from './components/info-container/info-container.component';
+import { SideNavComponent } from './components/side-nav/side-nav.component';
+import { TopBarComponent } from './components/top-bar/top-bar.component';
 
 @NgModule ({
   declarations: [
@@ -20,7 +22,9 @@ import { InfoContainerComponent } from './components/info-container/info-contain
     HeaderComponent,
     FooterComponent,
     SquadComponent,
-    InfoContainerComponent
+    InfoContainerComponent,
+    SideNavComponent,
+    TopBarComponent
   ],
   imports: [
     NgbModule,

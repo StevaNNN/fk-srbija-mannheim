@@ -1,0 +1,22 @@
+/// @group top-bar
+.#{$prefix}top-bar {
+  background-color: $fcm-top-bar-bg-color;
+  color: $fcm-top-bar-color;
+  padding: $fcm-top-bar-padding;
+  
+  .#{$prefix}top-bar-sponsor-logo {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: $fcm-top-bar-logo-height;
+    width: $fcm-top-bar-logo-width;
+  }
+  
+  .#{$prefix}top-bar-sponsor-label {
+    font-size: $fcm-top-bar-label-font-size;
+    height: $fcm-top-bar-label-height;
+    display: flex;
+    align-items: flex-end;
+    color: $fcm-top-bar-label-color;
+  }
+}

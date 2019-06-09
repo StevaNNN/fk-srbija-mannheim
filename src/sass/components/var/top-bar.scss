@@ -1,0 +1,31 @@
+/// fcm top bar bg color
+/// @group top-bar
+$fcm-top-bar-bg-color: #131929 !default;
+
+/// fcm top bar padding
+/// @group top-bar
+$fcm-top-bar-padding: .938rem !default;
+
+/// fcm top bar color
+/// @group top-bar
+$fcm-top-bar-color: $white !default;
+
+/// fcm top bar logo height
+/// @group top-bar
+$fcm-top-bar-logo-height: 30px !default;
+
+/// fcm top bar logo width
+/// @group top-bar
+$fcm-top-bar-logo-width: 150px !default;
+
+/// fcm top bar label font size
+/// @group top-bar
+$fcm-top-bar-label-font-size: $fcm-font-size-sm !default;
+
+/// fcm top bar label height
+/// @group top-bar
+$fcm-top-bar-label-height: $fcm-top-bar-logo-height !default;
+
+/// fcm top bar label color
+/// @group top-bar
+$fcm-top-bar-label-color: rgba($white, .5) !default;
