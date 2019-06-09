@@ -5,6 +5,7 @@
   padding: $fcm-top-bar-padding;
   
   .#{$prefix}top-bar-sponsor-logo {
+    background-image: url('#{$fcm-img-path}ericsson-sponsor.svg');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
