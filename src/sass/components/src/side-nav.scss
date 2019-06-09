@@ -1,7 +1,11 @@
 /// @group side-nav
+app-side-nav {
+  pointer-events: none;
+  display: block;
+}
+
 .#{$prefix}side-menu {
   height: 100vh;
-  pointer-events: none;
   
   &.collapse:not(.show){
     display: block;

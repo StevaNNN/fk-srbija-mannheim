@@ -1,11 +1,12 @@
 /// this styling is needed because of scroll down hide scroll up show functionality
+/// @group nav-bar
 app-nav-bar {
   position: fixed;
   top: 0;
   transition: unquote($fcm-navbar-transition);
   width: 100%;
   
-  /// giving navbar background color when scrolled down above 100px(height of the nav). This can be confusing but we have functionality when scroll down transform: translateY(-100px) at the same time we have this class but its not visible to the user. We get coloured nav when scrolling up but when we come to to top of the page we lose bg-color, hopefuly this make sense :D
+  // giving navbar background color when scrolled down above 100px(height of the nav). This can be confusing but we have functionality when scroll down transform: translateY(-100px) at the same time we have this class but its not visible to the user. We get coloured nav when scrolling up but when we come to to top of the page we lose bg-color, hopefuly this make sense :D
   
   &.#{$prefix}navbar-bg {
     background-color: $fcm-navbar-bg-color;
@@ -13,6 +14,7 @@ app-nav-bar {
 }
 
 /// App navbar wrapper
+/// @group nav-bar
 .#{$prefix}navbar {
   min-height: $fcm-navbar-logo-size;
   padding: $fcm-navbar-padding;
@@ -24,7 +26,7 @@ app-nav-bar {
     background-color: $fcm-navbar-bg-color;
   }
   
-  /// Left side of nav
+  // Left side of nav
   .#{$prefix}list-of-links {
     flex-direction: row;
     
@@ -37,7 +39,8 @@ app-nav-bar {
     transition: unquote($fcm-navbar-nav-item-transition);
     color: $fcm-navbar-nav-item-color;
     
-    &:hover {
+    &:hover,
+    &.active {
       background-color: $fcm-navbar-nav-item-over-bg-color;
     }
   }
@@ -46,7 +49,7 @@ app-nav-bar {
     color: inherit;
   }
   
-  /// Middle of nav
+  // Middle of nav
   .#{$prefix}logo {
     background-image: url('#{$fcm-img-path}logo.png');
     background-position: center;
@@ -61,7 +64,7 @@ app-nav-bar {
     z-index: 1;
   }
   
-  /// Right side of nav
+  // Right side of nav
   .navbar-right-side {
     margin-right: ($fcm-navbar-right-side-margin - 2);
     margin-top: $fcm-navbar-right-side-margin;

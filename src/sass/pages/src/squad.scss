@@ -1,0 +1,36 @@
+.#{$prefix}squad-page {
+  
+  .#{$prefix}squad-filter-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    background-color: #f4f4f4;
+    border-bottom: 1px solid #e6e6e6;
+    
+    .btn {
+      border: 1px solid #e6e6e6;
+      opacity: .6;
+      
+      &.active {
+        opacity: 1;
+        background-color: $white;
+      }
+    }
+    
+    .#{$prefix}squad-filter-select {
+      margin-left: 1rem;
+      border: 0;
+      outline: none;
+      background-color: transparent;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      color: rgba($body-color, .6);
+      font-family: $fcm-font-family-medium;
+      
+      &.active {
+        color: $body-color;
+      }
+    }
+  }
+}

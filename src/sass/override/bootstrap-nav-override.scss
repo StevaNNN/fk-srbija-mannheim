@@ -1,0 +1,7 @@
+.nav-item {
+  cursor: pointer;
+  
+  &:focus {
+    outline: none;
+  }
+}
