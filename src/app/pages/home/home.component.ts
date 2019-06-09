@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class HomeComponent implements OnInit {
 
   public headerConfing: any = {
-    backgroundImage: 'assets/img/test.jpg',
+    backgroundImage: '/assets/img/fc-serbia-mannheim.jpg',
     type: 'Interview',
     acter: 'Juan Bernat',
     title: 'The coach put his faith in me'
