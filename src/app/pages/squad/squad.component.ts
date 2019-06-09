@@ -15,7 +15,21 @@ export class SquadComponent implements OnInit {
     btnText: 'Read more'
   };
 
+  public selectActive = false;
+
   constructor() {
+  }
+
+  toogleSlelectActive() {
+    this.selectActive = !this.selectActive;
+  }
+
+  handleActiveButton(event) {
+    const active = document.querySelector('.btn-group .active');
+    if (active) {
+      active.classList.remove('active');
+    }
+    event.currentTarget.classList.add('active');
   }
 
   ngOnInit() {

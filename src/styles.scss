@@ -17,6 +17,7 @@
 
 /// Override bootstrap imports
 @import 'sass/override/bootstrap-btn-override';
+@import 'sass/override/bootstrap-nav-override';
 
 /// Base imports
 @import 'sass/base/global';
@@ -29,6 +30,7 @@
 @import 'sass/components/var/btn';
 @import 'sass/components/var/side-nav';
 @import 'sass/components/var/top-bar';
+@import 'sass/components/var/team-member';
 
 /// Component's source
 @import 'sass/components/src/header';
@@ -38,7 +40,11 @@
 @import 'sass/components/src/btn';
 @import 'sass/components/src/side-nav';
 @import 'sass/components/src/top-bar';
+@import 'sass/components/src/team-member';
 
 /// Page imports
-@import 'sass/pages/home';
-@import 'sass/pages/squad';
+@import 'sass/pages/var/home';
+@import 'sass/pages/var/squad';
+
+@import 'sass/pages/src/home';
+@import 'sass/pages/src/squad';

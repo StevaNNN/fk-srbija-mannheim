@@ -1,24 +1,15 @@
 <div class="fcm-squad-page">
-  <div class="fcm-squad-page-content">
     <app-info-container [confing]="headerConfing"></app-info-container>
     <div class="fcm-body">
       <div class="fcm-squad-filter-container">
-
-        <ul>
-          <li role="tab">
-            <a href="#">
-              Players
-            </a>
-          </li>
-          <li role="tab">
-            <a href="#">
-              Staff
-            </a>
-          </li>
-        </ul>
-
-        <div>
-          <select>
+        <div class="btn-group" role="group">
+          <button type="button" (click)="handleActiveButton($event)" class="btn">Players</button>
+          <button type="button" (click)="handleActiveButton($event)" class="btn">Stuff</button>
+        </div>
+        <div class="fcm-squad-season-filter">
+          <select class="fcm-squad-filter-select"
+                  (click)="toogleSlelectActive()"
+                  [ngClass]="{'active': selectActive}">
             <option value="2014/15">2014/15</option>
             <option value="2015/16">2015/16</option>
             <option value="2016/17">2016/17</option>
@@ -30,6 +21,6 @@
       </div>
       <app-positions></app-positions>
     </div>
-  </div>
 </div>
+<app-footer></app-footer>
 
