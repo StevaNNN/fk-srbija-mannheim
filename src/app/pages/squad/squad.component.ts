@@ -11,7 +11,8 @@ export class SquadComponent implements OnInit {
     backgroundImage: '/assets/img/squad-hero.jpg',
     type: 'Interview',
     acter: 'Juan Bernat',
-    title: 'The coach put his faith in me'
+    title: 'The coach put his faith in me',
+    btnText: 'Read more'
   };
 
   constructor() {

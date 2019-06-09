@@ -11,7 +11,8 @@ export class HomeComponent implements OnInit {
     backgroundImage: '/assets/img/fc-serbia-mannheim.jpg',
     type: 'Interview',
     acter: 'Juan Bernat',
-    title: 'The coach put his faith in me'
+    title: 'The coach put his faith in me',
+    btnText: 'Read more'
   };
 
   constructor() {
