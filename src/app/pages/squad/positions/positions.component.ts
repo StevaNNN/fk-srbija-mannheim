@@ -39,10 +39,10 @@ export class PositionsComponent implements OnInit {
       position: 'Goalkeeper',
       number: 50,
       statistic: {
-        appearances: 0,
-        minutes_played: 0,
-        clean_sheets: 0,
-        saves: 0
+        appearances: '0',
+        minutes_played: '0',
+        clean_sheets: '0',
+        saves: '0'
       }
     }]
   }, {
@@ -56,7 +56,7 @@ export class PositionsComponent implements OnInit {
       statistic: {
         appearances: 39,
         minutes_played: 3299,
-        goals: 0,
+        goals: '0',
         assists: 1
       }
     }, {
@@ -152,7 +152,7 @@ export class PositionsComponent implements OnInit {
       statistic: {
         appearances: 22,
         minutes_played: 1154,
-        goals: 0,
+        goals: '0',
         assists: 2
       }
     }, {
@@ -164,7 +164,7 @@ export class PositionsComponent implements OnInit {
       statistic: {
         appearances: 15,
         minutes_played: 882,
-        goals: 0,
+        goals: '0',
         assists: 2
       }
     }]
@@ -191,7 +191,7 @@ export class PositionsComponent implements OnInit {
       statistic: {
         appearances: 22,
         minutes_played: 1577,
-        goals: 0,
+        goals: '0',
         assists: 2
       }
     }, {
