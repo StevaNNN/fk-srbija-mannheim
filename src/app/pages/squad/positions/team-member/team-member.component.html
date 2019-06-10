@@ -1,16 +1,16 @@
 <div class="fcm-team-member" [style.backgroundImage]="'url(' + member.image + ')'">
   <div class="fcm-team-member-overlay" *ngIf="member.statistic">
-    <div class="container">
+    <div class="fcm-flying-cont container">
       <div class="row">
         <div class="col-6">
-          <div *ngIf="member.statistic.appearances">
-            <h3>{{member.statistic.appearances}}</h3>
+          <div class="fcm-team-member-stat-holder" *ngIf="member.statistic.appearances">
+            <span class="fcm-team-member-stats-number">{{member.statistic.appearances}}</span>
             <span>Appearances</span>
           </div>
         </div>
         <div class="col-6">
-          <div *ngIf="member.statistic.minutes_played">
-            <h3>{{member.statistic.minutes_played}}</h3>
+          <div class="fcm-team-member-stat-holder" *ngIf="member.statistic.minutes_played">
+            <span class="fcm-team-member-stats-number">{{member.statistic.minutes_played}}</span>
             <span>Minutes played</span>
           </div>
         </div>
@@ -18,22 +18,22 @@
 
       <div class="row">
         <div class="col-6">
-          <div *ngIf="member.statistic.clean_sheets">
-            <h3>{{member.statistic.clean_sheets}}</h3>
+          <div class="fcm-team-member-stat-holder" *ngIf="member.statistic.clean_sheets">
+            <span class="fcm-team-member-stats-number">{{member.statistic.clean_sheets}}</span>
             <span>Clean sheets</span>
           </div>
-          <div *ngIf="member.statistic.goals">
-            <h3>{{member.statistic.goals}}</h3>
+          <div class="fcm-team-member-stat-holder" *ngIf="member.statistic.goals">
+            <span class="fcm-team-member-stats-number">{{member.statistic.goals}}</span>
             <span>Goals</span>
           </div>
         </div>
         <div class="col-6">
-          <div *ngIf="member.statistic.saves">
-            <h3>{{member.statistic.saves}}</h3>
+          <div class="fcm-team-member-stat-holder" *ngIf="member.statistic.saves">
+            <span class="fcm-team-member-stats-number">{{member.statistic.saves}}</span>
             <span>Saves</span>
           </div>
-          <div *ngIf="member.statistic.assists">
-            <h3>{{member.statistic.assists}}</h3>
+          <div class="fcm-team-member-stat-holder" *ngIf="member.statistic.assists">
+            <span class="fcm-team-member-stats-number">{{member.statistic.assists}}</span>
             <span>Assists</span>
           </div>
         </div>
