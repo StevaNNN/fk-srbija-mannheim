@@ -2,7 +2,8 @@
 <div class="d-flex fixed-top fcm-navbar w-100" id="fcm-navbar-wrap"
      [ngClass]="{'side-menu-open': navbarOpen}">
   <nav class="navbar navbar-expand-md navbar-toggleable-md w-100">
-    <span class="menu-white-big-icon mr-2" (click)="toggleNavbar()"></span>
+    <span class="mr-2" [ngClass]="navbarOpen? 'close-white-big-icon' : 'menu-white-big-icon'"
+          (click)="toggleNavbar()"></span>
     <ul class="navbar-nav fcm-list-of-links">
       <li class="nav-item">
         <a class="nav-link" href="#">psg.fr</a>
