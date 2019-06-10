@@ -12,7 +12,8 @@ export class SquadComponent implements OnInit {
     type: 'Interview',
     acter: 'Juan Bernat',
     title: 'The coach put his faith in me',
-    btnText: 'Read more'
+    btnText: 'Read more',
+    context: 'squad'
   };
 
   public selectActive = false;

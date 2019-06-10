@@ -25,3 +25,7 @@ $fcm-side-nav-item-over-color: $white !default;
 /// fcm side nav item transition
 /// @group side-nav
 $fcm-side-nav-item-transition: $fcm-navbar-nav-item-transition !default;
+
+/// fcm side nav box-shadow
+/// @group side-nav
+$fcm-side-nav-box-shadow: 3px 15px 15px $black !default;

@@ -1,5 +1,5 @@
-<div class="card fcm-team-member-card" [style.backgroundImage]="'url(' + member.image + ')'">
-  <div class="fcm-member-overlay d-none" *ngIf="member.statistic">
+<div class="fcm-team-member" [style.backgroundImage]="'url(' + member.image + ')'">
+  <div class="fcm-team-member-overlay" *ngIf="member.statistic">
     <div *ngIf="member.statistic.appearances">
       <h3>{{member.statistic.appearances}}</h3>
       <span>Appearances</span>
@@ -24,11 +24,14 @@
       <h3>{{member.statistic.assists}}</h3>
       <span>Assists</span>
     </div>
+    <div>
+    
+    </div>
   </div>
-  <div class="card-header bg-transparent border-success">{{member.number}}</div>
-  <div class="card-body">
-    <p>{{member.position}}</p>
-    <p>{{member.name}}</p>
+  <div class="fcm-team-member-header">{{member.number}}</div>
+  <div class="fcm-team-member-body">
+    <p class="fcm-team-member-position-title">{{member.position}}</p>
+    <p class="fcm-team-member-name">{{member.name}}</p>
   </div>
-  <div class="card-footer bg-transparent border-success">PLAYER PROFILE</div>
+  <div class="fcm-team-member-footer">PLAYER PROFILE</div>
 </div>

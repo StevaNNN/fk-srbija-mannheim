@@ -1,4 +1,5 @@
-<div class="fcm-info-container-bg-img"
+<div class="fcm-info-container"
+     [ngClass]="'fcm-' + confing.context + '-info-container' "
      *ngIf="confing"
      [style.backgroundImage]="'url(' + confing.backgroundImage + ')'">
   <div class="fcm-info-bar">

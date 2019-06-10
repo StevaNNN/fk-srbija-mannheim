@@ -1,7 +1,96 @@
-.fcm-team-member-card {
+/// @group fcm-team-member-card
+.#{$prefix}team-member {
   height: 450px;
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
-  background-color: #1b2436;
+  position: relative;
+  margin-bottom: 2rem;
+  background-color: $primary;
+  display: flex;
+  color: $white;
+  flex-direction: column;
+  cursor: pointer;
+  font-family: $fcm-font-family-gothic;
+  justify-content: space-between;
+  
+  &:hover {
+    .#{$prefix}team-member-overlay {
+      visibility: visible;
+      opacity: 1;
+    }
+    
+    .#{$prefix}team-member-footer {
+      background-color: #ff1541;
+    }
+    
+    .#{$prefix}team-member-position-title {
+      visibility: hidden;
+      opacity: 0;
+    }
+  }
+  
+  &::before {
+    content: '';
+    background-image: linear-gradient(rgba(19,25,41,0) 0%, #131929 100%);
+    display: block;
+    position: absolute;
+    top: 0;
+    background-color: transparent;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .#{$prefix}team-member-overlay {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    height: calc(100% - 72px);
+    pointer-events: none;
+    width: 100%;
+    padding-top: 72px;
+    font-family: $fcm-font-family-fancy;
+    display: flex;
+    transition: all .2s ease-in-out;
+    background-color: rgba($white, .8);
+  }
+  
+  .#{$prefix}team-member-header {
+    padding: 1rem 2rem;
+    font-size: 3.7rem;
+    color: rgba($white, .3);
+    font-family: $fcm-font-family-fancy;
+  }
+  
+  .#{$prefix}team-member-body {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: flex-end;
+    padding: 1.5rem;
+    z-index: 1;
+  }
+  
+  .#{$prefix}team-member-position-title {
+    color: #ff1541;
+    text-transform: uppercase;
+    visibility: visible;
+    opacity: 1;
+    transition: all .2s ease-in-out;
+  }
+  
+  .#{$prefix}team-member-name {
+    font-size: 2rem;
+    font-family: $fcm-font-family-bold;
+  }
+  
+  .#{$prefix}team-member-footer {
+    padding: 1.5rem;
+    z-index: 1;
+    font-size: $fcm-font-size-md;
+    border-top: 1px solid rgba(#ccc, .4);
+    transition: all .2s ease-in-out;
+  }
 }

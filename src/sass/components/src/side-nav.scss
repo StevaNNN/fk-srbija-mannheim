@@ -19,6 +19,7 @@ app-side-nav {
     transform: translateX(-#{$fcm-side-nav-navbar-width});
     transition: unquote($fcm-side-nav-navbar-transition);
     width: 0;
+    box-shadow: $fcm-side-nav-box-shadow;
   }
   
   .nav-item {
