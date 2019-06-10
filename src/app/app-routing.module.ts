@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './pages/home/home.component';
 import { SquadComponent } from './pages/squad/squad.component';
 import { ProfileDetailsComponent } from './pages/squad/profile-details/profile-details.component';
+import { LeagueTableComponent } from './pages/league-table/league-table.component';
 
 const routes: Routes = [
   {
@@ -22,6 +23,9 @@ const routes: Routes = [
       path: ':id',
       component: ProfileDetailsComponent
     }]
+  }, {
+    path: 'league-table',
+    component: LeagueTableComponent
   }, {
     path: '**',
     redirectTo: '/home'

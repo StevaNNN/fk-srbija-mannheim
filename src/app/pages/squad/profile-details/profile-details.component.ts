@@ -7,7 +7,7 @@ import { ActivatedRoute } from '@angular/router';
   styleUrls: ['./profile-details.component.scss']
 })
 export class ProfileDetailsComponent implements OnInit {
-  private profile: any;
+  public profile: any;
 
   constructor(private activeRoute: ActivatedRoute) {
     this.activeRoute.params.subscribe (params => {

@@ -48,9 +48,9 @@ enum Direction {
 export class NavBarComponent  implements AfterViewInit {
   navbarOpen = false;
 
-  // public topBarConfig: any = {
-  //   backgroundImage: '/assets/img/ericsson-sponsor.svg'
-  // };
+  public topBarConfig: any = {
+    backgroundImage: '/assets/img/ericsson-sponsor.svg'
+  };
 
   private isVisible = true;
 

@@ -17,6 +17,7 @@ import { SideNavComponent } from './components/side-nav/side-nav.component';
 import { TopBarComponent } from './components/top-bar/top-bar.component';
 import { ProfileDetailsComponent } from './pages/squad/profile-details/profile-details.component';
 import { ProfileDetailsHeaderComponent } from './pages/squad/profile-details/profile-details-header/profile-details-header.component';
+import { LeagueTableComponent } from './pages/league-table/league-table.component';
 
 @NgModule ({
   declarations: [
@@ -33,7 +34,8 @@ import { ProfileDetailsHeaderComponent } from './pages/squad/profile-details/pro
     PositionsComponent,
     TeamMemberComponent,
     ProfileDetailsComponent,
-    ProfileDetailsHeaderComponent
+    ProfileDetailsHeaderComponent,
+    LeagueTableComponent
   ],
   imports: [
     NgbModule,
