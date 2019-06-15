@@ -1,0 +1,140 @@
+/// fcm team member height
+/// @group fcm-team-member
+$fcm-team-member-height: 45rem !default;
+
+/// fcm team member max width
+/// @group fcm-team-member
+$fcm-team-member-max-width: 32.7rem !default;
+
+/// fcm team member background color
+/// @group fcm-team-member
+$fcm-team-member-background-color: $primary !default;
+
+/// fcm team member color
+/// @group fcm-team-member
+$fcm-team-member-color: $white !default;
+
+/// fcm team member bottom spacer
+/// @group fcm-team-member
+$fcm-team-member-bottom-spacer: 6rem !default;
+
+/// fcm team member mask
+/// @group fcm-team-member
+$fcm-team-member-mask: rgba(19, 25, 41, 0) 0%, #131929 100% !default;
+
+// fcm team member img transition
+/// @group fcm-team-member
+$fcm-team-member-img-transition: filter .4s unquote($fcm-transition-animation) !default;
+
+/// fcm team member overlay bg-color
+/// @group fcm-team-member
+$fcm-team-member-overlay-bg-color: rgba($white, .8) !default;
+
+/// fcm team member overlay height
+/// @group fcm-team-member
+$fcm-team-member-overlay-height: calc(100% - 7.5rem) !default;
+
+/// fcm team member overlay padding
+/// @group fcm-team-member
+$fcm-team-member-overlay-padding: 9rem 0 0 2rem !default;
+
+/// fcm team member overlay transition
+/// @group fcm-team-member
+$fcm-team-member-overlay-transition: visibility unquote($fcm-transition-duration) unquote($fcm-transition-animation), opacity unquote($fcm-transition-duration)
+unquote($fcm-transition-animation) !default;
+
+/// fcm team member overlay flying cont transition
+/// @group fcm-team-member
+$fcm-overlay-flying-cont-transition: transform unquote($fcm-transition-duration) unquote($fcm-transition-animation) !default;
+
+/// fcm team member overlay flying cont transition
+/// @group fcm-team-member
+$fcm-overlay-stats-holder-color: $primary-medium-dark !default;
+
+/// fcm team member overlay flying cont transition
+/// @group fcm-team-member
+$fcm-overlay-stats-holder-desc-font-size: $fcm-font-size !default;
+
+/// fcm team member overlay number holder color
+/// @group fcm-team-member
+$fcm-overlay-stats-number-color: $secondary !default;
+
+/// fcm team member overlay number holder font-family
+/// @group fcm-team-member
+$fcm-overlay-stats-number-font-family: $fcm-font-family-gothic !default;
+
+/// fcm team member overlay number holder font-size
+/// @group fcm-team-member
+$fcm-overlay-stats-number-font-size: 7rem !default;
+
+/// fcm team member content header color
+/// @group fcm-team-member
+$fcm-content-header-color: rgba($white, .3) !default;
+
+/// fcm team member content header color
+/// @group fcm-team-member
+$fcm-content-overlayed-header-color: #a6adbb !default;
+
+/// fcm team member content header font-family
+/// @group fcm-team-member
+$fcm-content-header-font-family: $fcm-font-family-fancy !default;
+
+/// fcm team member content header font-size
+/// @group fcm-team-member
+$fcm-content-header-font-size: 6rem !default;
+
+/// fcm team member content header padding
+/// @group fcm-team-member
+$fcm-content-header-padding: 1rem 3rem !default;
+
+/// fcm team member content header transition
+/// @group fcm-team-member
+$fcm-content-header-transition: color unquote($fcm-transition-duration) unquote($fcm-transition-animation) !default;
+
+/// fcm team member content body padding
+/// @group fcm-team-member
+$fcm-content-body-padding: 1.5rem !default;
+
+/// fcm team member content body position title color
+/// @group fcm-team-member
+$fcm-content-body-position-title-color: $secondary !default;
+
+/// fcm team member content body position title font family
+/// @group fcm-team-member
+$fcm-content-body-position-title-font-family: $fcm-font-family-gothic !default;
+
+/// fcm team member content body position title transition
+/// @group fcm-team-member
+$fcm-content-body-position-title-transition: $fcm-team-member-overlay-transition !default;
+
+/// fcm team member content body name font family
+/// @group fcm-team-member
+$fcm-content-body-name-font-family: $fcm-font-family-bold !default;
+
+/// fcm team member content body name font size
+/// @group fcm-team-member
+$fcm-content-body-name-font-size: 3rem !default;
+
+/// fcm team member content overlayed body name color
+/// @group fcm-team-member
+$fcm-content-body-overlayed-name-color: $primary-medium-dark !default;
+
+/// fcm team member content footer border top
+/// @group fcm-team-member
+$fcm-content-footer-border-top: 1px solid rgba(#ccc, .4) !default;
+
+/// fcm team member content footer font family
+/// @group fcm-team-member
+$fcm-content-footer-font-family: $fcm-font-family-gothic !default;
+
+/// fcm team member content footer font size
+/// @group fcm-team-member
+$fcm-content-footer-font-size: $fcm-font-size-md !default;
+
+/// fcm team member content footer padding
+/// @group fcm-team-member
+$fcm-content-footer-padding: 2.5rem 3rem !default;
+
+/// fcm team member content footer transition
+/// @group fcm-team-member
+$fcm-content-footer-transition: background unquote($fcm-transition-duration) unquote($fcm-transition-animation) !default;

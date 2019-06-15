@@ -1,17 +1,23 @@
 /// info bar max width
-$fcm-info-bar-max-width: 700px !default;
+$fcm-info-bar-max-width: 70rem !default;
+
+/// info bar padding
+$fcm-info-bar-padding: 2rem !default;
 
 /// info bar color
 $fcm-info-bar-color: $white !default;
 
-/// info bar title text shadow
-$fcm-info-bar-color: $white !default;
-
 /// info bar context color
-$fcm-info-bar-context-color: #ff1541 !default;
+$fcm-info-bar-context-color: $secondary !default;
 
 /// info bar context font-family
 $fcm-info-bar-context-font-family: $fcm-font-family-medium !default;
+
+/// info bar context font size
+$fcm-info-bar-context-font-size: 1.5rem !default;
+
+/// info bar context spacing bottom
+$fcm-info-bar-context-spacing-bottom: 1rem !default;
 
 /// info bar context text transform
 $fcm-info-bar-context-text-transform: 'uppercase' !default;
@@ -19,5 +25,11 @@ $fcm-info-bar-context-text-transform: 'uppercase' !default;
 /// info bar title text shadow
 $fcm-info-bar-title-text-shadow: 1px 1px 1px $black !default;
 
-/// info bar btn color
-$fcm-info-bar-btn-color: $white !default;
+/// info bar title font size
+$fcm-info-bar-title-font-size: 4.6rem !default;
+
+/// info bar title font family
+$fcm-info-bar-title-font-family: $fcm-font-family-medium !default;
+
+/// info bar title spacing bottom
+$fcm-info-bar-title-spacing-bottom: 2rem !default;

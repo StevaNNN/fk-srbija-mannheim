@@ -1,14 +1,14 @@
 /// fcm side nav navbar active bg color
 /// @group side-nav
-$fcm-side-nav-navbar-active-bg-color: #1b2436 !default;
+$fcm-side-nav-navbar-active-bg-color: $primary !default;
 
 /// fcm side nav width
 /// @group side-nav
-$fcm-side-nav-navbar-width: 350px !default;
+$fcm-side-nav-navbar-width: 35rem !default;
 
 /// fcm side nav navbar padding
 /// @group side-nav
-$fcm-side-nav-navbar-padding: #{$fcm-navbar-total-height} 25px 0 !default;
+$fcm-side-nav-navbar-padding: #{$fcm-navbar-total-height} 2.5rem 0 !default;
 
 /// fcm side nav navbar transition
 /// @group side-nav
@@ -24,7 +24,7 @@ $fcm-side-nav-item-over-color: $white !default;
 
 /// fcm side nav item transition
 /// @group side-nav
-$fcm-side-nav-item-transition: $fcm-navbar-nav-item-transition !default;
+$fcm-side-nav-item-transition: 'all .2s ease-in-out' !default;
 
 /// fcm side nav box-shadow
 /// @group side-nav

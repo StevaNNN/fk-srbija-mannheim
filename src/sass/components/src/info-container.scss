@@ -7,42 +7,49 @@
   position: relative;
   
   &.fcm-squad-info-container {
-    min-height: calc(100vh - 72px); // height of the squad filter cont
+    min-height: calc(100vh - 7.2rem); // height of the squad filter cont
   }
   
   .#{$prefix}info-bar {
     bottom: 35%;
     color: $fcm-info-bar-color;
     max-width: $fcm-info-bar-max-width;
-    padding: 1rem;
+    padding: $fcm-info-bar-padding;
     position: absolute;
     right: 10%;
     width: 100%;
     
     @include media-breakpoint-down(md){
       max-width: 500px;
-      right: calc(50% - 250px);
+      right: calc(50% - 25rem);
     }
     
     @include media-breakpoint-down(sm){
-      max-width: 300px;
-      right: calc(50% - 150px);
+      max-width: 30rem;
+      right: calc(50% - 15rem);
     }
   }
   
   .#{$prefix}info-bar-context {
     color: $fcm-info-bar-context-color;
     font-family: $fcm-info-bar-context-font-family;
-    margin-bottom: 1rem;
+    margin-bottom: $fcm-info-bar-context-spacing-bottom;
+    font-size: $fcm-info-bar-context-font-size;
     text-transform: unquote($fcm-info-bar-context-text-transform);
   }
   
   .#{$prefix}info-bar-title {
-    margin-bottom: 1rem;
+    margin-bottom: $fcm-info-bar-title-spacing-bottom;
+    font-size: $fcm-info-bar-title-font-size;
+    font-family: $fcm-info-bar-title-font-family;
     text-shadow: $fcm-info-bar-title-text-shadow;
+  
+    @include media-breakpoint-down(md){
+      font-size: 3.6rem
+    }
     
     @include media-breakpoint-down(sm){
-      font-size: 2rem
+      font-size: 2.6rem
     }
   }
 }

@@ -28,7 +28,7 @@
 /// @param $map {map} of icons stored by theirs size
 /// @param $unit {string} unit used for determining size of the icon wrapper
 
-@mixin generate-icon-by-size($map: $fcm-list-of-custom-icon-names, $unit: 'px') {
+@mixin generate-icon-by-size($map: $fcm-list-of-custom-icon-names, $unit: 'rem') {
     $map-keys: map-keys($map);
   
     @each $key in $map-keys {
@@ -55,4 +55,12 @@
             }
         }
     }
+}
+
+//TODO make mixin for this and all players
+.fcm-profile-details-header {
+  
+  &.mbappe {
+    background-image: url('#{$fcm-img-path}players/details/header/mbappe.png');
+  }
 }

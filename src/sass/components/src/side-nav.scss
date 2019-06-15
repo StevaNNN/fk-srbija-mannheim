@@ -24,7 +24,7 @@ app-side-nav {
   
   .nav-item {
     color: $fcm-side-nav-item-color;
-    transition: unquote($fcm-navbar-nav-item-transition);
+    transition: unquote($fcm-side-nav-item-transition);
     
     &:hover {
       color: $fcm-side-nav-item-over-color;
@@ -40,6 +40,10 @@ app-side-nav {
       transform: translateX(0);
       width: $fcm-side-nav-navbar-width;
       background-color: $fcm-side-nav-navbar-active-bg-color;
+      
+      @include media-breakpoint-down(xs) {
+        width: 100%;
+      }
     }
   }
 }

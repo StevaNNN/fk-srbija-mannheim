@@ -16,15 +16,11 @@
 @import 'sass/vendors/bootstrap';
 
 /// Override bootstrap imports
+@import 'sass/override/bootstrap-reboot-override';
 @import 'sass/override/bootstrap-btn-override';
 @import 'sass/override/bootstrap-nav-override';
 
-/// Base imports
-@import 'sass/base/global';
-
 /// Component's variables
-@import 'sass/components/var/header';
-@import 'sass/components/var/footer';
 @import 'sass/components/var/navbar';
 @import 'sass/components/var/info-container';
 @import 'sass/components/var/btn';

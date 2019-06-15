@@ -1,11 +1,9 @@
-<div class="fcm-profile-details-header">
-  <div>
-    <div>{{confing.name}}</div>
-    <div>{{confing.surname}}</div>
-    <div>FIRST TEAM</div>
-  </div>
-  <div class="fcm-profile-details-header-image"
+<div class="fcm-profile-details-header-cont">
+  <div class="fcm-profile-details-header"
        *ngIf="confing"
-       [style.backgroundImage]="'url(' + confing.image + ')'">
+       [ngClass]="confing.surname.toLowerCase()">
+    <div class="fcm-profile-details-header-name">{{confing.name}}</div>
+    <div class="fcm-profile-details-header-surname">{{confing.surname}}</div>
+    <div class="fcm-profile-details-header-team">FIRST TEAM</div>
   </div>
 </div>

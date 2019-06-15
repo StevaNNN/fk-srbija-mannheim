@@ -21,8 +21,6 @@ export class ProfileDetailsComponent implements OnInit {
         weight: '73kg',
         nationality: 'French',
         skills: 'Right',
-        image: '/assets/img/players/card-mbappe.jpg',
-        numberBackgroundImage: '/assets/img/players/details/number-mbappe7.jpg',
         position: 'Forward',
         number: 7,
         statistic: {

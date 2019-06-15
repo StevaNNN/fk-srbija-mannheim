@@ -1,7 +1,7 @@
 <div class="fcm-position-container container" *ngFor="let position of positions;">
   <h4 class="fcm-position-title">{{position.positionName}}</h4>
   <div class="row">
-    <div class="col-md-4 col-sm-6 col-12" *ngFor="let member of position.members; let i = index">
+    <div class="col-lg-4 col-md-6 col-12 fcm-member-wrap" *ngFor="let member of position.members; let i = index">
       <app-team-member [member]="member"></app-team-member>
     </div>
   </div>

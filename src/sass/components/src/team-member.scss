@@ -1,128 +1,181 @@
 /// @group fcm-team-member-card
 .#{$prefix}team-member {
-  height: 450px;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-  position: relative;
-  margin-bottom: 2rem;
-  background-color: $primary;
-  display: flex;
-  color: $white;
-  flex-direction: column;
+  background-color: $fcm-team-member-background-color;
+  color: $fcm-team-member-color;
   cursor: pointer;
-  justify-content: space-between;
+  height: $fcm-team-member-height;
+  margin-bottom: $fcm-team-member-bottom-spacer;
+  position: relative;
   user-select: none;
+  max-width: $fcm-team-member-max-width;
+  min-width: $fcm-team-member-max-width;
   
-  &:hover {
-    .#{$prefix}team-member-overlay {
-      visibility: visible;
-      opacity: 1;
-    }
-  
-    .#{$prefix}flying-cont {
-      transform: translateX(0%);
-    }
-    
-    .#{$prefix}team-member-footer {
-      background-color: #ff1541;
-    }
-    
-    .#{$prefix}team-member-position-title {
-      visibility: hidden;
-      opacity: 0;
-    }
-    
-    .#{$prefix}team-member-header {
-      color: #a6adbb;
-    }
+  @include media-breakpoint-down(lg) {
+    min-width: auto;
   }
   
-  &::before {
-    content: '';
-    background-image: linear-gradient(rgba(19,25,41,0) 0%, #131929 100%);
-    display: block;
+  @include media-breakpoint-down(sm) {
+    max-width: 100%;
+    margin-bottom: 3rem;
+  }
+  
+  
+  .#{$prefix}team-member-img {
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
     position: absolute;
-    top: 0;
-    background-color: transparent;
     left: 0;
+    top: 0;
     width: 100%;
+    z-index: 0;
+    transition: $fcm-team-member-img-transition;
     height: 100%;
   }
   
-  .#{$prefix}flying-cont {
-    transform: translateX(-100%);
-    transition: all .2s ease-in-out;
+  &:hover {
+  
+    .#{$prefix}team-member-img {
+      filter: grayscale(100%);
+    }
+    
+    // Team member overlay hover content
+    .#{$prefix}team-member-overlay {
+      opacity: 1;
+      visibility: visible;
+  
+      .#{$prefix}overlay-flying-cont {
+        transform: translateX(0%);
+      }
+    }
+  
+    // Team member hover content
+    .#{$prefix}team-member-content {
+      
+      .#{$prefix}content-header {
+        color: $fcm-content-overlayed-header-color;
+      }
+  
+      .#{$prefix}content-body {
+        
+        .#{$prefix}content-body-position-title {
+          opacity: 0;
+          visibility: hidden;
+        }
+        
+        .#{$prefix}content-body-name {
+          color: $fcm-content-body-overlayed-name-color;
+        }
+      }
+  
+      .#{$prefix}content-footer {
+        background-color: $secondary;
+      }
+    }
   }
   
-  .#{$prefix}team-member-stats-number {
-    color: #ff1541;
-    font-size: 4.5rem;
-    line-height: 1;
-    font-family: $fcm-font-family-gothic;
-  }
-  
-  .#{$prefix}team-member-stat-holder {
-    display: flex;
-    color: #151e2d;
-    flex-direction: column;
-  }
-  
-  .#{$prefix}team-member-overlay {
-    visibility: hidden;
-    opacity: 0;
+  // team member mask
+  &::before {
+    background-color: transparent;
+    background-image: linear-gradient($fcm-team-member-mask);
+    content: '';
+    display: block;
+    height: 100%;
+    left: 0;
+    z-index: 1;
     position: absolute;
     top: 0;
-    height: calc(100% - 72px);
-    overflow: hidden;
-    pointer-events: none;
     width: 100%;
-    padding-top: 90px;
-    padding-left: 15px;
-    display: flex;
-    transition: all .2s ease-in-out;
-    background-color: rgba($white, .8);
   }
   
-  .#{$prefix}team-member-header {
-    padding: 1rem 2rem;
-    font-size: 3.7rem;
-    color: rgba($white, .3);
-    font-family: $fcm-font-family-fancy;
+  // Team member overlay content
+  .#{$prefix}team-member-overlay {
+    background-color: $fcm-team-member-overlay-bg-color;
+    display: flex;
+    height: $fcm-team-member-overlay-height;
+    opacity: 0;
+    overflow: hidden;
+    padding: $fcm-team-member-overlay-padding;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
     z-index: 1;
-    transition: color .2s ease-in-out;
+    transition: $fcm-team-member-overlay-transition;
+    visibility: hidden;
+    width: 100%;
+  
+    .#{$prefix}overlay-flying-cont {
+      transform: translateX(-100%);
+      transition: $fcm-overlay-flying-cont-transition;
+    }
+  
+    .#{$prefix}overlay-stats-holder {
+      color: $fcm-overlay-stats-holder-color;
+      display: flex;
+      flex-direction: column;
+    
+      span {
+        &:last-child {
+          font-size: $fcm-overlay-stats-holder-desc-font-size;
+        }
+      }
+    }
+  
+    .#{$prefix}overlay-stats-number {
+      color: $fcm-overlay-stats-number-color;
+      font-family: $fcm-overlay-stats-number-font-family;
+      font-size: $fcm-overlay-stats-number-font-size;
+      line-height: 1;
+    }
   }
   
-  .#{$prefix}team-member-body {
+  // Team member content
+  .#{$prefix}team-member-content {
     display: flex;
+    justify-content: space-between;
     flex-direction: column;
-    flex: 1;
-    justify-content: flex-end;
-    padding: 1.5rem;
-    z-index: 1;
-  }
+    height: 100%;
   
-  .#{$prefix}team-member-position-title {
-    color: #ff1541;
-    font-family: $fcm-font-family-gothic;
-    text-transform: uppercase;
-    visibility: visible;
-    opacity: 1;
-    transition: all .2s ease-in-out;
-  }
+    .#{$prefix}content-header {
+      color: $fcm-content-header-color;
+      font-family: $fcm-content-header-font-family;
+      font-size: $fcm-content-header-font-size;
+      padding: $fcm-content-header-padding;
+      transition: $fcm-content-header-transition;
+      z-index: 1; // needs to be set because of mask
+    }
   
-  .#{$prefix}team-member-name {
-    font-size: 2rem;
-    font-family: $fcm-font-family-bold;
-    margin-bottom: 0;
-  }
+    .#{$prefix}content-body {
+      display: flex;
+      flex: 1;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: $fcm-content-body-padding;
+      z-index: 1; // needs to be set because of mask
   
-  .#{$prefix}team-member-footer {
-    padding: 1.5rem;
-    z-index: 1;
-    font-size: $fcm-font-size-md;
-    font-family: $fcm-font-family-gothic;
-    border-top: 1px solid rgba(#ccc, .4);
-    transition: all .2s ease-in-out;
+      .#{$prefix}content-body-position-title {
+        color: $fcm-content-body-position-title-color;
+        font-family: $fcm-content-body-position-title-font-family;
+        opacity: 1;
+        text-transform: uppercase;
+        transition: $fcm-content-body-position-title-transition;
+        visibility: visible;
+      }
+  
+      .#{$prefix}content-body-name {
+        font-family: $fcm-content-body-name-font-family;
+        font-size: $fcm-content-body-name-font-size;
+        margin-bottom: 0;
+      }
+    }
+  
+    .#{$prefix}content-footer {
+      border-top: $fcm-content-footer-border-top;
+      font-family: $fcm-content-footer-font-family;
+      font-size: $fcm-content-footer-font-size;
+      padding: $fcm-content-footer-padding;
+      transition: $fcm-content-footer-transition;
+      z-index: 1; // needs to be set because of mask
+    }
   }
 }

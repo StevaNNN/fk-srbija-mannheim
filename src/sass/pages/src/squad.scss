@@ -1,5 +1,14 @@
 .#{$prefix}squad-page {
   
+  .#{$prefix}member-wrap {
+    
+    &.col-lg-4 {
+      padding-left: 3rem;
+      padding-right: 3rem;
+    }
+  }
+  
+  
   /// @group squad-filter
   .#{$prefix}squad-filter-container {
     display: flex;
@@ -39,10 +48,16 @@
   
   /// @group fcm-position-container
   .#{$prefix}position-container {
-      margin: 3rem auto;
+  
+    &:first-of-type {
+      
+      .#{$prefix}position-title {
+        margin-top: 5rem;
+      }
+    }
     
     .#{$prefix}position-title {
-      margin-bottom: 3rem;
+      margin: 2rem 0 5rem 2rem;
       font-family: $fcm-font-family-bold;
     }
   }

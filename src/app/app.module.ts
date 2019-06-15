@@ -7,7 +7,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './pages/home/home.component';
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
-import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { SquadComponent } from './pages/squad/squad.component';
 import { InfoContainerComponent } from './components/info-container/info-container.component';
@@ -24,7 +23,6 @@ import { LeagueTableComponent } from './pages/league-table/league-table.componen
     AppComponent,
     HomeComponent,
     NavBarComponent,
-    HeaderComponent,
     FooterComponent,
     SquadComponent,
     InfoContainerComponent,

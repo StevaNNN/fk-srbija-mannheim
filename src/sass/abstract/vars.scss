@@ -1,19 +1,48 @@
 /// App prefix
+/// @group app-config
 $prefix: 'fcm-';
 
 /// Font path root
+/// @group app-config
 $fcm-font-path: 'assets/font/';
 
-/// Fonts
+/// Img path for sass folder arhitecture
+/// Note this path is relative from styles.scss this path should be also used into html img etc...
+/// img's or icons or fonts that are included in app with html will be stored at dist/assets/img
+/// but those generated from sass folder will be stored at root of the dist folder
+/// @group app-config
+$fcm-img-path: 'assets/img/';
+
+/// Font family light
+/// @group app-config
 $fcm-font-family-light: 'Roboto-Light';
+
+/// Font family default
+/// @group app-config
 $fcm-font-family: 'Roboto-Regular';
+
+/// Font family medium
+/// @group app-config
 $fcm-font-family-medium: 'Roboto-Medium';
+
+/// Font family bold
+/// @group app-config
 $fcm-font-family-bold: 'Roboto-Bold';
+
+/// Font family italic
+/// @group app-config
 $fcm-font-family-italic: 'Roboto-Italic';
+
+/// Font family fancy
+/// @group app-config
 $fcm-font-family-fancy: 'Bebas-Nue-Bold';
+
+/// Font family gothic
+/// @group app-config
 $fcm-font-family-gothic: 'Gothic-Regular';
 
-// Map of fonts needed by mixin that generates them
+/// Map of fonts needed by mixin that generates them
+/// @group app-config
 $fcm-map-of-fonts: (
   'Roboto-Light': #{$fcm-font-family-light  + '.ttf'},
   'Roboto-Regular': #{$fcm-font-family + '.ttf'},
@@ -24,35 +53,42 @@ $fcm-map-of-fonts: (
   'Gothic-Regular': #{$fcm-font-family-gothic + '.otf'}
 );
 
-/// Font sizes
-$fcm-font-size-xs: 10px;
-$fcm-font-size-sm: 12px;
-$fcm-font-size:    14px;
-$fcm-font-size-md: 16px;
-$fcm-font-size-lg: 18px;
-$fcm-font-size-xlg: 20px;
+/// Font size xs
+/// @group app-config
+$fcm-font-size-xs: 1.0rem;
 
-/// Colors
-$white: #fff;
-$black: #000;
+/// Font size sm
+/// @group app-config
+$fcm-font-size-sm: 1.2rem;
 
-/// Img path for sass folder arhitecture
-/// Note this path is relative from styles.scss this path should be also used into html img etc...
-/// img's or icons or fonts that are included in app with html will be stored at dist/assets/img
-/// but those generated from sass folder will be stored at root of the dist folder
-$fcm-img-path: 'assets/img/';
+/// Font size default
+/// @group app-config
+$fcm-font-size:    1.4rem;
+
+/// Font size md
+/// @group app-config
+$fcm-font-size-md: 1.6rem;
+
+/// Font size lg
+/// @group app-config
+$fcm-font-size-lg: 1.8rem;
+
+/// Font size lg
+/// @group app-config
+$fcm-font-size-xlg: 2.0rem;
 
 /// Map of icon references
+/// @group app-config
 $fcm-list-of-custom-icon-names: (
-    '20': (
+    '2': (
         'globe-white'
     ),
-    '24': (
+    '2.4': (
         'search-white',
         'menu-white',
         'globe-white-big'
     ),
-    '30': (
+    '3': (
         'menu-white-big',
         'close-white-big'
     )
@@ -60,7 +96,14 @@ $fcm-list-of-custom-icon-names: (
 );
 
 /// height of app-nav-bar element
-$fcm-app-nav-bar-height: 100px;
+/// @group app-config
+$fcm-app-nav-bar-height: 10rem;
 
 /// z-index of app-nav-bar element
+/// @group app-config
 $fcm-app-nav-bar-z-index: 1000;
+
+/// animation
+/// @group app-config
+$fcm-transition-duration: '.2s';
+$fcm-transition-animation: 'ease-in-out';

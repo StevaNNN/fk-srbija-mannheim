@@ -19,7 +19,7 @@ app-nav-bar {
   min-height: $fcm-navbar-logo-size;
   padding: $fcm-navbar-padding;
   /// this must stay initialy after scroll we set this to 0 with JS
-  top: 60px;
+  top: 6rem;
   transition: unquote($fcm-navbar-transition);
   
   &.side-menu-open {
@@ -35,19 +35,47 @@ app-nav-bar {
     }
   }
   
-  .nav-item {
-    transition: unquote($fcm-navbar-nav-item-transition);
-    color: $fcm-navbar-nav-item-color;
+  .navbar-toggler {
+    color: $fcm-navbar-item-color;
+    border-color: $fcm-navbar-toggler-border-color;
+  }
+  
+  .navbar-toggler-icon {
+    background-image: $fcm-navbar-toggler-icon-bg;
+  }
+  
+  .navbar-nav {
     
-    &:hover,
-    &.active {
-      background-color: $fcm-navbar-nav-item-over-bg-color;
+    .nav-link {
+      color: $fcm-navbar-item-color;
+      font-family: $fcm-navbar-item-font-family;
+      padding: $fcm-navbar-item-padding;
+      transition: unquote($fcm-navbar-item-transition);
+      font-size: $fcm-navbar-item-font-size;
+      text-transform: unquote($fcm-navbar-item-text-transform);
+      
+      @include hover-focus {
+        color: $fcm-navbar-item-hover-color;
+      }
+      
+      &.disabled {
+        color: $fcm-navbar-item-disabled-color;
+      }
+    }
+    
+    .show > .nav-link,
+    .active > .nav-link,
+    .nav-item:hover > .nav-link,
+    .nav-link.show,
+    .nav-link.active {
+      color: $fcm-navbar-item-active-color;
+      background-color: $fcm-navbar-item-active-bg-color;
     }
   }
   
-  .nav-link {
-    color: inherit;
-  }
+  
+  
+  
   
   // Middle of nav
   .#{$prefix}logo {

@@ -1,46 +1,86 @@
-/// navbar padding
-/// @group navbar
-$fcm-navbar-padding: 10px !default;
+/// fcm navbar padding
+/// @group fcm-navbar
+$fcm-navbar-padding: 1rem 1.5rem !default;
 
-/// navbar padding
-/// @group navbar
-$fcm-navbar-total-height: 100px !default;
+/// fcm navbar padding
+/// @group fcm-navbar
+$fcm-navbar-total-height: 10rem !default;
 
-/// navbar bg-color
-/// @group navbar
-$fcm-navbar-bg-color: #151e2d !default;
+/// fcm navbar scroll up background color
+/// @group fcm-navbar
+$fcm-navbar-bg-color: $primary-medium-dark !default;
 
-/// navbar transition
-/// @group navbar
+/// fcm navbar transition
+/// @group nfcm-avbar
 $fcm-navbar-transition: 'all .3s ease-in-out' !default;
 
 /// fcm navbar dropdown height
-/// @group navbar
-$fcm-navbar-logo-size: 100px !default;
+/// @group fcm-navbar
+$fcm-navbar-logo-size: 10rem !default;
 
-/// fcm navbar nav item color
-/// @group navbar
-$fcm-navbar-nav-item-color: #fff !default;
+/// fcm navbar item color
+/// @group fcm-navbar
+$fcm-navbar-item-color: $white !default;
 
-/// fcm navbar nav item transition
-/// @group navbar
-$fcm-navbar-nav-item-transition: unquote('all .2s ease-in-out') !default;
+/// fcm navbar item transition
+/// @group fcm-navbar
+$fcm-navbar-item-transition: $fcm-navbar-transition !default;
 
-/// fcm navbar nav item hover background color
-/// @group navbar
-$fcm-navbar-nav-item-over-bg-color: rgba(#ccc, .3) !default;
+/// fcm navbar item hover color
+/// @group fcm-navbar
+$fcm-navbar-item-hover-color: $white !default;
+
+/// fcm navbar item active color
+/// @group fcm-navbar
+$fcm-navbar-item-active-color:$white !default;
+
+/// fcm navbar item active background color
+/// @group fcm-navbar
+$fcm-navbar-item-active-bg-color: rgba(166,173,187,0.3) !default;
+
+/// fcm navbar item disabled color
+/// @group fcm-navbar
+$fcm-navbar-item-disabled-color: rgba($gray-400, .3) !default;
+
+/// fcm navbar item font family
+/// @group fcm-navbar
+$fcm-navbar-item-font-family: $fcm-font-family-medium !default;
+
+/// fcm navbar item font size
+/// @group fcm-navbar
+$fcm-navbar-item-font-size: 1.4rem !default;
+
+/// fcm navbar item text-transform
+/// @group fcm-navbar
+$fcm-navbar-item-text-transform: 'uppercase' !default;
+
+/// fcm navbar item podding
+/// @group fcm-navbar
+$fcm-navbar-item-padding: 1.5rem !default;
+
+
+/// fcm navbar toggler icon bg
+/// @group fcm-navbar
+$fcm-navbar-toggler-icon-bg: str-replace(url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='#{$navbar-light-color}' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e"), "#", "%23") !default;
+
+/// fcm navbar toggler border color
+/// @group fcm-navbar
+$fcm-navbar-toggler-border-color: rgba($gray-400, .1) !default;
+
+
+
 
 // ======================== SPACER ===================== //
 
 
 /// navbar right side holder margin
-/// @group navbar
-$fcm-navbar-right-side-margin: 28px !default;
+/// @group fcm-navbar
+$fcm-navbar-right-side-margin: 2.8rem !default;
 
 
 // ======================== SPACER ===================== //
 
 
 /// fcm navbar dropdown height
-/// @group navbar
-$fcm-navbar-dropdown-height: 24px !default;
+/// @group fcm-navbar
+$fcm-navbar-dropdown-height: 2.4rem !default;

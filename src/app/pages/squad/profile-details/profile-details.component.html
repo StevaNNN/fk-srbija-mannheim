@@ -1,26 +1,37 @@
 <app-profile-details-header [confing]="profile"></app-profile-details-header>
-<section>
-  <div class="row">
+<div class="fcm-profile-body">
+  <div class="row" >
     <div class="col-md-6 col-sm-12 col-12">
-
-      <div>{{profile.number}}
+      <div>
+        <div>{{profile.number}}</div>
         <div class="fcm-profile-details-number-container"
              [style.backgroundImage]="'url(' + profile.numberBackgroundImage + ')'">
         </div>
       </div>
     </div>
-
+    <!--TODO make body png photos accesible for each player with ng class like in header-->
     <div class="col-md-6 col-sm-12 col-12">
       <h3>{{profile.name}} {{profile.surname}} {{profile.number}}</h3>
       <div class="row">
         <div class="col-md-8 col-sm-12 col-12">
-          <div><span class="fcm-profile-label">Birthdate</span> {{profile.birthday}} {{profile.birthCity}}</div>
-          <div><span class="fcm-profile-label">Nationality</span> {{profile.nationality}} <span
-            [ngClass]="getNationalFlage()"></span></div>
-          <div><span class="fcm-profile-label">Height/Weight</span> {{profile.height}}/{{profile.weight}}</div>
-          <div><span class="fcm-profile-label">Skills</span> {{profile.skills}}</div>
+          <div>
+            <span class="fcm-profile-label">Birthdate</span>
+            <span>{{profile.birthday}} {{profile.birthCity}}</span>
+          </div>
+          <div>
+            <span class="fcm-profile-label">Nationality</span>
+            <span>{{profile.nationality}} </span>
+            <span [ngClass]="getNationalFlage()"></span>
+          </div>
+          <div>
+            <span class="fcm-profile-label">Height/Weight</span>
+            <span>{{profile.height}}/{{profile.weight}}</span>
+          </div>
+          <div>
+            <span class="fcm-profile-label">Skills</span>
+            {{profile.skills}}
+          </div>
         </div>
-
         <div class="col-md-4 col-sm-12 col-12">
           <div class="fcm-player-position"></div>
           <div>{{profile.position}}</div>
@@ -28,4 +39,4 @@
       </div>
     </div>
   </div>
-</section>
+</div>
