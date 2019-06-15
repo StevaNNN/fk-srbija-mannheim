@@ -57,10 +57,36 @@
     }
 }
 
-//TODO make mixin for this and all players
-.fcm-profile-details-header {
+/// @name class name same as team member name
+///
+/// @author Stevan Stojanovic
+///
+/// @param $class-list {list} of team players stored in var.scss
+@mixin class-name-same-as-backgound-image-name($class-list...) {
+  $path: $fcm-img-path;
+  $header-img-path: $fcm-img-path + 'players/details/header/';
+  $body-img-path: $fcm-img-path + 'players/details/body/';
+  $sufix: '.png';
   
-  &.mbappe {
-    background-image: url('#{$fcm-img-path}players/details/header/mbappe.png');
+  @for $i from 1 through length($class-list) {
+    $list-of-classes: nth($class-list, $i);
+    
+    @each $class in $list-of-classes {
+      
+      .#{$prefix}profile-details-header {
+        
+        &.#{$class} {
+          background-image: url($header-img-path + 'details-header-' + $class + $sufix);
+        }
+      }
+      
+      .#{$prefix}profile-details-body-img {
+        
+        &.#{$class} {
+          background-image: url($body-img-path + 'details-body-' + $class + $sufix);
+        }
+      }
+    }
   }
 }
+

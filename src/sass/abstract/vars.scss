@@ -39,7 +39,7 @@ $fcm-font-family-fancy: 'Bebas-Nue-Bold';
 
 /// Font family gothic
 /// @group app-config
-$fcm-font-family-gothic: 'Gothic-Regular';
+$fcm-font-family-gothic: 'Gotic-Regular';
 
 /// Map of fonts needed by mixin that generates them
 /// @group app-config
@@ -50,7 +50,7 @@ $fcm-map-of-fonts: (
   'Roboto-Bold': #{$fcm-font-family-bold + '.ttf'},
   'Roboto-Italic': #{$fcm-font-family-italic + '.ttf'},
   'Bebas-Nue-Bold': #{$fcm-font-family-fancy + '.ttf'},
-  'Gothic-Regular': #{$fcm-font-family-gothic + '.otf'}
+  'Gotic-Regular': #{$fcm-font-family-gothic + '.woff2'}
 );
 
 /// Font size xs
@@ -107,3 +107,7 @@ $fcm-app-nav-bar-z-index: 1000;
 /// @group app-config
 $fcm-transition-duration: '.2s';
 $fcm-transition-animation: 'ease-in-out';
+
+/// list of players
+/// @group app-config
+$fcm-list-of-players: mbappe;

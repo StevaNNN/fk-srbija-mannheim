@@ -12,6 +12,10 @@
 /// Generating icons
 @include generate-icon-by-size;
 
+/// image as class
+@include class-name-same-as-backgound-image-name($fcm-list-of-players);
+
+
 /// Third party libraries ready for overriding them with our variables
 @import 'sass/vendors/bootstrap';
 
@@ -27,9 +31,10 @@
 @import 'sass/components/var/side-nav';
 @import 'sass/components/var/top-bar';
 @import 'sass/components/var/team-member';
+@import 'sass/components/var/profile-details-header';
+@import 'sass/components/var/profile-details-body';
 
 /// Component's source
-@import 'sass/components/src/header';
 @import 'sass/components/src/footer';
 @import 'sass/components/src/navbar';
 @import 'sass/components/src/info-container';
@@ -37,6 +42,8 @@
 @import 'sass/components/src/side-nav';
 @import 'sass/components/src/top-bar';
 @import 'sass/components/src/team-member';
+@import 'sass/components/src/profile-details-header';
+@import 'sass/components/src/profile-details-body';
 
 /// Page imports
 @import 'sass/pages/var/home';

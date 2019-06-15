@@ -1,40 +1,41 @@
 <app-profile-details-header [confing]="profile"></app-profile-details-header>
-<div class="fcm-profile-body">
-  <div class="row" >
-    <div class="col-md-6 col-sm-12 col-12">
-      <div>
-        <div>{{profile.number}}</div>
-        <div class="fcm-profile-details-number-container"
-             [style.backgroundImage]="'url(' + profile.numberBackgroundImage + ')'">
-        </div>
+<div class="fcm-profile-details-body">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-sm-12 col-12">
+          <div class="fcm-profile-details-body-number">
+            {{profile.number}}
+          </div>
+          <div class="fcm-profile-details-body-img"
+               [ngClass]="profile.surname.toLowerCase()">
+          </div>
       </div>
-    </div>
-    <!--TODO make body png photos accesible for each player with ng class like in header-->
-    <div class="col-md-6 col-sm-12 col-12">
-      <h3>{{profile.name}} {{profile.surname}} {{profile.number}}</h3>
-      <div class="row">
-        <div class="col-md-8 col-sm-12 col-12">
-          <div>
-            <span class="fcm-profile-label">Birthdate</span>
-            <span>{{profile.birthday}} {{profile.birthCity}}</span>
+      <div class="col-md-6 col-sm-12 col-12">
+        <h3>{{profile.name}} {{profile.surname}} {{profile.number}}</h3>
+        <div class="row">
+          <div class="col-md-8 col-sm-12 col-12">
+            <div>
+              <span class="fcm-profile-label">Birthdate</span>
+              <span>{{profile.birthday}} {{profile.birthCity}}</span>
+            </div>
+            <div>
+              <span class="fcm-profile-label">Nationality</span>
+              <span>{{profile.nationality}} </span>
+              <span [ngClass]="getNationalFlage()"></span>
+            </div>
+            <div>
+              <span class="fcm-profile-label">Height/Weight</span>
+              <span>{{profile.height}}/{{profile.weight}}</span>
+            </div>
+            <div>
+              <span class="fcm-profile-label">Skills</span>
+              {{profile.skills}}
+            </div>
           </div>
-          <div>
-            <span class="fcm-profile-label">Nationality</span>
-            <span>{{profile.nationality}} </span>
-            <span [ngClass]="getNationalFlage()"></span>
+          <div class="col-md-4 col-sm-12 col-12">
+            <div class="fcm-player-position"></div>
+            <div>{{profile.position}}</div>
           </div>
-          <div>
-            <span class="fcm-profile-label">Height/Weight</span>
-            <span>{{profile.height}}/{{profile.weight}}</span>
-          </div>
-          <div>
-            <span class="fcm-profile-label">Skills</span>
-            {{profile.skills}}
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-12 col-12">
-          <div class="fcm-player-position"></div>
-          <div>{{profile.position}}</div>
         </div>
       </div>
     </div>

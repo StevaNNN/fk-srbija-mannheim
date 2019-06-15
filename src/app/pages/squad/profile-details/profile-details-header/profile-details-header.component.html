@@ -2,8 +2,12 @@
   <div class="fcm-profile-details-header"
        *ngIf="confing"
        [ngClass]="confing.surname.toLowerCase()">
-    <div class="fcm-profile-details-header-name">{{confing.name}}</div>
-    <div class="fcm-profile-details-header-surname">{{confing.surname}}</div>
-    <div class="fcm-profile-details-header-team">FIRST TEAM</div>
+  </div>
+  <div class="fcm-profile-details-header-bar">
+    <div class="fcm-header-bar-content">
+      <div class="fcm-profile-details-header-name">{{confing.name}}</div>
+      <div class="fcm-profile-details-header-surname">{{confing.surname}}</div>
+      <div class="fcm-profile-details-header-team">FIRST TEAM</div>
+    </div>
   </div>
 </div>
