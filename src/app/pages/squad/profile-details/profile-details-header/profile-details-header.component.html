@@ -1,7 +1,8 @@
 <div class="fcm-profile-details-header-cont">
   <div class="fcm-profile-details-header"
        *ngIf="confing"
-       [ngClass]="confing.surname.toLowerCase()">
+       [ngClass]="{'page-loaded': state === 'showPhoto'}"
+       [class]="confing.surname.toLowerCase()">
   </div>
   <div class="fcm-profile-details-header-bar">
     <div class="fcm-header-bar-content">

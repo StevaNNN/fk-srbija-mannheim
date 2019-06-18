@@ -1,0 +1,52 @@
+/// app profile details header cont bg color
+/// @group profile-details-header
+$fcm-profile-details-header-cont-bg-color: $primary-dark !default;
+
+/// app profile details header cont mask gradient
+/// @group profile-details-header
+$fcm-profile-details-header-cont-mask-gradient:
+  linear-gradient(
+    rgba(19, 25, 41, 0) 0%,
+    rgba(19, 25, 41, 0) 30%, $primary-dark 100%) !default;
+
+/// app profile details header cont mask z-index
+/// @group profile-details-header
+$fcm-profile-details-header-cont-mask-z-index: 3 !default;
+
+/// app profile details header max-width
+/// @group profile-details-header
+$fcm-profile-details-header-max-width: 70rem !default;
+
+/// app profile details header player transition
+/// @group profile-details-header
+$fcm-profile-details-header-player-transition: visibility 1s .5s ease-in-out,
+opacity 1s .5s ease-in-out !default;
+
+/// app profile details header bar name color
+/// @group profile-details-header
+$fcm-profile-details-header-bar-name-color: $white !default;
+
+/// app profile details header bar name font-size
+/// @group profile-details-header
+$fcm-profile-details-header-name-font-size: 3rem !default;
+
+
+/// app profile details header bar surname font-size
+/// @group profile-details-header
+$fcm-profile-details-header-bar-surname-font-size: 26rem !default;
+
+/// app profile details header bar surname font-family
+/// @group profile-details-header
+$fcm-profile-details-header-bar-surname-font-family: $fcm-font-family-gothic !default;
+
+/// app profile details header bar surname color
+/// @group profile-details-header
+$fcm-profile-details-header-bar-surname: $secondary !default;
+
+/// app profile details header bar team color
+/// @group profile-details-header
+$fcm-profile-details-header-bar-team-color: #a6adbb !default;
+
+/// app profile details header bar team font-size
+/// @group profile-details-header
+$fcm-profile-details-header-bar-team-color: $fcm-profile-details-header-name-font-size !default;

@@ -1,11 +1,11 @@
 .#{$prefix}profile-details-header-cont {
   min-height: 100vh;
   position: relative;
-  background: #131929;
+  background: $fcm-profile-details-header-cont-bg-color;
   
   &::before {
     content: '';
-    background-image: linear-gradient(rgba(19, 25, 41, 0) 0%, rgba(19, 25, 41, 0) 30%, #131929 100%);
+    background-image: $fcm-profile-details-header-cont-mask-gradient;
     display: block;
     position: absolute;
     top: 0;
@@ -13,7 +13,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: 3;
+    z-index: $fcm-profile-details-header-cont-mask-z-index;
   }
   
   .#{$prefix}profile-details-header {
@@ -21,48 +21,94 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
-    max-width: 700px;
+    max-width: $fcm-profile-details-header-max-width;
     width: 100%;
     bottom: 0;
     height: calc(100vh - 160px);
-    left: calc(50% - 350px);
+    left: calc(50% - #{$fcm-profile-details-header-max-width / 2});
     background-color: transparent;
     z-index: 2;
+    transition: $fcm-profile-details-header-player-transition;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    
+    &.page-loaded {
+      opacity: 1 !important;
+      visibility: visible !important;
+    }
+  
+    @include media-breakpoint-down(xs) {
+      max-width: 100%;
+      left: 0;
+      background-position: bottom;
+    }
   }
   
   .#{$prefix}profile-details-header-bar {
-    height: 255px;
     display: flex;
     flex-direction: column;
     position: absolute;
-    top: calc(50% - 150px);
+    top: calc(50% - 160px);
     left: 0;
     align-items: center;
     width: 100%;
-    line-height: 0;
+    line-height: 1;
+  
+    @include media-breakpoint-down(md) {
+      top: calc(50% - 130px);
+    }
+    
+    @include media-breakpoint-down(sm) {
+      top: calc(50% - 100px);
+    }
   
     .#{$prefix}profile-details-header-name {
-      color: $white;
-      font-size: 3rem;
+      color: $fcm-profile-details-header-bar-name-color;
+      font-size: $fcm-profile-details-header-name-font-size;
       text-transform: uppercase;
-      line-height: 7rem;
+  
+      @include media-breakpoint-down(sm) {
+        font-size: 2rem;
+      }
+  
+      @include media-breakpoint-down(xs) {
+        font-size: 1.4rem;
+      }
     }
     
     .#{$prefix}profile-details-header-surname {
-      font-size: 26rem;
-      font-family: $fcm-font-family-gothic;
-      color: $secondary;
+      font-size: $fcm-profile-details-header-bar-surname-font-size;
+      font-family: $fcm-profile-details-header-bar-surname-font-family;
+      color: $fcm-profile-details-header-bar-surname;
       text-transform: uppercase;
-      line-height: 16rem;
+  
+      @include media-breakpoint-down(md) {
+        font-size: 20rem;
+      }
+      
+      @include media-breakpoint-down(sm) {
+        font-size: 16rem;
+      }
+  
+      @include media-breakpoint-down(xs) {
+        font-size: 10rem;
+      }
     }
     
     .#{$prefix}profile-details-header-team {
-      color: #a6adbb;
-      line-height: 3rem;
-      font-size: 3rem;
+      color: $fcm-profile-details-header-bar-team-color;
+      font-size: $fcm-profile-details-header-bar-team-color;
       text-transform: uppercase;
       text-align: right;
-    } //TODO refactor and contiune
+  
+      @include media-breakpoint-down(sm) {
+        font-size: 2rem;
+      }
+  
+      @include media-breakpoint-down(xs) {
+        font-size: 1.4rem;
+      }
+    }
   }
 }
 
