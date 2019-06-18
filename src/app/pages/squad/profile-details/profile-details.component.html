@@ -1,43 +1,51 @@
 <app-profile-details-header [confing]="profile"></app-profile-details-header>
 <div class="fcm-profile-details-body">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-6 col-sm-12 col-12">
-          <div class="fcm-profile-details-body-number">
-            {{profile.number}}
-          </div>
-          <div class="fcm-profile-details-body-img"
-               [ngClass]="profile.surname.toLowerCase()">
-          </div>
+  <div class="fcm-profile-details-section-holder">
+    <div class="fcm-profile-details-body-section">
+      <div class="fcm-profile-details-body-number">
+        {{profile.number}}
       </div>
-      <div class="col-md-6 col-sm-12 col-12">
-        <h3>{{profile.name}} {{profile.surname}} {{profile.number}}</h3>
-        <div class="row">
-          <div class="col-md-8 col-sm-12 col-12">
-            <div>
-              <span class="fcm-profile-label">Birthdate</span>
-              <span>{{profile.birthday}} {{profile.birthCity}}</span>
-            </div>
-            <div>
-              <span class="fcm-profile-label">Nationality</span>
-              <span>{{profile.nationality}} </span>
-              <span [ngClass]="getNationalFlage()"></span>
-            </div>
-            <div>
-              <span class="fcm-profile-label">Height/Weight</span>
-              <span>{{profile.height}}/{{profile.weight}}</span>
-            </div>
-            <div>
-              <span class="fcm-profile-label">Skills</span>
-              {{profile.skills}}
-            </div>
+      <div class="fcm-profile-details-body-img"
+           [ngClass]="profile.surname.toLowerCase()">
+      </div>
+    </div>
+    <div class="fcm-profile-details-body-section">
+      <h3 class="fcm-player-name">{{profile.name}} {{profile.surname}} {{profile.number}}</h3>
+      <div class="fcm-section-inner">
+        <div class="fcm-right-section-item-holder">
+          <div class="fcm-body-section-item">
+            <span class="fcm-body-section-item-label">Birthdate</span>
+            <span>{{profile.birthday}} {{profile.birthCity}}</span>
           </div>
-          <div class="col-md-4 col-sm-12 col-12">
-            <div class="fcm-player-position"></div>
-            <div>{{profile.position}}</div>
+          <div class="fcm-body-section-item">
+            <span class="fcm-body-section-item-label">Nationality</span>
+            <span>
+            {{profile.nationality}}
+            <span class="fcm-body-section-item-flag" [ngClass]="getNationalFlage()"></span>
+          </span>
+          </div>
+          <div class="fcm-body-section-item">
+            <span class="fcm-body-section-item-label">Height/Weight</span>
+            <span>{{profile.height}} / {{profile.weight}}</span>
+          </div>
+          <div class="fcm-body-section-item">
+            <span class="fcm-body-section-item-label">Skills</span>
+            <span>{{profile.skills}}</span>
           </div>
         </div>
+        <div class="fcm-player-on-field">
+          <div class="fcm-body-section-pitch"></div>
+          <div class="fcm-player-position">{{profile.position}}</div>
+        </div>
       </div>
+    </div>
+  </div>
+  <div class="fcm-profile-body-sponsors">
+    <div class="fcm-profile-body-sponsor-holder">
+      <div class="fcm-profile-body-sponsor nike"></div>
+      <div class="fcm-profile-body-sponsor emirates"></div>
+      <div class="fcm-profile-body-sponsor oredo"></div>
+      <div class="fcm-profile-body-sponsor qnb"></div>
     </div>
   </div>
 </div>

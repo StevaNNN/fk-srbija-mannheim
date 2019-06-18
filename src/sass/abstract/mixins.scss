@@ -62,7 +62,7 @@
 /// @author Stevan Stojanovic
 ///
 /// @param $class-list {list} of team players stored in var.scss
-@mixin class-name-same-as-backgound-image-name($class-list...) {
+@mixin class-name-same-as-background-image-name($class-list...) {
   $path: $fcm-img-path;
   $header-img-path: $fcm-img-path + 'players/details/header/';
   $body-img-path: $fcm-img-path + 'players/details/body/';
@@ -85,6 +85,27 @@
         &.#{$class} {
           background-image: url($body-img-path + 'details-body-' + $class + $sufix);
         }
+      }
+    }
+  }
+}
+
+/// @name class name same as flag name
+///
+/// @author Stevan Stojanovic
+///
+/// @param $class-list {list} of flags stored in var.scss
+@mixin class-name-same-as-flag-name($class-list...) {
+  $path: $fcm-img-path;
+  $flag-path: $path + 'flags/';
+  $sufix: '.svg';
+  
+  @for $i from 1 through length($class-list) {
+    $list-of-classes: nth($class-list, $i);
+    
+    @each $class in $list-of-classes {
+      .#{$class}-flag {
+        background-image: url($flag-path + $class + $sufix);
       }
     }
   }

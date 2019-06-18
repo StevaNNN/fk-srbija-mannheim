@@ -1,0 +1,144 @@
+.#{$prefix}profile-details-body {
+  min-height: 100vh;
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.#{$prefix}profile-details-section-holder {
+  display: flex;
+  
+  .#{$prefix}profile-details-body-section {
+    flex: .5;
+    padding: 6rem 4rem;
+    position: relative;
+    
+    &:nth-of-type(2) {
+      background-color: #fafafa;
+    }
+  }
+  
+  .#{$prefix}profile-details-body-img {
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    max-height: 685px;
+    max-width: 685px;
+    position: absolute;
+    right: 0;
+    top: 6rem;
+    width: 100%;
+    z-index: 2;
+  }
+  
+  .#{$prefix}profile-details-body-number {
+    color: $secondary;
+    font-family: $fcm-font-family-gothic;
+    font-size: 50rem;
+    font-weight: 500;
+    text-align: center;
+    text-indent: 270px;
+    z-index: 1;
+  }
+  
+  .#{$prefix}player-name {
+    font-family: $fcm-font-family-bold;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+  }
+  
+  .#{$prefix}body-section-item {
+    display: flex;
+    margin-bottom: 2rem;
+    
+    span {
+      &:nth-of-type(2) {
+        flex: .7;
+      }
+    }
+  }
+  
+  .#{$prefix}body-section-item-flag {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-flex;
+    height: 1.2rem;
+    width: 1.8rem;
+  }
+  
+  .#{$prefix}body-section-item-label {
+    color: #9d9c9c;
+    flex: .3;
+  }
+  
+  .#{$prefix}section-inner {
+    display: flex;
+  }
+  
+  .#{$prefix}right-section-item-holder {
+    flex: 1;
+  }
+  
+  .#{$prefix}body-section-pitch {
+    background-image: url('#{$fcm-img-path}football-pitch.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80px;
+    position: relative;
+    width: 130px;
+    
+    &::before {
+      background-color: $secondary;
+      border-radius: 50%;
+      content: '';
+      height: .8rem;
+      left: 75%;
+      position: absolute;
+      top: calc(50% - .4rem);
+      width: .8rem;
+    }
+  }
+  
+  .#{$prefix}player-position {
+    margin-top: 1rem;
+  }
+}
+.#{$prefix}profile-body-sponsors {
+  justify-content: center;
+  display: flex;
+  padding: 2rem;
+  border-top: 1px solid #e9e9e9;
+  
+  .#{$prefix}profile-body-sponsor-holder {
+    display: flex;
+  }
+  
+  .#{$prefix}profile-body-sponsor {
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    height: 6rem;
+    
+    &.nike {
+      width: 14.9em;
+      background-image: url('#{$fcm-img-path}nike.png');
+    }
+    
+    &.oredo {
+      width: 18.4rem;
+      background-image: url('#{$fcm-img-path}ooredoo.png');
+    }
+    
+    &.emirates {
+      width: 13.3rem;
+      background-image: url('#{$fcm-img-path}emirates.png');
+    }
+    
+    &.qnb {
+      background-image: url('#{$fcm-img-path}qnb.png');
+      width: 14.8rem;
+    }
+  }
+}

@@ -9,6 +9,7 @@
   user-select: none;
   max-width: $fcm-team-member-max-width;
   min-width: $fcm-team-member-max-width;
+  box-shadow: $fcm-team-member-box-shadow;
   
   @include media-breakpoint-down(lg) {
     min-width: auto;

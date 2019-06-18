@@ -37,6 +37,6 @@ export class ProfileDetailsComponent implements OnInit {
   }
 
   getNationalFlage() {
-    return `fcm-nationality-flag-${this.profile.nationality.toLowerCase ()}`;
+    return `${this.profile.nationality.toLowerCase ()}-flag`;
   }
 }
