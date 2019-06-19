@@ -21,6 +21,9 @@
 /// Third party libraries ready for overriding them with our variables
 @import 'sass/vendors/bootstrap';
 
+/// Import Shared
+@import 'sass/shared/shared';
+
 /// Override bootstrap imports
 @import 'sass/override/bootstrap-reboot-override';
 @import 'sass/override/bootstrap-btn-override';
@@ -28,6 +31,7 @@
 
 /// Component's variables
 @import 'sass/components/var/navbar';
+@import 'sass/components/var/footer';
 @import 'sass/components/var/info-container';
 @import 'sass/components/var/btn';
 @import 'sass/components/var/side-nav';
