@@ -8,7 +8,7 @@ $fcm-side-nav-navbar-width: 35rem !default;
 
 /// fcm side nav navbar padding
 /// @group side-nav
-$fcm-side-nav-navbar-padding: #{$fcm-navbar-total-height} 2.5rem 0 !default;
+$fcm-side-nav-navbar-padding: #{$fcm-navbar-total-height} 0 0 !default;
 
 /// fcm side nav navbar transition
 /// @group side-nav
@@ -17,6 +17,14 @@ $fcm-side-nav-navbar-transition: $fcm-navbar-transition !default;
 /// fcm side nav item color
 /// @group side-nav
 $fcm-side-nav-item-color: rgba($white, .5) !default;
+
+/// fcm side nav item background color
+/// @group side-nav
+$fcm-side-nav-item-bg-color: rgba(166,173,187, .3) !default;
+
+/// fcm side nav item padding
+/// @group side-nav
+$fcm-side-nav-item-padding: 1rem 2.5rem !default;
 
 /// fcm side nav item over color
 /// @group side-nav

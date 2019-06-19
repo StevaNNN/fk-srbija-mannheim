@@ -1,21 +1,16 @@
 <app-top-bar [config]="topBarConfig"></app-top-bar>
-<div class="d-flex fixed-top fcm-navbar w-100" id="fcm-navbar-wrap"
+<div class="d-flex fixed-top fcm-navbar w-100"
+     id="fcm-navbar-wrap"
      [ngClass]="{'side-menu-open': navbarOpen}">
   <nav class="navbar navbar-expand-md navbar-toggleable-md w-100">
-    <span class="mr-2" [ngClass]="navbarOpen? 'close-white-big-icon' : 'menu-white-big-icon'"
+    <span class="mr-2"
+          [ngClass]="navbarOpen? 'close-white-big-icon' : 'menu-white-big-icon'"
           (click)="toggleNavbar()"></span>
     <ul class="navbar-nav fcm-list-of-links">
       <li class="nav-item">
-        <a class="nav-link" href="#">psg.fr</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">billets</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">boutique</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">myparis</a>
+        <a class="nav-link"
+           routerLinkActive="active"
+           routerLink="home">shop</a>
       </li>
       <li class="nav-item"
           routerLinkActive="active"

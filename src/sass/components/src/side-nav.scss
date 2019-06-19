@@ -25,9 +25,12 @@ app-side-nav {
   .nav-item {
     color: $fcm-side-nav-item-color;
     transition: unquote($fcm-side-nav-item-transition);
+    padding: $fcm-side-nav-item-padding;
     
     &:hover {
       color: $fcm-side-nav-item-over-color;
+      background-color: $fcm-side-nav-item-bg-color;
+      padding: 1rem 3rem;
     }
   }
   

@@ -73,14 +73,14 @@
     
     @each $class in $list-of-classes {
       
-      .#{$prefix}profile-details-header {
+      .#{$prefix}profile-header-player-img {
         
         &.#{$class} {
           background-image: url($header-img-path + 'details-header-' + $class + $sufix);
         }
       }
       
-      .#{$prefix}profile-details-body-img {
+      .#{$prefix}profile-body-player-img {
         
         &.#{$class} {
           background-image: url($body-img-path + 'details-body-' + $class + $sufix);
