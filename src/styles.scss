@@ -13,10 +13,10 @@
 @include generate-icon-by-size;
 
 /// image as class
-@include class-name-same-as-background-image-name($fcm-list-of-players);
+@include class-name-same-as-background-image-name;
 
 /// flag as class
-@include class-name-same-as-flag-name($fcm-list-of-flags);
+@include class-name-same-as-flag-name;
 
 /// Third party libraries ready for overriding them with our variables
 @import 'sass/vendors/bootstrap';

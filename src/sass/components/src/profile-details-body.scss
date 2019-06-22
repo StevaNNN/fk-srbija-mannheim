@@ -8,7 +8,7 @@
     display: flex;
     
     @include media-breakpoint-down(sm) {
-      flex-direction: column;
+      flex-direction: column-reverse;
     }
     
     .#{$prefix}profile-body-section {
@@ -152,54 +152,6 @@
         .#{$prefix}profile-body-player-position {
           margin-top: 1rem;
         }
-      }
-    }
-  }
-  
-  .#{$prefix}profile-body-sponsors {
-    border-top: 1px solid $fcm-profile-body-sponsors-border-color;
-    display: flex;
-    justify-content: center;
-    padding: $fcm-profile-body-sponsors-padding;
-    
-    .#{$prefix}profile-body-sponsor-holder {
-      display: flex;
-      
-      @include media-breakpoint-down(xs) {
-        align-items: center;
-        flex-direction: column;
-      }
-    }
-    
-    .#{$prefix}profile-body-sponsor {
-      background-color: transparent;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: contain;
-      height: 6rem;
-      
-      @include media-breakpoint-down(xs) {
-        margin-bottom: 2rem;
-      }
-      
-      &.nike {
-        background-image: url('#{$fcm-img-path}nike.png');
-        width: 8em;
-      }
-      
-      &.oredo {
-        background-image: url('#{$fcm-img-path}ooredoo.png');
-        width: 15.4rem;
-      }
-      
-      &.emirates {
-        background-image: url('#{$fcm-img-path}emirates.png');
-        width: 13.3rem;
-      }
-      
-      &.qnb {
-        background-image: url('#{$fcm-img-path}qnb.png');
-        width: 14.8rem;
       }
     }
   }

@@ -3,3 +3,11 @@
 html {
     font-size: 62.5%;
 }
+
+/// reset lists
+/// @group bootstrap
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}

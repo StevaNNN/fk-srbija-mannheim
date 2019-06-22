@@ -103,15 +103,42 @@ $fcm-app-nav-bar-height: 10rem;
 /// @group app-config
 $fcm-app-nav-bar-z-index: 1000;
 
-/// animation
+/// animation duration
 /// @group app-config
 $fcm-transition-duration: '.2s';
+
+/// animation type
+/// @group app-config
 $fcm-transition-animation: 'ease-in-out';
 
 /// list of players
 /// @group app-config
-$fcm-list-of-players: mbappe;
+$fcm-list-of-players: 'mbappe';
 
 /// list of flags
 /// @group app-config
-$fcm-list-of-flags: french;
+$fcm-list-of-flags: 'french';
+
+/// list of sponsors
+/// @group app-config
+$fcm-list-of-sponsors:
+  'sponsor-1'
+  'sponsor-2'
+  'sponsor-3'
+  'sponsor-4'
+  'sponsor-5'
+  'sponsor-5'
+  'sponsor-6'
+  'sponsor-7'
+  'sponsor-8'
+  'sponsor-9'
+;
+
+/// list of social platforms
+/// @group app-config
+$fcm-social-platform-list:
+  'facebook'
+  'instagram'
+  'twitter'
+  'youtube'
+;
