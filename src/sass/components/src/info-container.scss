@@ -6,8 +6,8 @@
   min-height: 100vh;
   position: relative;
   
-  &.fcm-squad-info-container {
-    min-height: calc(100vh - 7.2rem); // height of the squad filter cont
+  &.fcm-first-team-info-container {
+    min-height: calc(100vh - 7.2rem); // height of the first-team filter cont
   }
   
   .#{$prefix}info-bar {

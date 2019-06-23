@@ -1,6 +1,10 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {Store} from '@ngrx/store';
+import {AppState} from '../../state';
+import * as EventsActions from '../../state/actions/events.actions';
+import * as PlayersActions from '../../state/actions/players.actions';
 
-@Component ({
+@Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss']
@@ -15,10 +19,13 @@ export class HomeComponent implements OnInit {
     btnText: 'Read more'
   };
 
-  constructor() {
+  constructor(private store: Store<AppState>) {
   }
 
   ngOnInit() {
+    this.store.dispatch(new EventsActions.LoadEvents());
+    this.store.dispatch(new PlayersActions.LoadPlayers());
+    this.store.dispatch(new PlayersActions.LoadStaffs());
   }
 
 }

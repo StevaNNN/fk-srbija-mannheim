@@ -2,19 +2,30 @@
      [ngClass]="{ 'show': navbarOpen }">
   <ul class="navbar-nav">
     <li class="nav-item">
-      <a class="nav-link" href="#">psg.fr</a>
+      <a class="nav-link"
+         routerLinkActive="active"
+         routerLink="home">Home</a>
     </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">billets</a>
+
+    <li class="nav-item dropdown" ngbDropdown>
+      <a class="nav-link dropdown-toggle" id="fcm-first-team-sidenav" ngbDropdownToggle>First team</a>
+      <div class="dropdown-menu" aria-labelledby="fcm-first-team-sidenav" ngbDropdownMenu>
+        <a class="dropdown-item btn"
+           routerLinkActive="active"
+           routerLink="/first-team/squad">Squad</a>
+        <a class="dropdown-item btn"
+           routerLinkActive="active"
+           routerLink="/first-team/league-table">League table</a>
+        <a class="dropdown-item btn"
+           routerLinkActive="active"
+           routerLink="/first-team/fixtures-and-results">Fixtures and results</a>
+      </div>
     </li>
+
     <li class="nav-item">
-      <a class="nav-link" href="#">boutique</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">myparis</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">experience</a>
+      <a class="nav-link"
+         routerLinkActive="active"
+         routerLink="shop">Shop</a>
     </li>
   </ul>
 </div>

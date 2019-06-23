@@ -1,0 +1,27 @@
+<div class="fcm-first-team-page">
+  <app-info-container [confing]="headerConfing" class="fcm-first-team-info-cont"></app-info-container>
+  <div class="fcm-first-team-body">
+    <div class="fcm-first-team-filter-container">
+      <div class="btn-group" role="group">
+        <button type="button"
+                routerLinkActive="active"
+                routerLink="squad"
+                class="btn">Squad
+        </button>
+        <button type="button"
+                routerLinkActive="active"
+                routerLink="league-table"
+                class="btn">League table
+        </button>
+        <button type="button"
+                routerLinkActive="active"
+                routerLink="fixtures-and-results"
+                class="btn">Feaxtures and results
+        </button>
+      </div>
+    </div>
+    <router-outlet></router-outlet>
+  </div>
+</div>
+<app-footer></app-footer>
+

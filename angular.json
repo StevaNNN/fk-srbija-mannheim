@@ -145,5 +145,8 @@
       }
     }
   },
-  "defaultProject": "fk-srbija-mannheim"
+  "defaultProject": "fk-srbija-mannheim",
+  "cli": {
+    "defaultCollection": "@ngrx/schematics"
+  }
 }
