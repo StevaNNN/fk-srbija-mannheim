@@ -23,11 +23,19 @@
     
     .#{$prefix}footer-nav-row {
       display: flex;
-      
-      .#{$prefix}footer-nav {
-        flex: 1;
-        max-width: 25.3rem;
-      }
+    }
+  
+    .#{$prefix}footer-nav {
+      flex: 1;
+      max-width: 25.3rem;
+    }
+    
+    .#{$prefix}footer-nav-title {
+      text-transform: uppercase;
+    }
+    .#{$prefix}footer-nav-link {
+      color: #a6adbb;
+      font-size: $fcm-font-size-sm;
     }
     
     .#{$prefix}footer-logo-holder {
