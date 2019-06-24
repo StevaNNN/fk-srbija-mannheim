@@ -1,4 +1,89 @@
-<p>
-  league-table works!
-</p>
-
+<div class="fcm-league-table-tab">
+  <div class="fcm-table-wrap">
+    <h3 class="fcm-table-headline">League</h3>
+    <div class="fcm-table">
+      <div class="fcm-table-head">
+        <div class="fcm-table-row fcm-table-header-row">
+          <div class="fcm-table-cell">
+            POS
+          </div>
+          <div class="fcm-table-cell team-cell">
+            TEAM
+          </div>
+          <div class="fcm-table-cell">
+            PTS
+          </div>
+          <div class="fcm-table-cell">
+            P
+          </div>
+          <div class="fcm-table-cell">
+            W
+          </div>
+          <div class="fcm-table-cell">
+            D
+          </div>
+          <div class="fcm-table-cell">
+            L
+          </div>
+          <div class="fcm-table-cell">
+            GS
+          </div>
+          <div class="fcm-table-cell">
+            GA
+          </div>
+          <div class="fcm-table-cell">
+            GD
+          </div>
+        </div>
+      </div>
+      <div class="fcm-table-body">
+        <div class="fcm-table-row"
+             *ngFor="let team of teamStats"
+              [ngClass]="{'fc-mannheim': team.teamFCM}">
+          <div class="fcm-table-cell first-cell">
+            {{team.teamPosition}}
+          </div>
+          <div class="fcm-table-cell team-cell">
+          <span class="fcm-team-avatar"
+                [style.backgroundImage]="'url(' + team.teamAvatar + ')'"></span>
+            <span class="fcm-team-name">
+              {{team.teamName}}
+            </span>
+          </div>
+          <div class="fcm-table-cell">
+            {{team.teamPlayed}}
+          </div>
+          <div class="fcm-table-cell">
+            {{team.teamPoints}}
+          </div>
+          <div class="fcm-table-cell">
+            {{team.teamWins}}
+          </div>
+          <div class="fcm-table-cell">
+            {{team.teamDraws}}
+          </div>
+          <div class="fcm-table-cell">
+            {{team.teamLoses}}
+          </div>
+          <div class="fcm-table-cell">
+            {{team.teamGoalsScored}}
+          </div>
+          <div class="fcm-table-cell">
+            {{team.teamGoalsAgainst}}
+          </div>
+          <div class="fcm-table-cell">
+            {{team.teamGoalsDifference}}
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="fcm-sponsors-bar fcm-profile-body-sponsors">
+      <div class="fcm-sponsors-bar-holder">
+        <div class="fcm-sponsor sponsor-8"></div>
+        <div class="fcm-sponsor sponsor-6"></div>
+        <div class="fcm-sponsor sponsor-7"></div>
+        <div class="fcm-sponsor sponsor-9"></div>
+      </div>
+    </div>
+  </div>
+</div>
