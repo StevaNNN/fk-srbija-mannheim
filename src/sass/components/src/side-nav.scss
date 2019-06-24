@@ -23,19 +23,54 @@ app-side-nav {
   }
   
   .nav-item {
-    color: $fcm-side-nav-item-color;
-    transition: unquote($fcm-side-nav-item-transition);
-    padding: $fcm-side-nav-item-padding;
-    
-    &:hover {
-      color: $fcm-side-nav-item-over-color;
-      background-color: $fcm-side-nav-item-bg-color;
-      padding: 1rem 3rem;
+    font-family: $fcm-side-nav-item-font-family;
+  
+    .nav-link {
+      padding: $fcm-side-nav-item-padding;
+      letter-spacing: 1px;
+      color: $fcm-side-nav-item-color;
+      transition: unquote($fcm-side-nav-item-transition);
+      font-size: $fcm-side-nav-item-font-size;
+      text-transform: uppercase;
+      align-items: center;
+      display: flex;
+      justify-content: space-between;
+  
+      &:hover {
+        color: $fcm-side-nav-item-over-color;
+        background-color: $fcm-side-nav-item-bg-color;
+      }
     }
   }
   
-  .nav-link {
-    color: inherit;
+  .#{$prefix}side-nav-dropdown-menu {
+    display: flex;
+    flex-direction: column;
+    visibility: hidden;
+    opacity: 0;
+    height: 0;
+    transition: all .3s ease-in-out;
+    
+    .btn {
+      font-family: $fcm-side-nav-item-font-family;
+      color: $fcm-side-nav-item-color;
+      padding: 1rem 2.5rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-size: $fcm-side-nav-item-font-size;
+      transition: unquote($fcm-side-nav-item-transition);
+      
+      &:hover {
+        color: $fcm-side-nav-item-over-color;
+        background-color: $fcm-side-nav-item-bg-color;
+      }
+    }
+    
+    &.show {
+      height: auto;
+      opacity: 1;
+      visibility: visible;
+    }
   }
   
   &.show {

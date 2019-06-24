@@ -9,7 +9,13 @@ export class SideNavComponent implements OnInit {
 
   @Input() navbarOpen: any;
 
+  public dropdownOpen = false;
+
   constructor() { }
+
+  public toogleDropdown() {
+    this.dropdownOpen = !this.dropdownOpen;
+  }
 
   ngOnInit() {
   }

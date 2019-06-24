@@ -53,6 +53,7 @@ app-nav-bar {
       transition: unquote($fcm-navbar-item-transition);
       font-size: $fcm-navbar-item-font-size;
       text-transform: unquote($fcm-navbar-item-text-transform);
+      letter-spacing: 1px;
       
       @include hover-focus {
         color: $fcm-navbar-item-hover-color;

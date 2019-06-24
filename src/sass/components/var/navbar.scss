@@ -44,11 +44,11 @@ $fcm-navbar-item-disabled-color: rgba($gray-400, .3) !default;
 
 /// fcm navbar item font family
 /// @group fcm-navbar
-$fcm-navbar-item-font-family: $fcm-font-family-medium !default;
+$fcm-navbar-item-font-family: $fcm-font-family-gothic !default;
 
 /// fcm navbar item font size
 /// @group fcm-navbar
-$fcm-navbar-item-font-size: 1.4rem !default;
+$fcm-navbar-item-font-size: $fcm-font-family-medium !default;
 
 /// fcm navbar item text-transform
 /// @group fcm-navbar

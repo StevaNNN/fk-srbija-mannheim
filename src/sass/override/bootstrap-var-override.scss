@@ -20,3 +20,15 @@ $neutral-color: #f4f4f4;
 $spacer: 2rem;
 
 $grid-gutter-width: 2rem;
+
+
+$dropdown-bg: $primary-medium-dark;
+$dropdown-color: #fff;
+$dropdown-border-color: $dropdown-color;
+
+$dropdown-link-color: rgba($dropdown-color, .7);
+$dropdown-link-hover-color: $dropdown-color;
+$dropdown-link-hover-bg: rgba($dropdown-bg, .7);
+
+$dropdown-item-padding-y:  2rem;
+$dropdown-item-padding-x:  $dropdown-item-padding-y;

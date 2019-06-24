@@ -18,6 +18,14 @@ $fcm-side-nav-navbar-transition: $fcm-navbar-transition !default;
 /// @group side-nav
 $fcm-side-nav-item-color: rgba($white, .5) !default;
 
+/// fcm side nav item font-family
+/// @group side-nav
+$fcm-side-nav-item-font-family: $fcm-font-family-gothic !default;
+
+/// fcm side nav item font-size
+/// @group side-nav
+$fcm-side-nav-item-font-size: $fcm-font-size-md !default;
+
 /// fcm side nav item background color
 /// @group side-nav
 $fcm-side-nav-item-bg-color: rgba(166,173,187, .3) !default;
