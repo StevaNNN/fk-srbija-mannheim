@@ -1,0 +1,75 @@
+.#{$prefix}first-team-tab {
+  
+  /// @group first-team
+  .#{$prefix}first-team-container {
+    align-items: center;
+    background-color: $fcm-first-team-container-bg-color;
+    border-bottom: $fcm-first-team-container-border-width solid $fcm-first-team-container-border-color;
+    display: flex;
+    justify-content: center;
+    
+    .btn {
+      font-family: $fcm-first-team-btn-font-family;
+      font-size: $fcm-first-team-btn-font-size;
+      padding: 2.5rem;
+      position: relative;
+      text-transform: uppercase;
+      
+      &.active,
+      &:hover {
+        color: $fcm-first-team-btn-active-color;
+        
+        &::after {
+          left: -100%;
+          opacity: 1;
+          transform: translateX(100%);
+          visibility: visible;
+        }
+      }
+      
+      &::after {
+        background-color: $secondary;
+        bottom: 0;
+        content: '';
+        height: 2px;
+        left: 0;
+        opacity: 0;
+        position: absolute;
+        transform: translateX(0);
+        transition: all .3s ease-in-out;
+        visibility: hidden;
+        width: 100%;
+      }
+    }
+  }
+  
+  /// @group fcm-position-container
+  .#{$prefix}position-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 140rem;
+    width: 100%;
+    margin: 0 auto;
+    
+    .#{$prefix}member-wrap {
+      padding: 0 1rem;
+    }
+  
+    .#{$prefix}position-inner-cont {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    
+    &:first-of-type {
+      
+      .#{$prefix}position-title {
+        margin-top: 5rem;
+      }
+    }
+    
+    .#{$prefix}position-title {
+      font-family: $fcm-font-family-bold;
+      margin: 2rem 0 5rem 0;
+    }
+  }
+}

@@ -24,7 +24,7 @@ $fcm-navbar-item-color: $white !default;
 
 /// fcm navbar item transition
 /// @group fcm-navbar
-$fcm-navbar-item-transition: $fcm-navbar-transition !default;
+$fcm-navbar-item-transition: 'background-color .4s ease-in-out, color .4s ease-in-out' !default;
 
 /// fcm navbar item hover color
 /// @group fcm-navbar
@@ -48,7 +48,7 @@ $fcm-navbar-item-font-family: $fcm-font-family-gothic !default;
 
 /// fcm navbar item font size
 /// @group fcm-navbar
-$fcm-navbar-item-font-size: $fcm-font-family-medium !default;
+$fcm-navbar-item-font-size: $fcm-font-size-md !default;
 
 /// fcm navbar item text-transform
 /// @group fcm-navbar

@@ -29,33 +29,43 @@
 @import 'sass/override/bootstrap-btn-override';
 @import 'sass/override/bootstrap-nav-override';
 
-/// Component's variables
-@import 'sass/components/var/navbar';
-@import 'sass/components/var/footer';
-@import 'sass/components/var/info-container';
-@import 'sass/components/var/btn';
-@import 'sass/components/var/side-nav';
-@import 'sass/components/var/top-bar';
-@import 'sass/components/var/team-member';
-@import 'sass/components/var/profile-details-header';
-@import 'sass/components/var/profile-details-body';
+/// Component's
+@import 'sass/components/button/btn-var';
+@import 'sass/components/button/btn-src';
 
-/// Component's source
-@import 'sass/components/src/footer';
-@import 'sass/components/src/navbar';
-@import 'sass/components/src/info-container';
-@import 'sass/components/src/btn';
-@import 'sass/components/src/side-nav';
-@import 'sass/components/src/top-bar';
-@import 'sass/components/src/team-member';
-@import 'sass/components/src/profile-details-header';
-@import 'sass/components/src/profile-details-body';
+@import 'sass/components/footer/footer-var';
+@import 'sass/components/footer/footer-src';
 
-/// Page imports
-@import 'sass/pages/var/home';
-@import 'sass/pages/var/first-team';
-@import 'sass/pages/var/league-table';
+@import 'sass/components/info-container/info-container-var';
+@import 'sass/components/info-container/info-container-src';
 
-@import 'sass/pages/src/home';
-@import 'sass/pages/src/first-team';
-@import 'sass/pages/src/league-table';
+@import 'sass/components/navbar/navbar-var';
+@import 'sass/components/navbar/navbar-src';
+
+@import 'sass/components/profile/profile-head/profile-header-var';
+@import 'sass/components/profile/profile-head/profile-header-src';
+
+@import 'sass/components/profile/profile-body/profile-body-var';
+@import 'sass/components/profile/profile-body/profile-body-src';
+
+@import 'sass/components/side-nav/side-nav-var';
+@import 'sass/components/side-nav/side-nav-src';
+
+@import 'sass/components/team-member/team-member-var';
+@import 'sass/components/team-member/team-member-src';
+
+@import 'sass/components/top-bar/top-bar-var';
+@import 'sass/components/top-bar/top-bar-src';
+
+/// Page's
+@import 'sass/pages/home/home-var';
+@import 'sass/pages/home/home-src';
+
+@import 'sass/pages/first-team/first-team-var';
+@import 'sass/pages/first-team/first-team-src';
+
+@import 'sass/pages/first-team/fixtures-and-results/fixtures-and-results-var';
+@import 'sass/pages/first-team/fixtures-and-results/fixtures-and-results-src';
+
+@import 'sass/pages/first-team/league-table/league-table-var';
+@import 'sass/pages/first-team/league-table/league-table-src';

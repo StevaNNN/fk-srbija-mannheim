@@ -1,0 +1,22 @@
+.#{$prefix}results-tab {
+  display: flex;
+  justify-content: center;
+  
+  .#{$prefix}table-wrap {
+    max-width: 140rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .#{$prefix}table-row {
+    display: flex;
+    padding: 2rem;
+  }
+  
+  .#{$prefix}teams-result {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+  }
+}

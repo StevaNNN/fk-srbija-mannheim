@@ -1,7 +1,5 @@
 /// @name add all fonts
-///
 /// @author Stevan Stojanovic
-///
 /// @param $font-names {string/string's} provide the list of font names/or single font name
 
 @mixin add-all-fonts(
@@ -22,9 +20,7 @@
 }
 
 /// @name generate-icon-by-size
-///
 /// @author Stevan Stojanovic
-///
 /// @param $map {map} of icons stored by theirs size
 /// @param $unit {string} unit used for determining size of the icon wrapper
 
@@ -60,10 +56,9 @@
 }
 
 /// @name class name same as team member name
-///
 /// @author Stevan Stojanovic
-///
 /// @param $class-list {list} of team players stored in var.scss
+
 @mixin class-name-same-as-background-image-name(
   $member-list: $fcm-list-of-players) {
   
@@ -94,10 +89,9 @@
 }
 
 /// @name class name same as flag name
-///
 /// @author Stevan Stojanovic
-///
 /// @param $class-list {list} of flags stored in var.scss
+
 @mixin class-name-same-as-flag-name(
   $flag-list: $fcm-list-of-flags) {
   
@@ -116,11 +110,10 @@
 }
 
 /// @name sponsors-css-generator
-///
 /// @author Stevan Stojanovic
-///
 /// @param $class-list {list} list of sponsors sinqle quoted without comma stored in var.scss
 /// Basicly this is custom component for sponsors bar and sponsor icons bar
+
 @mixin sponsors-css-generator(
   $sponsors-list: $fcm-list-of-sponsors,
   $default-sponsor-width: 10rem,
@@ -146,11 +139,11 @@
       
       &::before {
         content: '';
-        width: calc(100% + 20rem);
+        width: 100%;
         height: 2px;
         background-color: $secondary;
         position: absolute;
-        left: -10rem;
+        left: 0;
         bottom: 0;
       }
       
@@ -220,12 +213,10 @@
 }
 
 /// @name social-bar-css-generator
-///
 /// @author Stevan Stojanovic
-///
 /// @param $social-platforms {list} list of social platforms icon reference without comma single quoted of flags stored in var.scss
-///
 /// Basicly this is custom component for social bar and social icons
+
 @mixin social-bar-css-generator(
   $social-platforms: $fcm-social-platform-list,
   $social-platform-icon-sufix: '.svg',
