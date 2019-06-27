@@ -1,7 +1,7 @@
 .#{$prefix}league-table-tab {
   display: flex;
   justify-content: center;
-  
+  //TODO fix responsivness
   .#{$prefix}table-wrap {
     display: flex;
     flex-direction: column;

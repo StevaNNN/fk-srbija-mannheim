@@ -1,0 +1,69 @@
+/// @name social-bar-css-generator
+/// @author Stevan Stojanovic
+/// @param $social-platforms {list} list of social platforms icon reference without comma single quoted of flags stored in var.scss
+/// Basicly this is custom component for social bar and social icons
+
+@mixin social-bar-css-generator(
+  $social-platforms: $fcm-social-platform-list,
+  $social-platform-icon-sufix: '.svg',
+  $social-icon-size: 2.4rem,
+  $social-icon-spacing-right: 1rem,
+  $social-icon-opacity: .7,
+  $social-icon-opacity-hover: 1,
+  $social-bar-title-color: $white,
+  $social-bar-title-font-family: $fcm-font-family-gothic,
+  $social-bar-max-width: 12.6rem
+  //TODO refactor this var values into social-bar-var.scss file :)
+) {
+  
+  .#{$prefix}social-bar {
+    display: flex;
+    max-width: $social-bar-max-width;
+    flex-direction: column;
+    
+    .#{$prefix}social-bar-title {
+      color: $social-bar-title-color;
+      text-transform: uppercase;
+      font-family: $social-bar-title-font-family;
+    }
+    
+    .#{$prefix}social-bar-body {
+      display: flex;
+    }
+    
+    .#{$prefix}social-bar-icon {
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      cursor: pointer;
+      height: $social-icon-size;
+      transition: opacity unquote($fcm-transition-duration) unquote($fcm-transition-animation);
+      opacity: $social-icon-opacity;
+      width: $social-icon-size;
+      
+      &:not(:last-of-type) {
+        margin-right: $social-icon-spacing-right;
+      }
+      
+      &:hover {
+        opacity: $social-icon-opacity-hover;
+      }
+      
+      @for $i from 1 through length($social-platforms) {
+        
+        $list-of-classes: nth($social-platforms, $i);
+        
+        @each $class in $list-of-classes {
+          
+          &.#{$class} {
+            background-image: url($fcm-img-path + $class + $social-platform-icon-sufix);
+          }
+        }
+      }
+    }
+  }
+  
+  @content;
+}
+
+@include social-bar-css-generator;

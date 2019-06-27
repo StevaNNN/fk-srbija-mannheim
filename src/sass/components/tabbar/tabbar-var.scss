@@ -1,0 +1,32 @@
+
+/// fcm first-team filter container background color
+/// @group first-team
+$fcm-tabbar-bg-color: $white !default;
+
+/// fcm first-team filter container border color
+/// @group first-team
+$fcm-tabbar-border-color: #e6e6e6 !default;
+
+/// fcm first-team filter container border width
+/// @group first-team
+$fcm-tabbar-border-width: 1px !default;
+
+/// fcm first-team filter btn active color
+/// @group first-team
+$fcm-tabbar-btn-active-color: $secondary !default;
+
+/// fcm first-team filter btn font size
+/// @group first-team
+$fcm-tabbar-btn-font-size: $fcm-font-size-lg !default;
+
+/// fcm first-team filter btn font family
+/// @group first-team
+$fcm-tabbar-btn-font-family: $fcm-font-family-gothic !default;
+
+/// fcm first-team filter btn padding
+/// @group first-team
+$fcm-tabbar-btn-padding: 2.5rem !default;
+
+/// fcm first-team filter btn transition
+/// @group first-team
+$fcm-tabbar-btn-transition: all .4s unquote($fcm-transition-animation) !default;

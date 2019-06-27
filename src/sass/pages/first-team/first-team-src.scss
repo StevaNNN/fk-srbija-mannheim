@@ -1,47 +1,4 @@
-.#{$prefix}first-team-tab {
-  
-  /// @group first-team
-  .#{$prefix}first-team-container {
-    align-items: center;
-    background-color: $fcm-first-team-container-bg-color;
-    border-bottom: $fcm-first-team-container-border-width solid $fcm-first-team-container-border-color;
-    display: flex;
-    justify-content: center;
-    
-    .btn {
-      font-family: $fcm-first-team-btn-font-family;
-      font-size: $fcm-first-team-btn-font-size;
-      padding: 2.5rem;
-      position: relative;
-      text-transform: uppercase;
-      
-      &.active,
-      &:hover {
-        color: $fcm-first-team-btn-active-color;
-        
-        &::after {
-          left: -100%;
-          opacity: 1;
-          transform: translateX(100%);
-          visibility: visible;
-        }
-      }
-      
-      &::after {
-        background-color: $secondary;
-        bottom: 0;
-        content: '';
-        height: 2px;
-        left: 0;
-        opacity: 0;
-        position: absolute;
-        transform: translateX(0);
-        transition: all .3s ease-in-out;
-        visibility: hidden;
-        width: 100%;
-      }
-    }
-  }
+.#{$prefix}first-team-page {
   
   /// @group fcm-position-container
   .#{$prefix}position-container {
@@ -50,7 +7,7 @@
     max-width: 140rem;
     width: 100%;
     margin: 0 auto;
-    
+    //TODO fix responsivness
     .#{$prefix}member-wrap {
       padding: 0 1rem;
     }

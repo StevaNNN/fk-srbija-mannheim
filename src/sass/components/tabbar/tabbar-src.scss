@@ -1,0 +1,42 @@
+.#{$prefix}tabbar {
+  align-items: center;
+  background-color: $fcm-tabbar-bg-color;
+  border-bottom: $fcm-tabbar-border-width solid $fcm-tabbar-border-color;
+  display: flex;
+  justify-content: center;
+  
+  .btn {
+    font-family: $fcm-tabbar-btn-font-family;
+    font-size: $fcm-tabbar-btn-font-size;
+    padding: $fcm-tabbar-btn-padding;
+    position: relative;
+    text-transform: uppercase;
+    transition: $fcm-tabbar-btn-transition;
+    
+    &.active,
+    &:hover {
+      color: $fcm-tabbar-btn-active-color;
+      
+      &::after {
+        left: -100%;
+        opacity: 1;
+        transform: translateX(100%);
+        visibility: visible;
+      }
+    }
+    
+    &::after {
+      background-color: $fcm-tabbar-btn-active-color;
+      bottom: 0;
+      content: '';
+      height: 2px;
+      left: 0;
+      opacity: 0;
+      position: absolute;
+      transform: translateX(0);
+      transition: $fcm-tabbar-btn-transition;
+      visibility: hidden;
+      width: 100%;
+    }
+  }
+}

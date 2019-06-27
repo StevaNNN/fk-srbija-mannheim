@@ -1,7 +1,7 @@
 .#{$prefix}results-tab {
   display: flex;
   justify-content: center;
-  
+  //TODO fix responsivness and everything elese
   .#{$prefix}table-wrap {
     max-width: 140rem;
     width: 100%;

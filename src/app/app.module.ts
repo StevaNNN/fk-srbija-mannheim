@@ -25,6 +25,9 @@ import {EffectsModule} from '@ngrx/effects';
 import {HttpClientModule} from '@angular/common/http';
 import { FirstTeamComponent } from './pages/first-team/first-team.component';
 import { FixturesAndResultsComponent } from './pages/first-team/fixtures-and-results/fixtures-and-results.component';
+import { TabbarComponent } from './components/tabbar/tabbar.component';
+import { SponsorsBarComponent } from './components/sponsors-bar/sponsors-bar.component';
+import { SocialBarComponent } from './components/social-bar/social-bar.component';
 
 @NgModule({
   declarations: [
@@ -43,7 +46,10 @@ import { FixturesAndResultsComponent } from './pages/first-team/fixtures-and-res
     ProfileDetailsHeaderComponent,
     LeagueTableComponent,
     FirstTeamComponent,
-    FixturesAndResultsComponent
+    FixturesAndResultsComponent,
+    TabbarComponent,
+    SponsorsBarComponent,
+    SocialBarComponent
   ],
   imports: [
     HttpClientModule,

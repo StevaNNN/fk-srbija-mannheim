@@ -8,7 +8,9 @@ $fcm-team-member-max-width: 32.7rem !default;
 
 /// fcm team member box shaodw
 /// @group fcm-team-member
-$fcm-team-member-box-shadow: 0 8px 10px -5px rgba(0,0,0,.2), 0 16px 24px 2px rgba(0,0,0,.14), 0 6px 30px 5px rgba(0,0,0,.12) !default;
+$fcm-team-member-box-shadow: 0 8px 10px -5px rgba(0,0,0,.2),
+                             0 16px 24px 2px rgba(0,0,0,.14),
+                             0 6px 30px 5px rgba(0,0,0,.12) !default;
 
 /// fcm team member background color
 /// @group fcm-team-member
