@@ -42,17 +42,8 @@
 @import 'sass/components/navbar/navbar-var';
 @import 'sass/components/navbar/navbar-src';
 
-@import 'sass/components/profile/profile-head/profile-header-var';
-@import 'sass/components/profile/profile-head/profile-header-src';
-
-@import 'sass/components/profile/profile-body/profile-body-var';
-@import 'sass/components/profile/profile-body/profile-body-src';
-
 @import 'sass/components/side-nav/side-nav-var';
 @import 'sass/components/side-nav/side-nav-src';
-
-@import 'sass/components/team-member/team-member-var';
-@import 'sass/components/team-member/team-member-src';
 
 @import 'sass/components/top-bar/top-bar-var';
 @import 'sass/components/top-bar/top-bar-src';
@@ -72,6 +63,21 @@
 
 @import 'sass/pages/first-team/first-team-var';
 @import 'sass/pages/first-team/first-team-src';
+
+@import 'sass/pages/first-team/squad/squad-var';
+@import 'sass/pages/first-team/squad/squad-src';
+
+@import 'sass/pages/first-team/squad/positions/positions-var';
+@import 'sass/pages/first-team/squad/positions/positions-src';
+
+@import 'sass/pages/first-team/squad/positions/team-member/team-member-var';
+@import 'sass/pages/first-team/squad/positions/team-member/team-member-src';
+
+@import 'sass/pages/first-team/squad/profile-details/profile-details-var';
+@import 'sass/pages/first-team/squad/profile-details/profile-details-src';
+
+@import 'sass/pages/first-team/squad/profile-details/profile-details-header/profile-details-header-var';
+@import 'sass/pages/first-team/squad/profile-details/profile-details-header/profile-details-header-src';
 
 @import 'sass/pages/first-team/fixtures-and-results/fixtures-and-results-var';
 @import 'sass/pages/first-team/fixtures-and-results/fixtures-and-results-src';

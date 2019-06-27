@@ -1,0 +1,21 @@
+.#{$prefix}position-section {
+  display: flex;
+  flex-direction: column;
+  
+  .#{$prefix}position-members-wrap {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  app-team-member {
+    margin-bottom: 3.2rem;
+    
+    &:not(:last-of-type) {
+      margin-right: 3.2rem;
+    }
+    
+    &:nth-of-type(4n + 0) {
+      margin-right: 0;
+    }
+  }
+}

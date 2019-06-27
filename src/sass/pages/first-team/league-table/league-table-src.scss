@@ -1,19 +1,4 @@
-.#{$prefix}league-table-tab {
-  display: flex;
-  justify-content: center;
-  //TODO fix responsivness
-  .#{$prefix}table-wrap {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    max-width: 140rem;
-    align-items: center;
-    
-    .#{$prefix}table-headline,
-    .#{$prefix}table {
-      width: 100%;
-    }
-  }
+.#{$prefix}league-content {
   
   .#{$prefix}table-headline {
     padding: 3.8rem 0;

@@ -1,33 +1,31 @@
-<div class="fcm-results-tab">
-  <div class="fcm-table-wrap">
-    <div class="fcm-table">
-      <div class="fcm-table-body">
-        <div class="fcm-table-row"
-             *ngFor="let team of teamsScore">
-          <div class="fcm-time-played">
-            {{team.playedDate}}
+<div class="fcm-results-content fcm-tab-content">
+  <div class="fcm-table">
+    <div class="fcm-table-body">
+      <div class="fcm-table-row"
+           *ngFor="let team of teamsScore">
+        <div class="fcm-time-played">
+          {{team.playedDate}}
+        </div>
+        <div class="fcm-teams-result">
+          <div class="fcm-team-left">
+            <div class="fcm-team-name">
+              {{team.teamLeftName}}
+            </div>
+            <div class="fcm-team-avatar"
+                 [style.backgroundImage]="'url(' + team.teamLeftAvatar + ')'">
+            </div>
           </div>
-          <div class="fcm-teams-result">
-            <div class="fcm-team-left">
-              <div class="fcm-team-name">
-                {{team.teamLeftName}}
-              </div>
-              <div class="fcm-team-avatar"
-                   [style.backgroundImage]="'url(' + team.teamLeftAvatar + ')'">
-              </div>
+          <div class="fcm-team-score">
+            <span>{{team.teamLeftScore}}</span>
+            <span>-</span>
+            <span>{{team.teamRightScore}}</span>
+          </div>
+          <div class="fcm-team-right">
+            <div class="fcm-team-avatar"
+                 [style.backgroundImage]="'url(' + team.teamRightAvatar + ')'">
             </div>
-            <div class="fcm-team-score">
-              <span>{{team.teamLeftScore}}</span>
-              <span>-</span>
-              <span>{{team.teamRightScore}}</span>
-            </div>
-            <div class="fcm-team-right">
-              <div class="fcm-team-avatar"
-                   [style.backgroundImage]="'url(' + team.teamRightAvatar + ')'">
-              </div>
-              <div class="fcm-team-name">
-                {{team.teamRightName}}
-              </div>
+            <div class="fcm-team-name">
+              {{team.teamRightName}}
             </div>
           </div>
         </div>

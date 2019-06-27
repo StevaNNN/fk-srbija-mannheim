@@ -1,11 +1,11 @@
-<div class="fcm-first-team-tab">
-  <app-info-container [confing]="headerConfing"
-                      class="fcm-first-team-info-cont">
-  </app-info-container>
+<div class="fcm-first-team-page">
+  <app-info-container [confing]="headerConfing" class="fcm-first-team-info-cont"></app-info-container>
   <div class="fcm-first-team-body">
-   <app-tabbar></app-tabbar>
-   <app-sponsors-bar [footerSponsor]="false"></app-sponsors-bar>
-    <router-outlet></router-outlet>
+    <app-tabbar></app-tabbar>
+    <div class="fcm-tabpanel">
+      <app-sponsors-bar [footerSponsor]="false"></app-sponsors-bar>
+      <router-outlet></router-outlet>
+    </div>
   </div>
 </div>
 <app-footer></app-footer>

@@ -1,32 +1,18 @@
 .#{$prefix}first-team-page {
   
-  /// @group fcm-position-container
-  .#{$prefix}position-container {
+  .#{$prefix}tabpanel {
+    display: flex;
+    justify-content: center;
+    flex-direction: column-reverse;
+    max-width: 140rem;
+    margin: 0 auto;
+  }
+  
+  
+  
+  .#{$prefix}tab-content {
+    flex: 1;
     display: flex;
     flex-direction: column;
-    max-width: 140rem;
-    width: 100%;
-    margin: 0 auto;
-    //TODO fix responsivness
-    .#{$prefix}member-wrap {
-      padding: 0 1rem;
-    }
-  
-    .#{$prefix}position-inner-cont {
-      display: flex;
-      flex-wrap: wrap;
-    }
-    
-    &:first-of-type {
-      
-      .#{$prefix}position-title {
-        margin-top: 5rem;
-      }
-    }
-    
-    .#{$prefix}position-title {
-      font-family: $fcm-font-family-bold;
-      margin: 2rem 0 5rem 0;
-    }
   }
 }
