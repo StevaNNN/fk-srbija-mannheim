@@ -7,11 +7,17 @@ import {Component, Input, OnInit} from '@angular/core';
 })
 export class SponsorsBarComponent implements OnInit {
 
-  @Input() sponsorBarCls: any;
+  public sponsorBarCls: string;
+  @Input() footerSponsor: boolean;
+  @Input() profileSponsor: boolean;
 
   constructor() { }
 
   ngOnInit() {
+    if (this.footerSponsor) {
+      this.sponsorBarCls = 'fcm-footer-sponsors';
+    } else {
+      this.sponsorBarCls = 'fcm-profile-body-sponsors';
+    }
   }
-
 }

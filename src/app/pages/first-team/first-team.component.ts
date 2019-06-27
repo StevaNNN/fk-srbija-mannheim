@@ -16,8 +16,6 @@ export class FirstTeamComponent implements OnInit {
     context: 'squad'
   };
 
-  public sponsorCls = 'fcm-profile-body-sponsors';
-
   constructor() { }
 
   ngOnInit() {

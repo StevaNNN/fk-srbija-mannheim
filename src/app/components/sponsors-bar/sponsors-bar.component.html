@@ -1,18 +1,18 @@
 <div class="fcm-sponsors-bar"
      [ngClass]="sponsorBarCls">
   <div class="fcm-sponsors-bar-holder">
-    <ng-template *ngIf="sponsorBarCls === 'fcm-profile-body-sponsors'; else footer">
-      <div class="fcm-sponsor sponsor-8"></div>
-      <div class="fcm-sponsor sponsor-6"></div>
-      <div class="fcm-sponsor sponsor-7"></div>
-      <div class="fcm-sponsor sponsor-9"></div>
-    </ng-template>
-    <ng-template #footer>
+    <ng-container *ngIf="footerSponsor; else profile">
       <div class="fcm-sponsor sponsor-1"></div>
       <div class="fcm-sponsor sponsor-2"></div>
       <div class="fcm-sponsor sponsor-3"></div>
       <div class="fcm-sponsor sponsor-4"></div>
       <div class="fcm-sponsor sponsor-5"></div>
+    </ng-container>
+    <ng-template #profile>
+      <div class="fcm-sponsor sponsor-8"></div>
+      <div class="fcm-sponsor sponsor-6"></div>
+      <div class="fcm-sponsor sponsor-7"></div>
+      <div class="fcm-sponsor sponsor-9"></div>
     </ng-template>
   </div>
 </div>
