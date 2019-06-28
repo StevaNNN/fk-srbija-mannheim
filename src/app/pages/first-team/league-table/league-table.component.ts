@@ -57,7 +57,7 @@ export class LeagueTableComponent {
     teamGoalsDifference: 5
   }, {
     teamPosition: 5,
-    teamName: 'FC Krletovi Podanici',
+    teamName: 'FC Srbija Mannheim',
     teamAvatar: '/assets/img/test-badge.jpg',
     teamPlayed: 10,
     teamPoints: 30,
