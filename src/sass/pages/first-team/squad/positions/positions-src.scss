@@ -9,10 +9,18 @@
   .#{$prefix}position-members-wrap {
     display: flex;
     flex-wrap: wrap;
-    padding: 0 2.4rem;
+    margin: 0 2.4rem;
     
     @media screen and (max-width: 1400px) {
       justify-content: center;
+    }
+  
+    @media screen and (max-width: 716px) {
+      margin: 0 4rem;
+    }
+  
+    @media screen and (max-width: 326px) {
+      margin: 0;
     }
   }
   
@@ -46,6 +54,27 @@
         margin-right: 0;
       }
     }
+  
+    @media screen and (max-width: 716px) {
+      &:nth-of-type(4n + 0),
+      &:nth-of-type(3n + 0),
+      &:nth-of-type(2n + 0),
+      &:not(:last-of-type) {
+        margin: 0 0 1.6rem 0;
+      }
+    }
+    
+    @media screen and (max-width: 326px) {
+      margin-bottom: 0;
+      width: 100%;
+      
+      &:nth-of-type(4n + 0),
+      &:nth-of-type(3n + 0),
+      &:nth-of-type(2n + 0),
+      &:not(:last-of-type){
+        margin: 0;
+      }
+    }
   }
   
   &.five-members {
@@ -59,6 +88,22 @@
         
         &:nth-of-type(3) {
           margin-left: 1.6rem;
+        }
+      }
+  
+      @media screen and (max-width: 716px) {
+        &:nth-of-type(4n + 0),
+        &:nth-of-type(3n + 0),
+        &:nth-of-type(2n + 0),
+        &:not(:last-of-type) {
+          margin: 0 0 1.6rem 0;
+        }
+      }
+      
+      @media screen and (max-width: 326px) {
+        &:nth-of-type(4),
+        &:nth-of-type(3) {
+          margin: 0 0 1.6rem 0;
         }
       }
     }

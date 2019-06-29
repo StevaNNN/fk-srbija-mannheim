@@ -10,6 +10,10 @@
   min-width: $fcm-team-member-max-width;
   box-shadow: $fcm-team-member-box-shadow;
   
+  @media screen and (max-width: 326px) {
+    min-width: 100%;
+  }
+  
   .#{$prefix}team-member-img {
     background-position: top;
     background-repeat: no-repeat;
