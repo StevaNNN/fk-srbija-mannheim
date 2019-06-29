@@ -1,6 +1,7 @@
 <div class="fcm-position-section"
      *ngFor="let position of positions; let i = index"
-     [ngClass]="{'five-members': position.members.length === 5}">
+     [ngClass]="{'five-members': position.members.length === 5,
+                 'one-member': position.members.length === 1}">
   <h3 class="fcm-position-title">
     {{position.positionName}}
   </h3>

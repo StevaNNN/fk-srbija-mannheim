@@ -6,6 +6,16 @@
     align-items: center;
   }
   
+  &.one-member {
+    @media screen and (max-width: 326px) {
+      align-items: initial;
+  
+      .#{$prefix}position-title {
+        text-align: center;
+      }
+    }
+  }
+  
   .#{$prefix}position-members-wrap {
     display: flex;
     flex-wrap: wrap;
@@ -65,15 +75,7 @@
     }
     
     @media screen and (max-width: 326px) {
-      margin-bottom: 0;
       width: 100%;
-      
-      &:nth-of-type(4n + 0),
-      &:nth-of-type(3n + 0),
-      &:nth-of-type(2n + 0),
-      &:not(:last-of-type){
-        margin: 0;
-      }
     }
   }
   
@@ -96,13 +98,6 @@
         &:nth-of-type(3n + 0),
         &:nth-of-type(2n + 0),
         &:not(:last-of-type) {
-          margin: 0 0 1.6rem 0;
-        }
-      }
-      
-      @media screen and (max-width: 326px) {
-        &:nth-of-type(4),
-        &:nth-of-type(3) {
           margin: 0 0 1.6rem 0;
         }
       }
