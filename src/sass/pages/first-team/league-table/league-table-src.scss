@@ -6,7 +6,7 @@
     font-family: $fcm-font-family-bold;
     border-bottom: 1px solid $neutral-color;
   }
-  
+  // TODO responsivness refactor
   .#{$prefix}table {
     display: flex;
     flex-direction: column;

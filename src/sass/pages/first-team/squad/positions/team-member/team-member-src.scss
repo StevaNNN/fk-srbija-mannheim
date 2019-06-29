@@ -4,22 +4,11 @@
   color: $fcm-team-member-color;
   cursor: pointer;
   height: $fcm-team-member-height;
-  //margin-bottom: $fcm-team-member-bottom-spacer;
   position: relative;
   user-select: none;
   max-width: $fcm-team-member-max-width;
   min-width: $fcm-team-member-max-width;
   box-shadow: $fcm-team-member-box-shadow;
-  
-  @include media-breakpoint-down(lg) {
-    min-width: auto;
-  }
-  
-  @include media-breakpoint-down(sm) {
-    max-width: 100%;
-    margin-bottom: 3rem;
-  }
-  
   
   .#{$prefix}team-member-img {
     background-position: top;

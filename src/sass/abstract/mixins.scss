@@ -108,3 +108,37 @@
     }
   }
 }
+
+@mixin quntity-queries($all-queries: true, $total-queries: null, $query: null, $html-element: 'div') {
+  @warn "This mixin is related to the child inside it's parrent " +
+           "so in order to get desired result please call this mixin whitin parrent";
+  
+  @if ($all-queries == true and $total-queries != null and is-number($total-queries) == true) {
+    @warn "You are using this mixin for all children inside it' parrent";
+    /// styling first child related to number of last child in it's parrent
+    #{$html-element} {
+      &:nth-last-child(#{$total-queries}) {
+        &:first-child,
+        &:first-child ~ * {
+          @content;
+        }
+      }
+    }
+  }
+  @else if ($all-queries != true and $total-queries == nul and is-number($total-queries) != true and $query == null and is-number($total-queries) != true ) {
+    @warn "You are using this mixin for specific child inside it's parrent but not providing all neccecery arguments or invalid type of arguments";
+  }
+  
+  @else {
+    @warn "You are using this mixin for specific child inside it's parrent";
+    #{$html-element} {
+      &:nth-last-child(#{$total-queries}) {
+        &:first-child ~ {
+          #{$html-element}::nth-of-type(#{$query}) {
+            @content;
+          }
+        }
+      }
+    }
+  }
+}
