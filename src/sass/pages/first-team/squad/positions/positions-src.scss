@@ -16,6 +16,89 @@
     }
   }
   
+  &.five-members {
+    
+    app-team-member {
+      
+      @media screen and (max-width: 1057px) {
+        &:nth-of-type(4) {
+          margin-right: 1.6rem;
+        }
+        
+        &:nth-of-type(3) {
+          margin-left: 1.6rem;
+        }
+      }
+      
+      @media screen and (max-width: 716px) {
+        &:nth-of-type(4n + 0),
+        &:nth-of-type(3n + 0),
+        &:nth-of-type(2n + 0),
+        &:not(:last-of-type) {
+          margin: 0 0 1.6rem 0;
+        }
+      }
+    }
+  }
+  
+  &.ten-members {
+    
+    app-team-member {
+      
+      @media screen and (max-width: 1401px){
+        
+        &:nth-of-type(3n + 0) {
+          margin-right: 1.6rem;
+        }
+        
+        &:nth-of-type(1),
+        &:nth-of-type(4),
+        &:nth-of-type(7) {
+          margin-left: 1.6rem;
+        }
+      }
+      
+      @media screen and (max-width: 1089px) {
+        &:nth-of-type(3n + 0) {
+          margin-right: 0;
+        }
+  
+        &:nth-of-type(2n + 0):not(:nth-of-type(6)):not(:nth-of-type(10)) {
+          margin-right: 1.6rem;
+        }
+  
+        &:nth-of-type(1),
+        &:nth-of-type(4),
+        &:nth-of-type(7) {
+          margin-left: 0;
+        }
+      }
+  
+      @media screen and (max-width: 1057px) {
+        &:nth-of-type(3n + 0) {
+          margin-right: 1.6rem;
+        }
+  
+        &:nth-of-type(2n + 0):not(:nth-of-type(6)):not(:nth-of-type(10)) {
+          margin-right: 0;
+        }
+    
+        &:nth-of-type(2n + 0) {
+          margin-right: 0;
+        }
+      }
+  
+      @media screen and (max-width: 716px) {
+        &:nth-of-type(4n + 0),
+        &:nth-of-type(3n + 0),
+        &:nth-of-type(2n + 0),
+        &:not(:last-of-type) {
+          margin: 0 0 1.6rem 0;
+        }
+      }
+    }
+  }
+  
   .#{$prefix}position-members-wrap {
     display: flex;
     flex-wrap: wrap;
@@ -76,31 +159,6 @@
     
     @media screen and (max-width: 326px) {
       width: 100%;
-    }
-  }
-  
-  &.five-members {
-    
-    app-team-member {
-      
-      @media screen and (max-width: 1057px) {
-        &:nth-of-type(4) {
-          margin-right: 1.6rem;
-        }
-        
-        &:nth-of-type(3) {
-          margin-left: 1.6rem;
-        }
-      }
-  
-      @media screen and (max-width: 716px) {
-        &:nth-of-type(4n + 0),
-        &:nth-of-type(3n + 0),
-        &:nth-of-type(2n + 0),
-        &:not(:last-of-type) {
-          margin: 0 0 1.6rem 0;
-        }
-      }
     }
   }
 }
