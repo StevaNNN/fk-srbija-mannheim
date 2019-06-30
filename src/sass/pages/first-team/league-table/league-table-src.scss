@@ -1,12 +1,25 @@
 .#{$prefix}league-content {
+  margin: 0 2.4rem;
+  
+  @media screen and(max-width: 882px) {
+    margin: 0 1rem;
+  }
+  
+  @media screen and(max-width: 530px) {
+    margin: 0;
+  }
   
   .#{$prefix}table-headline {
-    padding: 3.8rem 0;
+    padding: 5rem 0 3.8rem 0;
     margin: 0;
     font-family: $fcm-font-family-bold;
     border-bottom: 1px solid $neutral-color;
+    
+    @media screen and (max-width: 882px) {
+      padding-left: 1rem;
+    }
   }
-  // TODO responsivness refactor
+  
   .#{$prefix}table {
     display: flex;
     flex-direction: column;
@@ -15,7 +28,7 @@
     
     .#{$prefix}table-row {
       display: flex;
-      padding: 0.25rem 2rem;
+      min-height: 7rem;
       
       &:not(.#{$prefix}table-header-row) {
         cursor: pointer;
@@ -35,9 +48,44 @@
     .#{$prefix}table-cell {
       display: flex;
       padding: $fcm-table-cell-padding;
-      min-width: 7rem;
+      width: 7rem;
       font-size: $fcm-font-size;
       align-items: center;
+  
+      @media screen and (max-width: 882px) {
+        padding: 0 1rem;
+        
+        &:not(.team-cell) {
+          width: 5rem;
+        }
+      }
+  
+      @media screen and (max-width: 665px) {
+
+        &:not(.team-cell) {
+          width: 4.3rem;
+        }
+      }
+      
+      
+      @media screen and (max-width: 597px) {
+    
+        &:not(.team-cell) {
+          width: 3.5rem;
+        }
+      }
+  
+      @media screen and (max-width: 530px) {
+        &:nth-of-type(8),
+        &:nth-of-type(9),
+        &:nth-of-type(10) {
+          display: none;
+        }
+      }
+  
+      @media screen and (max-width: 375px) {
+        font-size: $fcm-font-size-sm;
+      }
       
       &.first-cell {
         font-family: $fcm-font-family-bold;
@@ -74,7 +122,7 @@
       .#{$prefix}table-cell {
         font-family: $fcm-table-header-cell-font-family;
         font-size: $fcm-font-size-sm;
-        color: rgba(19,25,41,0.5);
+        color: rgba(19, 25, 41, .5);
         
         &.team-cell {
           color: $primary-medium-dark;

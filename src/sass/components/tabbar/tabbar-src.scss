@@ -1,9 +1,11 @@
 .#{$prefix}tabbar {
-  align-items: center;
   background-color: $fcm-tabbar-bg-color;
   border-bottom: $fcm-tabbar-border-width solid $fcm-tabbar-border-color;
-  display: flex;
-  justify-content: center;
+  
+  .btn-group {
+    display: flex;
+    justify-content: center;
+  }
   
   .btn {
     font-family: $fcm-tabbar-btn-font-family;
