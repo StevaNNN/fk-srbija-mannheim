@@ -2,39 +2,54 @@
   background-color: $primary-medium-dark;
   display: flex;
   justify-content: center;
+  font-family: $fcm-font-family-gothic;
   
   .#{$prefix}footer-inner {
-    padding: 0;
     display: flex;
     flex-direction: column;
+    flex: 1;
+    max-width: 140rem;
   }
   
   .#{$prefix}footer-grid {
     display: flex;
     color: white;
     padding: 4rem 0;
+    max-width: 116rem;
+    width: 100%;
+    margin: 0 auto;
+    
+    @include media-breakpoint-down(md) {
+      flex-direction: column;
+    }
     
     .#{$prefix}footer-nav-holder {
       flex: 1;
       display: flex;
-      max-width: 100.14rem;
+      max-width: 103.4rem;
       flex-direction: column;
     }
     
     .#{$prefix}footer-nav-row {
       display: flex;
+      padding-bottom: 2rem;
+      flex-wrap: wrap;
     }
   
     .#{$prefix}footer-nav {
       flex: 1;
-      max-width: 25.3rem;
+      min-width: 25.85rem;
     }
     
     .#{$prefix}footer-nav-title {
+      font-weight: 700;
+      font-size: $fcm-font-size;
       text-transform: uppercase;
     }
+    
     .#{$prefix}footer-nav-link {
       color: #a6adbb;
+      font-family: $fcm-font-family;
       font-size: $fcm-font-size-sm;
     }
     
