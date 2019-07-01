@@ -1,3 +1,55 @@
-/// app footer bg color
-/// @group footer
+/// fcm footer background color
+/// @group fcm-footer
 $fcm-footer-bg-color: $primary-medium-dark !default;
+
+/// fcm footer font family
+/// @group fcm-footer
+$fcm-footer-font-family: $fcm-font-family-gothic !default;
+
+/// fcm footer inner max width
+/// @group fcm-footer
+$fcm-footer-inner-max-width: 140rem !default;
+
+/// fcm footer grid max width
+/// @group fcm-footer
+$fcm-footer-grid-max-width: 116rem !default;
+
+/// fcm footer grid padding
+/// @group fcm-footer
+$fcm-footer-grid-padding: 4rem 2.4rem !default;
+
+/// fcm footer nav row padding
+/// @group fcm-footer
+$fcm-footer-nav-row-padding: 0 0 2rem !default;
+
+/// fcm footer nav max width
+/// @group fcm-footer
+$fcm-footer-nav-max-width: 24.65rem !default;
+
+/// fcm footer nav xs max width
+/// @group fcm-footer
+$fcm-footer-nav-xs-max-width: 50% !default;
+
+/// fcm footer nav xs spacing bottom
+/// @group fcm-footer
+$fcm-footer-nav-xs-spacing-bottom: 2rem !default;
+
+/// fcm footer nav li line height
+/// @group fcm-footer
+$fcm-footer-nav-li-line-height: 3rem !default;
+
+/// fcm footer nav title font size
+/// @group fcm-footer
+$fcm-footer-nav-title-font-size: $fcm-font-size-sm !default;
+
+/// fcm footer nav title font family
+/// @group fcm-footer
+$fcm-footer-nav-title-font-family: $fcm-font-family !default;
+
+/// fcm footer nav title color
+/// @group fcm-footer
+$fcm-footer-nav-title-color: #a6adbb !default;
+
+/// fcm footer nav logo size
+/// @group fcm-footer
+$fcm-footer-nav-logo-size: 10rem !default;

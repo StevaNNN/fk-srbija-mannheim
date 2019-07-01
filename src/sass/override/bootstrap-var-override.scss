@@ -11,6 +11,8 @@ $input-btn-focus-box-shadow: none;
 $input-btn-font-size: $fcm-font-size;
 $input-btn-font-family: $fcm-font-family-medium;
 
+$btn-active-box-shadow: none;
+
 $primary: #1b2436;
 $primary-medium-dark: #151e2d;
 $primary-dark: #131929;
@@ -20,11 +22,15 @@ $neutral-color: #f4f4f4;
 $spacer: 2rem;
 
 $grid-gutter-width: 2rem;
-
+$enable-shadows: true;
 
 $dropdown-bg: $primary-medium-dark;
 $dropdown-color: #fff;
 $dropdown-border-color: $dropdown-color;
+$dropdown-min-width: 7rem;
+$dropdown-box-shadow: 0 7px 9px -4px rgba(#000, .2),
+                      0 14px 21px 2px rgba(#000, .14),
+                      0 5px 26px 4px rgba(#000, .12);
 
 $dropdown-link-color: rgba($dropdown-color, .7);
 $dropdown-link-hover-color: $dropdown-color;

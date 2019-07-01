@@ -1,56 +1,67 @@
 .#{$prefix}footer {
-  background-color: $primary-medium-dark;
+  background-color: $fcm-footer-bg-color;
   display: flex;
+  font-family: $fcm-footer-font-family;
   justify-content: center;
-  font-family: $fcm-font-family-gothic;
   
   .#{$prefix}footer-inner {
     display: flex;
-    flex-direction: column;
     flex: 1;
-    max-width: 140rem;
+    flex-direction: column;
+    max-width: $fcm-footer-inner-max-width;
   }
   
   .#{$prefix}footer-grid {
-    display: flex;
     color: white;
-    padding: 4rem 0;
-    max-width: 116rem;
-    width: 100%;
+    display: flex;
     margin: 0 auto;
+    max-width: $fcm-footer-grid-max-width;
+    padding: $fcm-footer-grid-padding;
+    width: 100%;
     
     @include media-breakpoint-down(md) {
       flex-direction: column;
     }
     
     .#{$prefix}footer-nav-holder {
-      flex: 1;
       display: flex;
-      max-width: 103.4rem;
+      flex: 1;
       flex-direction: column;
     }
     
     .#{$prefix}footer-nav-row {
       display: flex;
-      padding-bottom: 2rem;
       flex-wrap: wrap;
+      padding-bottom: $fcm-footer-nav-row-padding;
     }
-  
+    
     .#{$prefix}footer-nav {
+      display: flex;
+      flex-direction: column;
       flex: 1;
-      min-width: 25.85rem;
+      max-width: $fcm-footer-nav-max-width;
+  
+      li {
+        line-height: $fcm-footer-nav-li-line-height;
+      }
+      
+      @include media-breakpoint-down(xs) {
+        min-width: $fcm-footer-nav-xs-max-width;
+        margin-bottom: $fcm-footer-nav-xs-spacing-bottom;
+      }
     }
     
     .#{$prefix}footer-nav-title {
-      font-weight: 700;
       font-size: $fcm-font-size;
+      margin-bottom: 2rem;
+      font-weight: 700;
       text-transform: uppercase;
     }
     
     .#{$prefix}footer-nav-link {
-      color: #a6adbb;
-      font-family: $fcm-font-family;
-      font-size: $fcm-font-size-sm;
+      color: $fcm-footer-nav-title-color;
+      font-family: $fcm-footer-nav-title-font-family;
+      font-size: $fcm-footer-nav-title-font-size;
     }
     
     .#{$prefix}footer-logo-holder {
@@ -58,14 +69,18 @@
       flex-direction: column;
       
       .#{$prefix}footer-logo {
-        margin-top: 10rem;
-        width: 10rem;
-        height: 10rem;
-        border-radius: 50%;
         background-image: url('#{$fcm-img-path}logo.png');
         background-position: center;
-        background-size: contain;
         background-repeat: no-repeat;
+        background-size: contain;
+        border-radius: 50%;
+        height: $fcm-footer-nav-logo-size;
+        margin-top: $fcm-footer-nav-logo-size;
+        width: $fcm-footer-nav-logo-size;
+  
+        @include media-breakpoint-down(xs) {
+          display: none;
+        }
       }
     }
   }

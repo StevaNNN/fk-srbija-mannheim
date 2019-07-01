@@ -5,15 +5,7 @@
 
 @mixin social-bar-css-generator(
   $social-platforms: $fcm-social-platform-list,
-  $social-platform-icon-sufix: '.svg',
-  $social-icon-size: 2.4rem,
-  $social-icon-spacing-right: 1rem,
-  $social-icon-opacity: .7,
-  $social-icon-opacity-hover: 1,
-  $social-bar-title-color: $white,
-  $social-bar-title-font-family: $fcm-font-family-gothic,
-  $social-bar-max-width: 12.6rem
-  //TODO refactor this var values into social-bar-var.scss file :)
+  $social-platform-icon-sufix: '.svg'
 ) {
   
   .#{$prefix}social-bar {
