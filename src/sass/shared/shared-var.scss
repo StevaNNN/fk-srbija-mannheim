@@ -1,0 +1,61 @@
+/// fcm table margin
+/// @group fcm-table
+$fcm-table-margin: 3.8rem 0 5rem !default;
+
+/// fcm table color
+/// @group fcm-table
+$fcm-table-color: $primary-medium-dark !default;
+
+/// fcm table head table cell font family
+/// @group fcm-table
+$fcm-table-head-table-cell-font-family: $fcm-font-family-bold !default;
+
+/// fcm table head table cell font size
+/// @group fcm-table
+$fcm-table-head-table-cell-font-size: $fcm-font-size-sm !default;
+
+/// fcm table head table cell color
+/// @group fcm-table
+$fcm-table-head-table-cell-color: rgba(19, 25, 41, .5) !default;
+
+/// fcm table head table cell team cell color
+/// @group fcm-table
+$fcm-table-head-table-cell-team-cell-color: $primary-medium-dark !default;
+
+/// fcm table body row even background color
+/// @group fcm-table
+$fcm-table-body-row-even-bg-color: $neutral-color !default;
+
+/// fcm table headline padding
+/// @group fcm-table
+$fcm-table-headline-padding: 5rem 0 3.8rem 0 !default;
+
+/// fcm table headline font family
+/// @group fcm-table
+$fcm-table-headline-font-family: $fcm-font-family-bold !default;
+
+/// fcm table headline border color
+/// @group fcm-table
+$fcm-table-headline-border-color: #f4f4f4 !default;
+
+/// fcm table headline border width
+/// @group fcm-table
+$fcm-table-headline-border-width: 1px !default;
+
+/// fcm table team name color
+/// @group fcm-table
+$fcm-table-team-name-color: rgba(19, 25, 41, .5) !default;
+
+/// fcm table team name fc mannheim color
+/// @group fcm-table
+$fcm-table-team-name-fc-mannheim-color: $white !default;
+
+
+
+/// fcm squad position title font family
+/// @group squad-position
+$fcm-squad-position-title-font-family: $fcm-font-family-bold !default;
+
+/// fcm squad position title margin
+/// @group squad-position
+$fcm-squad-position-title-margin: 5rem 0 5rem 2.4rem !default;

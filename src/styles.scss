@@ -22,7 +22,8 @@
 @import 'sass/vendors/bootstrap';
 
 /// Import Shared
-@import 'sass/shared/shared';
+@import 'sass/shared/shared-var';
+@import 'sass/shared/shared-src';
 
 /// Override bootstrap imports
 @import 'sass/override/bootstrap-reboot-override';

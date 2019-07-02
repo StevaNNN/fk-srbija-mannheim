@@ -1,0 +1,68 @@
+/// fcm results content margin
+/// @group fcm-results-content
+$fcm-results-content-margin: 0 2.4rem !default;
+
+/// fcm results table font size
+/// @group fcm-results-content
+$fcm-results-table-font-size: 2rem !default;
+
+/// fcm results table font family
+/// @group fcm-results-content
+$fcm-results-table-font-family: $fcm-font-family-gothic !default;
+
+/// fcm results table font wight
+/// @group fcm-results-content
+$fcm-results-table-font-weight: 500 !default;
+
+/// fcm results table row padding
+/// @group fcm-results-content
+$fcm-results-table-row-padding: 2rem !default;
+
+/// fcm results table row border width
+/// @group fcm-results-content
+$fcm-results-table-row-border-width: 2px !default;
+
+/// fcm results table row border color
+/// @group fcm-results-content
+$fcm-results-table-row-border-color: #e9e9e9 !default;
+
+/// fcm results table row spacer
+/// @group fcm-results-content
+$fcm-results-table-row-spacer: 2rem !default;
+
+/// fcm results table row box shadow color
+/// @group fcm-results-content
+$fcm-results-table-row-box-shadow: 0 .3rem .5rem 0 rgba($black, .15) !default;
+
+/// fcm results table row hover indicator linear gradient
+/// @group fcm-results-content
+$fcm-results-table-row-hover-indicator-linear-gradient: linear-gradient(to bottom,  $primary,  $secondary) !default;
+
+/// fcm results table row hover indicator width
+/// @group fcm-results-content
+$fcm-results-table-row-hover-indicator-width: .4rem !default;
+
+/// fcm results table team avatar size
+/// @group fcm-results-content
+$fcm-results-table-team-avatar-size: 4rem !default;
+
+/// fcm results table team score min width
+/// @group fcm-results-content
+$fcm-results-table-team-score-min-width: 8.2rem !default;
+
+/// fcm results table team score font size
+/// @group fcm-results-content
+$fcm-results-table-team-score-font-size: 3.2rem !default;
+
+/// fcm results table team score font weight
+/// @group fcm-results-content
+$fcm-results-table-team-score-font-weight: 900 !default;
+
+/// fcm results table team score color
+/// @group fcm-results-content
+$fcm-results-table-team-score-color: $white !default;
+
+/// fcm results table team score bg color
+/// @group fcm-results-content
+$fcm-results-table-team-score-bg-color: $primary-medium-dark !default;
+

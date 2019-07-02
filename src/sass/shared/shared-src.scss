@@ -1,0 +1,137 @@
+/// fcm table headline
+/// @group fcm-table
+.#{$prefix}table-headline {
+  padding: $fcm-table-headline-padding;
+  margin: 0;
+  font-family: $fcm-table-headline-font-family;
+  border-bottom: $fcm-table-headline-border-width solid $fcm-table-headline-border-color;
+  
+  @media screen and (max-width: 530px) {
+    margin-left: 1rem;
+  }
+}
+
+/// fcm squad position title
+/// @group squad-position
+.#{$prefix}position-title {
+  font-family: $fcm-squad-position-title-font-family;
+  margin: $fcm-squad-position-title-margin;
+  
+  @media screen and (max-width: 1400px) {
+    margin-left: 0;
+  }
+}
+
+/// fcm table
+/// @group fcm-table
+.#{$prefix}table {
+  display: flex;
+  flex-direction: column;
+  margin: $fcm-table-margin;
+  color: $fcm-table-color;
+}
+
+/// fcm table head and body
+/// @group fcm-table
+.#{$prefix}table-head,
+.#{$prefix}table-body {
+  display: flex;
+  flex-direction: column;
+}
+
+/// fcm table head table cell
+/// @group fcm-table
+.#{$prefix}table-head {
+  
+  .#{$prefix}table-cell {
+    font-family: $fcm-table-head-table-cell-font-family;
+    font-size: $fcm-table-head-table-cell-font-size;
+    color: $fcm-table-head-table-cell-color;
+  
+    &.team-cell {
+      color: $fcm-table-head-table-cell-team-cell-color;
+    }
+  }
+  
+  .#{$prefix}league-content .#{$prefix}table & {
+    .#{$prefix}table-cell {
+      font-size: $fcm-table-head-table-cell-font-size;
+    }
+  }
+}
+
+/// fcm table body table cell
+/// @group fcm-table
+.#{$prefix}table-body {
+  
+  .#{$prefix}table-cell {
+    color: $primary-medium-dark;
+    font-size: $fcm-font-size;
+  }
+}
+
+/// fcm table row
+/// @group fcm-table
+.#{$prefix}table-row {
+  display: flex;
+  align-items: center;
+  position: relative;
+  
+  &:not(.#{$prefix}table-header-row) {
+    cursor: pointer;
+  }
+  // we dont need on this table to have even bg color
+  .#{$prefix}results-content .#{$prefix}table-body & {
+    
+    &:nth-of-type(even) {
+      background-color: unset;
+    }
+  }
+  
+  &.fc-mannheim-row {
+    background-color: $primary-medium-dark;
+    
+    .#{$prefix}table-cell {
+      color: $white;
+      font-family: $fcm-font-family-bold;
+    }
+  }
+  
+  .#{$prefix}table-body & {
+    
+    &:nth-of-type(even) {
+      background-color: $fcm-table-body-row-even-bg-color;
+    }
+  }
+}
+
+/// fcm table cell
+/// @group fcm-table
+.#{$prefix}table-cell {
+  display: flex;
+  align-items: center;
+  position: relative;
+  
+  &.team-cell {
+    flex: 1;
+  }
+}
+
+/// fcm table team name
+/// @group fcm-table
+.#{$prefix}team-name {
+  color: $fcm-table-team-name-color;
+  
+  .fc-mannheim-row & {
+    color: $fcm-table-team-name-fc-mannheim-color;
+  }
+}
+
+/// fcm table team avatar
+/// @group fcm-table
+.#{$prefix}team-avatar {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 50%;
+}

@@ -1,15 +1,11 @@
 /// app table row transition
-/// @group op-table
+/// @group fcm-table
 $fcm-table-row-transition: background-color .2s ease-in-out !default;
 
 /// app table row hover background color
-/// @group op-table
+/// @group fcm-table
 $fcm-table-row-hover-bg-color: rgba($secondary, .3) !default;
 
 /// app table cell padding
-/// @group op-table
+/// @group fcm-table
 $fcm-table-cell-padding: 2rem !default;
-
-/// app table header cell font family
-/// @group op-table
-$fcm-table-header-cell-font-family: $fcm-font-family-bold !default;
